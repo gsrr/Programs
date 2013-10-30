@@ -12,3 +12,5 @@ code for practice
 	ForceBrowserDownloadFile.java
 20131022 total:23
 	mmapTest.py
+20131030 total:24
+	socketClient.py
