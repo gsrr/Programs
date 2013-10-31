@@ -14,5 +14,5 @@ code for practice
 	mmapTest.py
 20131030 total:24
 	socketClient.py
-20131030 total:25
+20131031 total:25
 	socketServer.py
