@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void func()
+{
+	printf("func1\n");
+}
+
+
+void func2()
+{
+	printf("func2\n");
+}
+
+int main()
+{
+	printf("%x\n" , func);
+	printf("%x\n" , func2);
+	func();
+
+	char B = 'A';
+	int (*c)() = NULL;
+	char A[8] = {};
+	printf("%x\n" , A);
+	printf("%x\n" , &c);
+	printf("c value:%x\n" , c);
+	/*
+	c =func;
+	c();
+	c = func2;
+	c();
+	*/
+	char d[50] = {0x61 , 0x62 , 0x63 , 0x66 , 0x67 , 0x68 , 0x69 , 0x64 ,0x65 , 0x70 , 0x71 , 0x72 , 0x73 , 0x74 , 0x75 , 0x76 ,0x8c , 0x05 , 0x40 ,0x00 , 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40, 0x05 , 0x40 , '\0'};
+	strcpy(A , d);
+	printf("c value:%x\n" , c);
+	c();
+	
+	return 0;
+}
