@@ -22,3 +22,7 @@ code for practice
 	java socket example for Client side
 20131109 total:29
 	buffer overflow example
+20131109 total:32
+	Extract Method - example
+20131109 total:33
+	shell script:IFS for split string
