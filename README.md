@@ -26,3 +26,5 @@ code for practice
 	Extract Method - example
 20131109 total:33
 	shell script:IFS for split string
+20131109 total:34
+	dtrace script:print function arguments
