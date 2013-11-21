@@ -28,3 +28,7 @@ code for practice
 	shell script:IFS for split string
 20131109 total:34
 	dtrace script:print function arguments
+20131120 total:35
+	hello world for solaris driver
+20131121 total:36
+	python dateTime transfer test
