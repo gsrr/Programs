@@ -53,7 +53,99 @@ function checkDiskStatus
 	echo
 }
 
+function setStaticIP
+{
+	
+	echo "-----set ip-----"
+	echo "-----set netmask(broadcast)-----"
+	echo "-----add router in Routing table-----"
+	route add $1 $2
+	echo
+}
+
+#---------------------------------------------------
+# Description: Reload the library of HA Server
+# Example: reloadHALibrary RROperation
+#---------------------------------------------------
+function reloadHALibrary
+{
+	python /var/apache/tomcat/webapps/NAS/misc/HAAgent/testHA.py 99 $1
+}
+
+function doRR
+{
+	echo ""
+}
+
+#---------------------------------------------------
+# Description: Set the color of terminal
+# Example: setColor
+#---------------------------------------------------
+function setColor
+{
+	#use source to execute
+	echo "-----color setting-----"
+	export TERM=xterm-color
+}
+
+
+#---------------------------------------------------
+# Description: Get total size of a directory
+# Example: getDirectorySize /Pool-1/folder
+#---------------------------------------------------
+function getDirectorySize
+{
+	echo "-----get directory size-----"
+	du -s $1
+	echo
+}
+
+
+function createFile
+{
+	echo "-----createFile-----"
+	read -p "directory number:" d_num
+	read -p "file number:" f_num
+	read -p "file size:" f_size
+	read -p "directory path:" d_path
+	for i in `seq 1 1 $d_num`
+	do	
+		destination=$d_path"dir_"$i
+		mkdir $destination
+		for j in `seq 1 1 $f_num`
+		do
+			dd if=/dev/urandom of=$destination"/file_"$j bs=$f_size count=1
+		done
+	done
+}
+
+function listAllCommands
+{
+	echo "---------------------"
+	echo "kill [name] : kill process by name"
+	echo "diskInfo : show information of disk"
+	echo "rsync [ip srcPath tgtPath]: test rsync connection"
+	echo "setStaticIP"
+	echo "reload [libraryName]"
+	echo "---------------------"
+}
+
 case "$1" in
+'createFile')
+	createFile
+	;;
+'color')
+	setColor
+	;;
+'RR')
+	doRR
+	;;
+'reload')
+	reloadHALibrary $1
+	;;
+'setStaticIP')
+	setStaticIP
+	;;
 'smart')
 	checkDiskStatus $2
 	;;
@@ -75,11 +167,3 @@ case "$1" in
 	;;
 esac
 
-function listAllCommands
-{
-	echo "---------------------"
-	echo "kill [name] : kill process by name"
-	echo "diskInfo : show information of disk"
-	echo "rsync [ip srcPath tgtPath]: test rsync connection"
-	echo "---------------------"
-}
