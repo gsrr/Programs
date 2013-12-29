@@ -119,18 +119,27 @@ function createFile
 	done
 }
 
-function listAllCommands
+
+#---------------------------------------------------
+# Description: Get size of file System
+# Example: getSizeOfFileSystem /Pool-1/folder 
+#---------------------------------------------------
+function getSizeOfFileSystem
 {
-	echo "---------------------"
-	echo "kill [name] : kill process by name"
-	echo "diskInfo : show information of disk"
-	echo "rsync [ip srcPath tgtPath]: test rsync connection"
-	echo "setStaticIP"
-	echo "reload [libraryName]"
-	echo "---------------------"
+	folder_path=$1
+	len=${#folder_path}
+	while true
+	do
+		zfs get -Hp used ${folder_path:1:len}
+		sleep 1
+	done
 }
 
+
 case "$1" in
+'size')
+	getSizeOfFileSystem $1
+	;;
 'createFile')
 	createFile
 	;;
