@@ -136,14 +136,11 @@ function getSizeOfFileSystem
 }
 
 
-#---------------------------------------------------
-# Description: Execute command by here document
-# Example: bg_execCmd
-#---------------------------------------------------
 function bg_execCmd
 {
+	echo "here document"
 	at now << Here
-	echo "execute command here!"
+	ls
 Here
 }
 
