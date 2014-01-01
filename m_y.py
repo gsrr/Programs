@@ -81,7 +81,7 @@ class decorator_foo(object):
         def f1(self):
                 print "decorator f1"
                 self.decoratee.f1()
-        def __getattr__(self , name):
+        def __getattr__(self , name): #Called when an attribute lookup has not found the attribute in the usual places.
                 return getattr(self.decoratee , name)
 
 def fiveExTest():
