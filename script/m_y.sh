@@ -147,7 +147,16 @@ function bg_execCmd
 Here
 }
 
+function timeConvert
+{
+        date --date=@$1
+}
+
+
 case "$1" in
+'time')
+        timeConvert $2
+        ;;
 'exec')
 	bg_execCmd
 	;;
