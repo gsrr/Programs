@@ -90,6 +90,22 @@ def fiveExTest():
         v.f1()
         v.f2()
 
+def dec_six_hello(f):
+        def wrapper(a , b):
+                a = a + 1
+                b = b + 1
+                c = f(a , b)
+                return c + 1
+        return wrapper                
+
+#six_hello = dec_six_hello(six_hello)
+@dec_six_hello
+def six_hello(a , b):
+        return a + b;
+def sixExTest():
+        print six_hello(1 , 3)
+        
+
 if __name__ == "__main__":
         import traceback
         firstExampleTest()
@@ -106,6 +122,9 @@ if __name__ == "__main__":
 
         print "Five: decorator pattern" 
         fiveExTest()
+
+        print "Six: decorator in python (add parameter)"
+        sixExTest()
 
 
 
