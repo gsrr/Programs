@@ -1,3 +1,5 @@
+import os
+
 #first example
 class Base_1(object):
         def first(self):
@@ -105,6 +107,15 @@ def six_hello(a , b):
 def sixExTest():
         print six_hello(1 , 3)
         
+def child():
+        print "child:" , os.getpid()
+
+def sevenTest():
+      newpid = os.fork()
+      if newpid == 0:
+              child()
+      else:
+              print "parent:" , os.getpid() , newpid
 
 if __name__ == "__main__":
         import traceback
@@ -125,6 +136,9 @@ if __name__ == "__main__":
 
         print "Six: decorator in python (add parameter)"
         sixExTest()
+
+        print "Seven: fork test"
+        sevenTest()
 
 
 
