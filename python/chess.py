@@ -10,9 +10,9 @@ def getLoc(loc):
         y = int(loc.split(",")[1])
         return (x , y)
 
-def change_matrix(matrix , loc):
+def change_matrix(matrix , loc , index):
         x , y = getLoc(loc)
-        matrix[x][y] = 1
+        matrix[x][y] = index
 
 
 def getStartPoint(x , y , matrix , loc):
@@ -41,26 +41,41 @@ def checkLU(matrix , loc):
         return isWin(x , y , 1 , 1)
 
 
+def checkUD(matrix , loc):
+        x , y = getStartPoint(0 , -1 , matrix , loc)
+        return isWin(x , y , 0 , 1)
+
+def checkRU(matrix , loc):
+        x , y = getStartPoint(1 , -1 , matrix , loc)
+        return isWin(x , y , -1 , 1)
+
+def checkLR(matrix , loc):
+        x , y = getStartPoint(1 , 0 , matrix , loc)
+        return isWin(x , y , -1 , 0)
+
 def check_winner(matrix , loc):
         ret = checkLU(matrix , loc)
         if ret == 0:
                 return ret
-        '''
+        
         ret = checkUD(matrix , loc)
         if ret == 0:
                 return ret
+        
         ret = checkRU(matrix , loc)
         if ret == 0:
                 return ret
-        ret = checkRL(matrix , loc)
+        ret = checkLR(matrix , loc)
         return ret
-        '''
+        
 
 def gameStart(matrix):
-        print_chessBoard(matrix)       
+        print_chessBoard(matrix)   
+        index = 1
         while True:
                 loc = raw_input("Enter your location: ")
-                change_matrix(matrix , loc)
+                change_matrix(matrix , loc , index % 2 + 1)
+                index = index + 1
                 print_chessBoard(matrix)
                 ret = check_winner(matrix , loc)
                 if ret == 0:
