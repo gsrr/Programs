@@ -1,5 +1,5 @@
-import random
 import sys
+import lib_number
 
 
 def getDigits(numbers , base):
@@ -35,16 +35,8 @@ def radix(numbers):
                                 numbers.append(bucket[i].pop())
 
                 
-        
-def generateNumbers(num):
-        numbers = []
-        for i in range(num):
-                number =  int(random.random() * 1000)
-                numbers.append(number)
-        return numbers
-
 if __name__ == "__main__":
-        numbers = generateNumbers(10)
+        numbers = lib_number.generateNumbers(10 , 3)
         func = getattr(sys.modules[__name__] , sys.argv[1])
         print "Before:" , numbers
         func(numbers)
