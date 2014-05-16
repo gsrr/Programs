@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
 	int port;
 	dest.sin_family = AF_INET;
 	dest.sin_addr.s_addr = dest_ip.s_addr;
-	for(port = 22 ; port < 23 ; port++)
+	for(port = 22 ; port < 50 ; port++)
 	{
 		tcph->dest = htons ( port );
 		tcph->check = 0; // if you set a checksum to zero, your kernel's IP stack should fill in the correct checksum during transmission
@@ -239,6 +239,7 @@ int start_sniffer()
 int count = 1;
 void process_packet(unsigned char* buffer, int size)
 {
+	sleep(5);
 	printf("process packet:%d\n",count++);
 	//Get the IP Header part of this packet
 	struct iphdr *iph = (struct iphdr*)buffer;
@@ -271,7 +272,6 @@ void process_packet(unsigned char* buffer, int size)
 			fflush(stdout);
 		}
 	}
-	sleep(5);
 }
 
 /*
