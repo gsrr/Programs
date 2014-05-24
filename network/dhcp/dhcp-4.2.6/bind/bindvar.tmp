@@ -1,0 +1,2 @@
+binddir=/home/jerrycheng/Desktop/Programs/network/dhcp/dhcp-4.2.6/bind
+GMAKE=make
