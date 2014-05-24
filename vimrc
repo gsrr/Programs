@@ -2,4 +2,4 @@ set nocompatible
 set bs=2
 set bg=dark
 set number
-set autoIndent
+set autoindent
