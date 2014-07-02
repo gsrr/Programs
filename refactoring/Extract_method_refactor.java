@@ -4,25 +4,11 @@ import java.util.Vector;
 import java.util.Enumeration;
 
 
-
-class Order
-{
-        int _price;
-        public Order(int price)
-        {
-               this._price = price;
-        }
-        public int getAmount()
-        {
-                return this._price;
-        }
-}
-
-class Extract_method
+class Extract_method_refactor
 {
         Vector<Order> _orders = new Vector<Order>();
         String _name;
-        public Extract_method(String name, int[] prices)
+        public Extract_method_refactor(String name, int[] prices)
         {
                 this._name = name;
                 for (int i = 0 ; i < prices.length ; i++)
@@ -31,29 +17,42 @@ class Extract_method
                 }
         }        
 
-        public void printOwing() 
+        void printBanner()
         {
-                
-                Enumeration e = this._orders.elements();
-                double outstanding = 0.0;
-                //print banner
                 System.out.println ("**************************");
                 System.out.println ("***** Customer Owes ******");
                 System.out.println ("**************************");
-                // calculate outstanding
-                while (e.hasMoreElements()) {
-                        Order each = (Order) e.nextElement();
-                        outstanding += each.getAmount();
-                }
-                //print details
+
+        }
+
+        void printDetail(double outstanding)
+        {
                 System.out.println ("name: " + this._name);
                 System.out.println ("amount: " + outstanding);
         }
 
+        double getOutstanding()
+        {
+                double outstanding = 0.0;
+                Enumeration e = this._orders.elements();
+                while (e.hasMoreElements()) {
+                        Order each = (Order) e.nextElement();
+                        outstanding += each.getAmount();
+                }
+                return outstanding;
+        }
+        public void printOwing() 
+        {
+                
+                printBanner();
+                double outstanding = getOutstanding();
+                printDetail(outstanding);
+        }
+
         public static void main(String args[])
         {
-             int[] prices = {10, 20, 30, 40, 50};   
-             Extract_method test = new Extract_method("My Order", prices);   
+             int[] prices = {10, 20, 30, 40, 60};   
+             Extract_method_refactor test = new Extract_method_refactor("My Order", prices);   
              test.printOwing();
         }
 }
