@@ -15,7 +15,7 @@ def uploadFileToGit(fileName , message , password):
 	time.sleep(2)
 	child = pexpect.spawn("git push")
 	print child.expect("Username")
-	print child.sendline("gsrr")
+	print child.sendline("")
 	print child.expect("Password")
 	print child.sendline(password)
 	print child.expect("Total")
