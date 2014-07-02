@@ -3,6 +3,7 @@ import re
 
 
 def getAreaData(path):
+        print path
         f = urllib.urlopen(path)
         lines = f.readlines()
         f.close()
@@ -13,6 +14,7 @@ def getAreaData(path):
                         return line
 
 def getNumData(path):
+        print path
         ret = {}
         f = urllib.urlopen(path)
         lines = f.readlines()
@@ -28,27 +30,32 @@ def getNumData(path):
 
 web_site = "http://finviz.com/"
 needFile = ['script/maps/sec/current.js', 'script/maps/sec/area.js']
-realFileUrl = []
+realFileUrl = {}
 f = urllib.urlopen("http://finviz.com/map.ashx")
 lines = f.readlines()
 f.close()
 for line in lines:
-        print line
         line = line.strip()
-        for js_file in needFile:
-                if js_file in line:
-                        urlPath = web_site + js_file
-                        realFileUrl.append(urlPath)
-areaData = getAreaData(realFileUrl[1])
+        if needFile[0] in line:
+                tmp_path = re.search("\".+\"",line.split()[1]).group()
+                urlPath = web_site + tmp_path[1:-1]
+                print urlPath
+                realFileUrl['current'] = urlPath
+        if needFile[1] in line:
+                tmp_path = re.search("\".+\"",line.split()[1]).group()
+                urlPath = web_site + tmp_path[1:-1]
+                print urlPath
+                realFileUrl['area'] = urlPath
+
+
+areaData = getAreaData(realFileUrl['area'])
 areaObj = re.search(r'\(.+\)', areaData)
 area_list = areaObj.group()[1:-1].split(",")
-numData = getNumData(realFileUrl[0])
+numData = getNumData(realFileUrl['current'])
 ticketObj_l = re.search(r'\(.+\)', numData['tickerQuote_l'])
 ticketList_l = ticketObj_l.group()[1:-1].split(",")
-print ticketList_l
 ticketObj_c = re.search(r'\(.+\)', numData['tickerQuote_c'])
 ticketList_c = ticketObj_c.group()[1:-1].split(",")
-print ticketList_c
 
 changePct = []
 for i in range(len(ticketList_l)):
