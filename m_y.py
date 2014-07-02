@@ -1,4 +1,6 @@
 import os
+import time
+import sys
 
 #first example
 class Base_1(object):
@@ -114,8 +116,14 @@ def sevenTest():
       newpid = os.fork()
       if newpid == 0:
               child()
+              sys.exit()
       else:
               print "parent:" , os.getpid() , newpid
+
+def eightTest():
+        print "sleeping..."
+        time.sleep(3)
+        print "sleep after 3 seconds!!"
 
 if __name__ == "__main__":
         import traceback
@@ -139,6 +147,9 @@ if __name__ == "__main__":
 
         print "Seven: fork test"
         sevenTest()
+        
+        print "Eight: sleep test"
+        eightTest()
 
 
 

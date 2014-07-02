@@ -1,80 +1,62 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define Mod 500000
-struct list {
-        int tag, t;
-        struct list *next;
-}*HASH[Mod], *curr, *prev, *temp;
-void InsHash(int n) {
-        int m = (n%Mod + Mod)%Mod;
-        if(HASH[m] == NULL) {
-                curr = (struct list *)malloc(sizeof(struct list));
-                curr->tag = n, curr->next = NULL, curr->t = 1;
-                HASH[m] = curr;return;
-        }
-        temp = HASH[m], prev = NULL;
-        while(temp->tag <= n) {
-                if(temp->tag == n) {temp->t++;return;}
-                if(temp->next != NULL)
-                        prev = temp, temp = temp->next;
-                else {
-                        curr = (struct list *)malloc(sizeof(struct list));
-                        curr->tag = n, curr->next = NULL, curr->t = 1;
-                        temp->next = curr; return;
-                }
-        }
-        if(prev != NULL) {
-                curr = (struct list *)malloc(sizeof(struct list));
-                curr->tag = n, curr->t = 1;
-                prev->next = curr, curr->next = temp;
-        }
-        else {
-                curr = (struct list *)malloc(sizeof(struct list));
-                curr->tag = n, curr->t = 1;
-                HASH[m] = curr, curr->next = temp;
-        }
-        return;
+
+#include <map>
+using namespace std;
+
+
+
+void InsHash(int n, map<int , int> &HASH) {
+        if(HASH.find(n) == HASH.end())
+                HASH[n] = 1;
+        else
+                HASH[n] = HASH[n] + 1;
+
 }
-void FreeAll() {
-        int a;
-        for(a = 0; a < Mod; a++) {
-                curr = HASH[a], prev = NULL;
-                while(curr != NULL) {
-                        prev = curr, curr = curr->next;
-                        free(prev);
-                }
-                HASH[a] = NULL;
-        }
-}
-int Find(int v) {
-        curr = HASH[(v%Mod + Mod)%Mod];
-        while(curr != NULL) {
-                if(curr->tag == v)    return curr->t;
-                curr = curr->next;
+
+int Find(int v, map<int, int> &HASH) {
+        map<int, int>::iterator curr = HASH.find(v);
+        if (curr != HASH.end()) {
+                return curr->second;
         }
         return 0;
 }
 
-main() {
-        int n, a, b, c, A[100];
-        while(scanf("%d", &n) == 1) {
-                for(a = 0; a < n; a++)
-                        scanf("%d", &A[a]);
-                FreeAll();
-                for(a = 0; a < n; a++)
-                        for(b = 0; b < n; b++)
-                                for(c = 0; c < n; c++) {
-                                        InsHash(A[a]*A[b]+A[c]);
+void putRightValueInfoHash(int A[], int n, map<int, int> &HASH)
+{
+        for(int a = 0; a < n; a++)
+                for(int b = 0; b < n; b++)
+                        for(int c = 0; c < n; c++) {
+                                InsHash(A[a]*A[b]+A[c], HASH);
+                        }
+}
+
+
+long long compareLeftValueWithHash(int A[], int n, map<int, int> &HASH)
+{
+        long long Ans = 0;
+        for(int a = 0; a < n; a++) {
+                if(A[a] != 0)
+                        for(int b = 0; b < n; b++)
+                                for(int c = 0; c < n; c++) {
+                                        Ans += Find(A[a]*(A[b]+A[c]), HASH);
                                 }
-                long long Ans = 0;
-                for(a = 0; a < n; a++) {
-                        if(A[a] != 0)
-                                for(b = 0; b < n; b++)
-                                        for(c = 0; c < n; c++) {
-                                                Ans += Find(A[a]*(A[b]+A[c]));
-                                        }
-                }
-                printf("%lld\n", Ans);
+        }
+
+        return Ans;
+
+}
+
+int main() {
+        int n, A[100];
+        while(scanf("%d", &n) == 1) {
+                map<int , int> HASH;
+                for(int a = 0; a < n; a++)
+                        scanf("%d", &A[a]);
+
+                putRightValueInfoHash(A, n, HASH);
+                printf("%lld\n\n", compareLeftValueWithHash(A, n , HASH));
         }
         return 0;
 }

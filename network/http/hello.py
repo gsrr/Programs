@@ -41,7 +41,7 @@ while True:
     conn, addr = s.accept()
     request    = conn.recv(1024)
     method    = request.split(' ')[0]
-    src            = request.split(' ')[1]
+    src       = request.split(' ')[1]
 
     # deal with GET method
     if method == 'GET':
