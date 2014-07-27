@@ -1,14 +1,10 @@
 import urllib
 import re
+import mylib_url
 
 web_site = "http://finviz.com/"
 needFile = {'current':'script/maps/sec/current.js', 'area':'script/maps/sec/area.js'}
 
-def getWebData(urlPath):
-        f = urllib.urlopen(urlPath)
-        data = f.readlines()
-        f.close()
-        return data
 
 
 def getJsUrl(line):
@@ -39,12 +35,12 @@ def getListFromObj(obj):
 
 
 def getAreaData(path):
-        data = getWebData(path)
+        data = mylib_url.getWebData(path)
         areaObj = getObjByKey("areaTicker_t", data)
         return getListFromObj(areaObj)
 
 def getNumData(path):
-        data = getWebData(path)
+        data = mylib_url.getWebData(path)
         ret = {}
         for line in data:
                 line = line.strip()
@@ -72,7 +68,7 @@ def writeResult(areaList, changePct):
 
 
 if __name__ == "__main__":
-        data = getWebData("http://finviz.com/map.ashx")
+        data = mylib_url.getWebData("http://finviz.com/map.ashx")
         print '1 - start web processing...'
         jsFiles = getJsFile(data)
         areaList = getAreaData(jsFiles['area'])

@@ -1,0 +1,1990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta NAME="keywords" content="海贼王漫画,SF动漫,海贼王,在线漫画,漫画">
+<meta NAME="description" content="海贼王漫画754于7月23日急速更新，SF动漫免费在线漫画是国内更新海贼王漫画速度最快、画质最好的海贼王漫画网，同时每周四以最快速度更新火影忍者漫画、死神漫画等热门在线漫画。">
+<title>海贼王漫画 在线漫画 海贼王754 海贼王在线漫画 SF动漫_SF在线漫画_SF互动传媒</title>
+<link href="http://rs.sfacg.com/css/commonality.css" rel="stylesheet" type="text/css" />
+<link href="http://rs.sfacg.com/css/comic.css" rel="stylesheet" type="text/css" />
+<script language="javascript"  src="/JS/common.js"></script>
+<script type="text/javascript" src="http://rs.sfacg.com/JS/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+.body-bg-left, .body-bg-right{display: block;position: absolute;width: 50%;z-index: 0;}
+.body-bg-left {background: url("http://game.weibo.com/spread/s/i/9cbfe8872821eab8.jpg") no-repeat scroll right 0px transparent;left: -498px;height: 700px;top: 0px;}
+.body-bg-right {background: url("http://game.weibo.com/spread/s/i/f27cc8e4b89758c1.jpg") no-repeat scroll 498px 0px transparent;right: 0px;height: 700px;top: 0px;}
+.pr {position: relative;z-index: 10;}
+</style>
+</head>
+
+<body>
+<div class="pr" style="width:980px;margin:0 auto;">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td width="300"><a href="http://www.sfacg.com/"><img src="http://rs.sfacg.com/images/sflogo.gif" width="271" height="89" border="0" alt="SF互动传媒网" /></a></td>
+<td align="right"><table width="660" height="70" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center"><div id="AD_A1"></div></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="63" valign="top" class="Menu_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr class="F14PX white_link1">
+<td width="60" height="40" align="center"><a href="http://www.sfacg.com/">首 页</a></td>
+<td width="60" align="center"><a href="http://news.sfacg.com/" class="Yellow_link2">资 讯</a></td>
+<td width="60" align="center" bgcolor="#FFAB00"><a href="http://comic.sfacg.com/"><b>漫 画</b></a></td>
+<td width="80" align="center"><a href="http://book.sfacg.com/">轻小说</a></td>
+<td width="70" align="center"><a href="http://baike.sfacg.com/">动漫百科</a></td>
+<td width="60" align="center"><a href="http://bbs.sfacg.com/">论 坛</a></td>
+<td width="80" align="center"><a href="http://passport.sfacg.com/">我的SF</a></td>
+<td align="right" style="font-size:12px;padding-right: 10px; color:#FFFFFF" class="white_link2"><script src="http://passport.sfacg.com/js/usermenu.js" type="text/javascript"></script></td>
+</tr>
+<tr class="white_link2">
+<td height="18" colspan="9" style="padding:0px 6px 0px 16px;"><span style="float:left;"><a href="/Forecast/">漫画更新指南</a>　<a href="/WeeklyUpdate/">一周漫画更新</a>　<a href="http://mh.sfacg.com/MyViewHistory/" rel="nofollow">我的阅读记录</a>　<a href="/Catalog/">漫画列表</a></span><span style="float:right;"><strong style="text-decoration: underline;">热门漫画</strong>： <a href="http://comic.sfacg.com/HTML/Naruto/">火影忍者</a> <a href="http://comic.sfacg.com/HTML/OnePiece/">海贼王</a> <a href="http://comic.sfacg.com/HTML/bleach/">死神</a> <a href="http://comic.sfacg.com/HTML/MZTKN/">名侦探柯南</a> <a href="http://comic.sfacg.com/HTML/YJDWB/">妖精的尾巴</a> <a href="http://comic.sfacg.com/HTML/JJDJR/">进击的巨人</a> <a href="http://comic.sfacg.com/HTML/SJZL/">食戟之灵</a> <a href="http://comic.sfacg.com/HTML/HZDLQ/">黑子的篮球</a> <a href="http://comic.sfacg.com/HTML/MSDHL/">美食的俘虏</a></span></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="980" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFB17D" align="center">
+<tr class="typelist">
+<td height="30" style="padding-left: 15px;">
+分类列表：<a href="/Catalog/?tid=1">热血</a><a href="/Catalog/?tid=2">校园</a><a href="/Catalog/?tid=3">推理</a><a href="/Catalog/?tid=4">机战</a><a href="/Catalog/?tid=5">冒险</a><a href="/Catalog/?tid=6">运动</a><a href="/Catalog/?tid=7">耽美</a><a href="/Catalog/?tid=8">搞笑</a><a href="/Catalog/?tid=9">科幻</a><a href="/Catalog/?tid=10">魔幻</a><a href="/Catalog/?tid=11">恐怖</a><a href="/Catalog/?tid=12">社会</a><a href="/Catalog/?tid=13">爱情</a><a href="/Catalog/?tid=14">武侠</a><a href="/Catalog/?tid=15">温情</a>
+</td>
+<td>
+字母列表：<a href="/Catalog/?l=A">A</a><a href="/Catalog/?l=B">B</a><a href="/Catalog/?l=C">C</a><a href="/Catalog/?l=D">D</a><a href="/Catalog/?l=E">E</a><a href="/Catalog/?l=F">F</a><a href="/Catalog/?l=G">G</a><a href="/Catalog/?l=H">H</a><a href="/Catalog/?l=I">I</a><a href="/Catalog/?l=J">J</a><a href="/Catalog/?l=K">K</a><a href="/Catalog/?l=L">L</a><a href="/Catalog/?l=M">M</a><a href="/Catalog/?l=N">N</a><a href="/Catalog/?l=O">O</a><a href="/Catalog/?l=P">P</a><a href="/Catalog/?l=Q">Q</a><a href="/Catalog/?l=R">R</a><a href="/Catalog/?l=S">S</a><a href="/Catalog/?l=T">T</a><a href="/Catalog/?l=U">U</a><a href="/Catalog/?l=V">V</a><a href="/Catalog/?l=W">W</a><a href="/Catalog/?l=X">X</a><a href="/Catalog/?l=Y">Y</a><a href="/Catalog/?l=Z">Z</a>
+</td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#dfdfdf" class="space10px">
+<tr>
+<td bgcolor="#FFFFFF"><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f6f6f6">
+<tr>
+<td width="68%" height="36" style="padding-left: 8px;"><script src="http://rs.sfacg.com/JS/SearchBox.js?1" type="text/javascript"></script>
+　<a href="#" class="Red_link1">帮助</a></td>
+<td width="32%" align="center">
+<table width="300" height="22" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="2" class="affiche_left"></td>
+<td align="left" class="affiche_middle"><iframe src="http://www.sfacg.com/News/Utility/bulletin.html" frameborder="0" scrolling="no" width="100%" height="20px"></iframe></td>
+<td width="2" class="affiche_right"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td><script src="/AD/B/B1-2.JS?v=20131219" type="text/javascript"></script></td>
+</tr>
+</table>
+</div>
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="space10px pr">
+<tr>
+<td width="770" valign="top">
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="news_bar1"></td>
+<td class="news_bar2 Li_bg Height_px20 gray_link1">
+<ul style="float:left;width:50%;">
+
+<li><a href="http://bbs.sfacg.com/showtopic-64405.aspx" style="color:#FF6600" target="_blank"><b>第二届SF原创轻小说大赛正式开始</b></a></li>
+
+
+<li><a href="http://news.sfacg.com/Files/2014-7-22/f6388f7e-f7b3-498d-a62a-d29017014058.shtml" target="_blank">真人电影版《诚如神之所说》首曝剧照</a></li>
+
+<li><a href="http://news.sfacg.com/Files/2014-7-22/914fa744-ff2b-49d4-9f89-cf224de68d24.shtml" target="_blank">《偶像大师》&#22524;玉演唱会蓝光情报公布</a></li>
+
+</ul>
+<ul style="float:left;">
+
+<li><a href="http://news.sfacg.com/Files/2014-7-4/9331a38e-a32c-4f60-a000-25dfefddef4b.shtml" style="color:#FF6600" target="_blank"><b>英雄联盟同人绘卷-诺克萨斯篇「血染之碑」登场</b></a></li>
+
+
+<li><a href="http://news.sfacg.com/Files/2014-7-22/4788783c-9227-4676-aca8-5a654f98cc0c.shtml" target="_blank">乙女番再临！《兄弟战争》新OVA决定</a></li>
+
+<li><a href="http://news.sfacg.com/Files/2014-7-22/19ff779e-1720-4547-8ea3-342b623a788e.shtml" target="_blank">花彩夜来祭！《花舞少女》祭11月开催</a></li>
+
+</ul>
+</td>
+<td class="news_bar3"></td>
+</tr>
+</table>
+<div style="width:750px;overflow:hidden;" class="space10px"><script language="javascript" src="/AD/A/A2.js"></script></div>
+<div id="TopList_1">
+<table width="750"  border="0" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="53%" valign="bottom" class="Tab_bg">
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">最新更新</td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,2)">热门推荐</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,3)">最新收录</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,4)">完结经典</a></td>
+</tr>
+</table>            </td>
+<td width="13%" align="right" class="Tab_bg"><B style="color:#FF6600">你喜欢SF吗：</B></td>
+<td width="17%" class="Tab_bg"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F351878155&amp;type=button_num&amp;width=400&amp;height=30" allowtransparency="true" scrolling="No" border="0" frameborder="0" style="width:120px;height:24px;border:none;overflow:hidden;"></iframe></td>
+<td width="17%" class="Tab_bg"><a href="http://mh.sfacg.com/MyViewHistory/" class="icon_read orange_link1" target="_blank" rel="nofollow">我的阅读记录</a></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1">
+<tr>
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/HZDLQ/" target="_blank" title="黑子的篮球"><img src="http://mh.sfacg.com/Logo/31309503-624a-4af5-a874-c7b66ee760c7.jpg" width="80" height="100" border="0" alt="黑子的篮球" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/HZDLQ/" target="_blank">黑子的篮球</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">271话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">藤卷忠俊</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Naruto/" target="_blank" title="火影忍者"><img src="http://mh.sfacg.com/Logo/Naruto.jpg" width="80" height="100" border="0" alt="火影忍者" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Naruto/" target="_blank">火影忍者</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">686话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">岸本齐史</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/QJWYX/" target="_blank" title="请叫我英雄"><img src="http://mh.sfacg.com/Logo/d14974c8-0064-42de-bc7d-87dad236e1cf.jpg" width="80" height="100" border="0" alt="请叫我英雄" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/QJWYX/" target="_blank">请叫我英雄</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">183话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">花泽健吾</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/LLL/" target="_blank" title="啦啦啦"><img src="http://mh.sfacg.com/Logo/4efe811d-bcd6-43e4-9bd6-2957d81cbc6b.jpg" width="80" height="100" border="0" alt="啦啦啦" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/LLL/" target="_blank">啦啦啦</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">020话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">金田一莲十郎</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/BLOOD/" target="_blank" title="Bloody Cross"><img src="http://mh.sfacg.com/Logo/a85b4422-7a0f-40e1-83f9-13190531b896.jpg" width="80" height="100" border="0" alt="Bloody Cross" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/BLOOD/" target="_blank">Bloody Cross</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">060话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">米山シヲ</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/OnePiece/" target="_blank" title="海贼王/One Piece"><img src="http://mh.sfacg.com/Logo/OnePiece.jpg" width="80" height="100" border="0" alt="海贼王/One Piece" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/OnePiece/" target="_blank">海贼王/One Piece</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">754话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">尾田荣一郎</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JZXFZ/" target="_blank" title="君主先发制人"><img src="http://mh.sfacg.com/Logo/aa02ed2b-10a6-4c1f-bc2d-4e20e033d666.jpg" width="80" height="100" border="0" alt="君主先发制人" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JZXFZ/" target="_blank">君主先发制人</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">009话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">幸田百子</td>
+</tr>
+</table></td>
+</tr><tr>
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/TSJMY/" target="_blank" title="汤神君没有朋友"><img src="http://mh.sfacg.com/Logo/28cccb8a-0382-48a7-b634-45ca4c2294ce.jpg" width="80" height="100" border="0" alt="汤神君没有朋友" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/TSJMY/" target="_blank">汤神君没有朋友</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">017话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">佐仓准</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JMLSblack/" target="_blank" title="假面教师BLACK"><img src="http://mh.sfacg.com/Logo/201309/b68360b9-8297-4407-bd7a-8ff5ac856cde.jpg" width="80" height="100" border="0" alt="假面教师BLACK" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JMLSblack/" target="_blank">假面教师BLACK</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">035话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">藤泽亨</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/PHXXX/" target="_blank" title="破坏 x 革命"><img src="http://mh.sfacg.com/Logo/407e1a56-e5db-44ce-98b9-08a6559363e9.jpg" width="80" height="100" border="0" alt="破坏 x 革命" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/PHXXX/" target="_blank">破坏 x 革命</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">032话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">森恒二</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/TJQF/" target="_blank" title="特极囚犯"><img src="http://mh.sfacg.com/Logo/2fc0cc6b-32bd-49e9-b34e-26865b73ec4e.jpg" width="80" height="100" border="0" alt="特极囚犯" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/TJQF/" target="_blank">特极囚犯</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">164话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">濑口忍</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/BILLI/" target="_blank" title="Billion Dogs"><img src="http://mh.sfacg.com/Logo/ddb82ed2-7af9-4d56-be68-ac345467a776.jpg" width="80" height="100" border="0" alt="Billion Dogs" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/BILLI/" target="_blank">Billion Dogs</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">023话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">芹泽直树</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/EMNB/" target="_blank" title="恶魔奶爸"><img src="http://mh.sfacg.com/Logo/45eb6781-07be-4a10-9a36-507755dc9b16.jpg" width="80" height="100" border="0" alt="恶魔奶爸" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/EMNB/" target="_blank">恶魔奶爸</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">EX奶爸02</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">田村隆平</td>
+</tr>
+</table></td>
+
+<td height="190"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/NZJD/" target="_blank" title="逆转监督"><img src="http://mh.sfacg.com/Logo/b81f4f12-8864-475b-83e0-9cfbdf348100.jpg" width="80" height="100" border="0" alt="逆转监督" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/NZJD/" target="_blank">逆转监督</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">304话</td>
+</tr>
+<tr>
+<td height="22" align="center" style="color:#333333">辻智 纲本将也</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</div>
+<div id="TopList_2" style="display:none">
+<table width="750"  border="0" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="53%" valign="bottom" class="Tab_bg">
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#cccccc" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,1)">最新更新</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">热门推荐</td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,3)">最新收录</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,4)">完结经典</a></td>
+</tr>
+</table>            </td>
+<td width="13%" align="right" class="Tab_bg"><B style="color:#FF6600">你喜欢SF吗：</B></td>
+<td width="17%" class="Tab_bg"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F351878155&amp;type=button_num&amp;width=400&amp;height=30" allowtransparency="true" scrolling="No" border="0" frameborder="0" style="width:120px;height:24px;border:none;overflow:hidden;"></iframe></td>
+<td width="17%" class="Tab_bg"><a href="http://mh.sfacg.com/MyViewHistory/" class="icon_read orange_link1" target="_blank" rel="nofollow">我的阅读记录</a></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1">
+<tr>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Naruto" title="火影忍者" target="_blank"><img src="http://mh.sfacg.com/Logo/Naruto.jpg" width="80" height="100" border="0" alt="火影忍者" ></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Naruto/" target="_blank">火影忍者</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/OnePiece/" target="_blank" title="海贼王/One Piece"><img src="http://mh.sfacg.com/Logo/OnePiece.jpg" width="80" height="100" border="0" alt="海贼王/One Piece" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/OnePiece/" target="_blank">海贼王/One Piece</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/bleach/" target="_blank" title="死神"><img src="http://mh.sfacg.com/Logo/bleach.jpg" width="80" height="100" border="0" alt="死神" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/bleach/" target="_blank">死神</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/MDMAG/" target="_blank" title="魔笛MAGI"><img src="http://mh.sfacg.com/Logo/567cf95b-0441-46a3-a5ce-e80ef9ebaba3.jpg" width="80" height="100" border="0" alt="魔笛MAGI" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/MDMAG/" target="_blank">魔笛MAGI</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/YJDWB/" target="_blank" title="妖精的尾巴"><img src="http://mh.sfacg.com/Logo/26234a50-a9d8-4464-8414-f420894a614f.jpg" width="80" height="100" border="0" alt="妖精的尾巴" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/YJDWB/" target="_blank">妖精的尾巴</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/EMNB/" target="_blank" title="恶魔奶爸"><img src="http://mh.sfacg.com/Logo/45eb6781-07be-4a10-9a36-507755dc9b16.jpg" width="80" height="100" border="0" alt="恶魔奶爸" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/EMNB/" target="_blank">恶魔奶爸</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SkipBeat/" target="_blank" title="Skip Beat"><img src="http://mh.sfacg.com/Logo/SkipBeat.jpg" width="80" height="100" border="0" alt="Skip Beat" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SkipBeat/" target="_blank">Skip Beat</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+</tr><tr>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/shiszqdzqy/" target="_blank" title="史上最强弟子兼一"><img src="http://mh.sfacg.com/Logo/89d8523b-e3dd-4b59-aadb-f333ab4e6e0f.jpg" width="80" height="100" border="0" alt="史上最强弟子兼一" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/shiszqdzqy/" target="_blank">史上最强弟子兼一</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/YQCR/" target="_blank" title="一拳超人"><img src="http://mh.sfacg.com/Logo/7b65b01a-745d-4f94-a8ce-7c4b4c9e6ce0.jpg" width="80" height="100" border="0" alt="一拳超人" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/YQCR/" target="_blank">一拳超人</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JJDJR/" target="_blank" title="进击的巨人"><img src="http://mh.sfacg.com/Logo/2ca23d71-2eba-4d45-8b74-9c57e4e13348.jpg" width="80" height="100" border="0" alt="进击的巨人" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JJDJR/" target="_blank">进击的巨人</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/YingHun/" target="_blank" title="银魂"><img src="http://mh.sfacg.com/Logo/YingHun.jpg" width="80" height="100" border="0" alt="银魂" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/YingHun/" target="_blank">银魂</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/HZDLQ/" target="_blank" title="黑子的篮球"><img src="http://mh.sfacg.com/Logo/31309503-624a-4af5-a874-c7b66ee760c7.jpg" width="80" height="100" border="0" alt="黑子的篮球" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/HZDLQ/" target="_blank">黑子的篮球</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/huizsnp/" target="_blank" title="会长是女仆"><img src="http://mh.sfacg.com/Logo/e36c1ac4-974e-4991-a567-0ea1bbf58614.jpg" width="80" height="100" border="0" alt="会长是女仆" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/huizsnp/" target="_blank">会长是女仆</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SJZL/" target="_blank" title="食戟之灵"><img src="http://mh.sfacg.com/Logo/50c49ef0-c223-4a7b-8ef5-a2e058c1fdcc.jpg" width="80" height="100" border="0" alt="食戟之灵" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SJZL/" target="_blank">食戟之灵</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"></td>
+</tr>
+</table></td>
+
+</tr>
+
+</table>
+</div>
+<div id="TopList_3" style="display:none">
+<table width="750"  border="0" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="53%" valign="bottom" class="Tab_bg">
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#cccccc" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,1)">最新更新</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,2)">热门推荐</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">最新收录</td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#cccccc" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,4)">完结经典</a></td>
+</tr>
+</table>            </td>
+<td width="13%" align="right" class="Tab_bg"><B style="color:#FF6600">你喜欢SF吗：</B></td>
+<td width="17%" class="Tab_bg"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F351878155&amp;type=button_num&amp;width=400&amp;height=30" allowtransparency="true" scrolling="No" border="0" frameborder="0" style="width:120px;height:24px;border:none;overflow:hidden;"></iframe></td>
+<td width="17%" class="Tab_bg"><a href="/MyViewHistory/" class="icon_read orange_link1" target="_blank">我的阅读记录</a></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1">
+<tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/FXWY/" target="_blank" title="拂晓物语"><img src="http://mh.sfacg.com/Logo/201407/994f2a0a-9cf1-4f9c-a85c-f51f52c13b8f.jpg" width="80" height="100" border="0" alt="拂晓物语" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/FXWY/" target="_blank">拂晓物语</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">001话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/WDYXXY/" target="_blank" title="我的英雄学院"><img src="http://mh.sfacg.com/Logo/201407/ae5d4387-3463-4da1-9d64-24cc257a2641.jpg" width="80" height="100" border="0" alt="我的英雄学院" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/WDYXXY/" target="_blank">我的英雄学院</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">001话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SSG/" target="_blank" title="神狩鬼"><img src="http://mh.sfacg.com/Logo/22342306-df77-415a-aa56-67428eb288b4.jpg" width="80" height="100" border="0" alt="神狩鬼" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SSG/" target="_blank">神狩鬼</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">003话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SYDZG/" target="_blank" title="杀意的战鬼"><img src="http://mh.sfacg.com/Logo/201406/dec99c5f-7090-4279-9225-3177e4d14b1e.jpg" width="80" height="100" border="0" alt="杀意的战鬼" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SYDZG/" target="_blank">杀意的战鬼</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">001话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/DYLSFMSK/" target="_blank" title="地狱老师 逢魔时刻"><img src="http://mh.sfacg.com/Logo/201406/e2b8b7ef-cb23-4723-886b-90aa495a67dc.jpg" width="80" height="100" border="0" alt="地狱老师 逢魔时刻" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/DYLSFMSK/" target="_blank">地狱老师 逢魔时刻</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">002话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/XXLDQ/" target="_blank" title="小巷里的七宝诊疗所"><img src="http://mh.sfacg.com/Logo/c1ac1413-a13f-4e3c-b623-17e0ab6e2d86.jpg" width="80" height="100" border="0" alt="小巷里的七宝诊疗所" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/XXLDQ/" target="_blank">小巷里的七宝诊疗所</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">005话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/HXSDB/" target="_blank" title="火线上的波照间"><img src="http://mh.sfacg.com/Logo/21e55708-0d21-4659-b051-efd765547ca7.jpg" width="80" height="100" border="0" alt="火线上的波照间" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/HXSDB/" target="_blank">火线上的波照间</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">031话</td>
+</tr>
+</table></td>
+</tr><tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/ZCWSZ/" target="_blank" title="致曾为神之众兽"><img src="http://mh.sfacg.com/Logo/7a279ebc-eee9-40d0-aeb8-74514a7e2e32.jpg" width="80" height="100" border="0" alt="致曾为神之众兽" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/ZCWSZ/" target="_blank">致曾为神之众兽</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">002话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/BNCDMM/" target="_blank" title="不能吹的秘密"><img src="http://mh.sfacg.com/Logo/201406/7cfad94e-3292-4400-aa96-08c1191455d1.jpg" width="80" height="100" border="0" alt="不能吹的秘密" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/BNCDMM/" target="_blank">不能吹的秘密</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">001话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Deathtopia/" target="_blank" title="Deathtopia"><img src="http://mh.sfacg.com/Logo/201406/b6f88a2d-1fb3-40e2-a928-5e8001f8d115.jpg" width="80" height="100" border="0" alt="Deathtopia" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Deathtopia/" target="_blank">Deathtopia</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">004话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/TJQF/" target="_blank" title="特极囚犯"><img src="http://mh.sfacg.com/Logo/2fc0cc6b-32bd-49e9-b34e-26865b73ec4e.jpg" width="80" height="100" border="0" alt="特极囚犯" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/TJQF/" target="_blank">特极囚犯</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">164话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/L/" target="_blank" title="累"><img src="http://mh.sfacg.com/Logo/f9a8b4c0-60fd-4897-80a4-28443df95696.jpg" width="80" height="100" border="0" alt="累" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/L/" target="_blank">累</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">030话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/BSZG/" target="_blank" title="宝石之国"><img src="http://mh.sfacg.com/Logo/898471de-bc40-4f39-bb5d-5f61b26c29f5.jpg" width="80" height="100" border="0" alt="宝石之国" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/BSZG/" target="_blank">宝石之国</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">006话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JSZR/" target="_blank" title="将死之人"><img src="http://mh.sfacg.com/Logo/19d50818-38db-43c2-81fd-a6e17faf6b82.jpg" width="80" height="100" border="0" alt="将死之人" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JSZR/" target="_blank">将死之人</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">009话</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</div>
+<div id="TopList_4" style="display:none">
+<table width="750"  border="0" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="53%" valign="bottom" class="Tab_bg">
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#cccccc" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,1)">最新更新</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,2)">热门推荐</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="void(0)" class="Tab1" onmouseover="javascript:show_tbl('TopList_',4,3)">最新收录</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">完结经典</td>
+</tr>
+</table>            </td>
+<td width="13%" align="right" class="Tab_bg"><B style="color:#FF6600">你喜欢SF吗：</B></td>
+<td width="17%" class="Tab_bg"><iframe src="http://open.qzone.qq.com/like?url=http%3A%2F%2Fuser.qzone.qq.com%2F351878155&amp;type=button_num&amp;width=400&amp;height=30" allowtransparency="true" scrolling="No" border="0" frameborder="0" style="width:120px;height:24px;border:none;overflow:hidden;"></iframe></td>
+<td width="17%" class="Tab_bg"><a href="/MyViewHistory/" class="icon_read orange_link1" target="_blank">我的阅读记录</a></td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1">
+<tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/FSJ/" target="_blank" title="封神纪"><img src="http://mh.sfacg.com/Logo/636fd988-65cc-476c-86a4-102e05ee7476.jpg" width="80" height="100" border="0" alt="封神纪" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/FSJ/" target="_blank">封神纪</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">038话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Tsubasa/" target="_blank" title="Tsubasa翼"><img src="http://mh.sfacg.com/Logo/Tsubasa.jpg" width="80" height="100" border="0" alt="Tsubasa翼" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Tsubasa/" target="_blank">Tsubasa翼</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">233话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/MLZT/" target="_blank" title="魔人侦探"><img src="http://mh.sfacg.com/Logo/ef7c647e-4f26-4ae4-85c6-2de90d95f8da.jpg" width="80" height="100" border="0" alt="魔人侦探" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/MLZT/" target="_blank">魔人侦探</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">202话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JtjsREBORN/" target="_blank" title="家庭教师REBORN!"><img src="http://mh.sfacg.com/Logo/55599c96-c3c0-49ea-adbe-5eec0bcf9ef0.jpg" width="80" height="100" border="0" alt="家庭教师REBORN!" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JtjsREBORN/" target="_blank">家庭教师REBORN!</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">409最终话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/CODEBREAKER/" target="_blank" title="Code Breaker"><img src="http://mh.sfacg.com/Logo/c5384e07-015c-4359-be1f-00ca16f51529.jpg" width="80" height="100" border="0" alt="Code Breaker" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/CODEBREAKER/" target="_blank">Code Breaker</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">230话完结</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/ALSXY/" target="_blank" title="爱丽丝学园"><img src="http://mh.sfacg.com/Logo/ALSXY.jpg" width="80" height="100" border="0" alt="爱丽丝学园" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/ALSXY/" target="_blank">爱丽丝学园</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">血型小剧场</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/xinsjfyzs/" target="_blank" title="新世纪福音战士"><img src="http://mh.sfacg.com/Logo/674061c7-d50d-4322-a684-1e15743d72d9.jpg" width="80" height="100" border="0" alt="新世纪福音战士" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/xinsjfyzs/" target="_blank">新世纪福音战士</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">096话完结</td>
+</tr>
+</table></td>
+</tr><tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/tianshihha/" target="_blank" title="天是红河岸"><img src="http://mh.sfacg.com/Logo/808967cf-7933-4b78-a515-a9b38c38e5aa.jpg" width="80" height="100" border="0" alt="天是红河岸" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/tianshihha/" target="_blank">天是红河岸</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">030卷</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Enigmami/" target="_blank" title="Enigma谜"><img src="http://mh.sfacg.com/Logo/e97f3023-70b8-4330-8279-3aef773cff2b.jpg" width="80" height="100" border="0" alt="Enigma谜" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Enigmami/" target="_blank">Enigma谜</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">056话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SlamDunk/" target="_blank" title="灌篮高手"><img src="http://mh.sfacg.com/Logo/SlamDunk.jpg" width="80" height="100" border="0" alt="灌篮高手" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SlamDunk/" target="_blank">灌篮高手</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">031卷</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/DQMR/" target="_blank" title="地球末日"><img src="http://mh.sfacg.com/Logo/4b2c359a-6683-4767-a713-775cfec277d7.jpg" width="80" height="100" border="0" alt="地球末日" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/DQMR/" target="_blank">地球末日</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">078话最终话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JOJO/" target="_blank" title="JOJO奇妙冒险"><img src="http://mh.sfacg.com/Logo/JOJO.jpg" width="80" height="100" border="0" alt="JOJO奇妙冒险" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JOJO/" target="_blank">JOJO奇妙冒险</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">080卷</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/BAKUMAN/" target="_blank" title="Bakuman食梦者"><img src="http://mh.sfacg.com/Logo/c9444f03-c852-49c4-9386-41ddb23e5504.jpg" width="80" height="100" border="0" alt="Bakuman食梦者" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/BAKUMAN/" target="_blank">Bakuman食梦者</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">176话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/XXXHolic/" target="_blank" title="XXXHolic"><img src="http://mh.sfacg.com/Logo/XXXHolic.jpg" width="80" height="100" border="0" alt="XXXHolic" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/XXXHolic/" target="_blank">XXXHolic</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">完结特别篇</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</div>
+<table width="750" height="1" border="0" cellpadding="0" cellspacing="0" class="base_line space10px">
+<tr>
+<td></td>
+</tr>
+</table>
+
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1 space10px">
+<tr>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="那天那时的那个世界" href="http://book.sfacg.com/Novel/36763/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/99d9a9d8-6243-4638-8580-f1f91a5d6aac.jpg" width="80" height="106" border="0" alt="那天那时的那个世界" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="那天那时的那个世界" href="http://book.sfacg.com/Novel/36763/" target="_blank">那天那时的那个世界</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="葱绿色的长征（克雷西亚）" href="http://book.sfacg.com/Novel/34332/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/d960629a-72a4-4066-97cf-302071309a76.jpg" width="80" height="106" border="0" alt="葱绿色的长征（克雷西亚）" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="葱绿色的长征（克雷西亚）" href="http://book.sfacg.com/Novel/34332/" target="_blank">葱绿色的长征（克雷西亚）</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="涅槃的凤凰与王之少女" href="http://book.sfacg.com/Novel/34925/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/3e7f8967-483a-4653-9700-7f7a1909a11d.jpg" width="80" height="106" border="0" alt="涅槃的凤凰与王之少女" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="涅槃的凤凰与王之少女" href="http://book.sfacg.com/Novel/34925/" target="_blank">涅槃的凤凰与王之少女</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="银耀的子弹" href="http://book.sfacg.com/Novel/36326/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/1ac19ba1-730a-469e-a99d-eb7669a0fd6b.jpg" width="80" height="106" border="0" alt="银耀的子弹" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="银耀的子弹" href="http://book.sfacg.com/Novel/36326/" target="_blank">银耀的子弹</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="三月凉生" href="http://book.sfacg.com/Novel/35684/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/add64925-0703-486b-aaa3-666ef0c64269.jpg" width="80" height="106" border="0" alt="三月凉生" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="三月凉生" href="http://book.sfacg.com/Novel/35684/" target="_blank">三月凉生</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="巫女巫女爱丽丝" href="http://book.sfacg.com/Novel/35303/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/cc2beb8b-e121-4c62-b017-65abd959f938.jpg" width="80" height="106" border="0" alt="巫女巫女爱丽丝" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="巫女巫女爱丽丝" href="http://book.sfacg.com/Novel/35303/" target="_blank">巫女巫女爱丽丝</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="有神在的世界很荒唐" href="http://book.sfacg.com/Novel/36089/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/71c75fa9-6245-4acb-98ad-9d9c34a33cd8.jpg" width="80" height="106" border="0" alt="有神在的世界很荒唐" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="有神在的世界很荒唐" href="http://book.sfacg.com/Novel/36089/" target="_blank">有神在的世界很荒唐</a></td>
+</tr>
+</table></td>
+
+</tr>
+<tr>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="RING" href="http://book.sfacg.com/Novel/36707/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/f559c709-ad0a-418b-8917-344f5618679e.jpg" width="80" height="106" border="0" alt="RING" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="RING" href="http://book.sfacg.com/Novel/36707/" target="_blank">RING</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="光明的背后是黑暗" href="http://book.sfacg.com/Novel/19026/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/525a82ca-8d73-471c-8332-f6716f8bab2b.jpg" width="80" height="106" border="0" alt="光明的背后是黑暗" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="光明的背后是黑暗" href="http://book.sfacg.com/Novel/19026/" target="_blank">光明的背后是黑暗</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="你们的喜欢.我搞不明白" href="http://book.sfacg.com/Novel/33873/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/64c74602-c742-4e6b-84df-86736b334fd3.jpg" width="80" height="106" border="0" alt="你们的喜欢.我搞不明白" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="你们的喜欢.我搞不明白" href="http://book.sfacg.com/Novel/33873/" target="_blank">你们的喜欢.我搞不明白</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="幻想游戏" href="http://book.sfacg.com/Novel/31544/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/dc8a44dc-1752-4408-9b90-4b7f80e2af90.jpg" width="80" height="106" border="0" alt="幻想游戏" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="幻想游戏" href="http://book.sfacg.com/Novel/31544/" target="_blank">幻想游戏</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="超导学院" href="http://book.sfacg.com/Novel/36016/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/811c7a10-d845-4d9d-b5bd-94271ddf0579.jpg" width="80" height="106" border="0" alt="超导学院" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="超导学院" href="http://book.sfacg.com/Novel/36016/" target="_blank">超导学院</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="学习用女友" href="http://book.sfacg.com/Novel/31470/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/f229f8d7-7332-4315-b8e6-2c9a6fca73e7.jpg" width="80" height="106" border="0" alt="学习用女友" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="学习用女友" href="http://book.sfacg.com/Novel/31470/" target="_blank">学习用女友</a></td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="114" align="center" bgcolor="#FFFFFF" class="gray_frame"><a title="魔术后宫学园" href="http://book.sfacg.com/Novel/36354/" target="_blank"><img src="http://book.sfacg.com/NovelCover/Small/abe32b79-6839-4919-80cf-bd622b51ccfd.jpg" width="80" height="106" border="0" alt="魔术后宫学园" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a title="魔术后宫学园" href="http://book.sfacg.com/Novel/36354/" target="_blank">魔术后宫学园</a></td>
+</tr>
+</table></td>
+
+</tr>
+</table></td>
+<td valign="top"><a href="http://comic.sfacg.com/Forecast/" class="Mh_time_update" target="_blank" >漫画更新指南</a><a href="/WeeklyUpdate/" class="Mh_week_update Mh_space6px">一周更新指南</a><table width="210" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC" class="space10px">
+<tr>
+<td height="23" bgcolor="#FFFFFF"><table width="100%" height="23" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="block_bg"><h4 class="Subhead">周热门漫画排行榜</h4></td>
+</tr>
+</table></td>
+</tr>
+<tr class="font_gray gray_link1 Li_bg">
+<td valign="top" bgcolor="#F7F7F7" class="Height_px22" style="padding: 6px;">
+<ul>
+
+<li><a href="/HTML/DJSSG/" target="_blank">东京食尸鬼</a>[136话]</li>
+
+<li><a href="/HTML/OnePiece/" target="_blank">海贼王/One P..</a>[754话]</li>
+
+<li><a href="/HTML/Naruto/" target="_blank">火影忍者</a>[686话]</li>
+
+<li><a href="/HTML/HunterXHunter/" target="_blank">全职猎人</a>[347话]</li>
+
+<li><a href="/HTML/BYZS/" target="_blank">白银之匙</a>[105-107话]</li>
+
+<li><a href="/HTML/bleach/" target="_blank">死神</a>[589话]</li>
+
+<li><a href="/HTML/EMNB/" target="_blank">恶魔奶爸</a>[EX奶爸02]</li>
+
+<li><a href="/HTML/SummrizeKing/" target="_blank">通灵王</a>[Flowers2..]</li>
+
+<li><a href="/HTML/shiszqdzqy/" target="_blank">史上最强弟子兼一</a>[576话]</li>
+
+<li><a href="/HTML/ARACH/" target="_blank">Arachnid</a>[054话]</li>
+
+<li><a href="/HTML/YJDWB/" target="_blank">妖精的尾巴</a>[393话]</li>
+
+<li><a href="/HTML/HZDLQ/" target="_blank">黑子的篮球</a>[271话]</li>
+
+<li><a href="/HTML/CRSZS/" target="_blank">诚如神之所说</a>[第二部71]</li>
+
+<li><a href="/HTML/WQTXS/" target="_blank">我妻同学是我的老婆</a>[082-090话]</li>
+
+<li><a href="/HTML/BSZN/" target="_blank">飙速宅男</a>[224话]</li>
+
+<li><a href="/HTML/MSDHL/" target="_blank">美食的俘虏</a>[285话]</li>
+
+</ul>
+</td>
+</tr>
+</table>
+<table width="210" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC" class="space10px">
+<tr>
+<td height="23" bgcolor="#FFFFFF"><table width="100%" height="23" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="block_bg"><h4 class="Subhead">SF官方新浪微博</h4></td>
+</tr>
+</table></td>
+</tr>
+<tr class="font_gray gray_link1 Li_bg">
+<td valign="top" bgcolor="#F7F7F7" class="Height_px22" style="padding: 6px;">
+为了更好的与大家沟通交流，SF特开设新浪官方微博，最快的了解SF信息、漫画更新、请大家关注本微博。<br />
+<strong>为了SF，大家给力吧！</strong>
+<iframe width="100%" height="240" class="share_self"  frameborder="0" scrolling="no" src="http://service.t.sina.com.cn/widget/WeiboShow.php?width=0&height=240&fansRow=2&ptype=1&speed=0&skin=-1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1686708464&verifier=b571a0b8&colors=d6f3f7,f7f7f7,666666,bd0000"></iframe>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="770" valign="top"><table width="750" height="100" border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<tr>
+<td align="center" bgcolor="#FFFFFF"><script language="javascript" src="/AD/A/A3.js"></script></td>
+</tr>
+</table>
+<table width="750"  border="0" cellpadding="0" cellspacing="0" class="space10px base_line">
+<tr>
+<td width="59%" height="21" valign="top"><div class="comic_title3"></div></td>
+<td width="41%" align="right">&nbsp;</td>
+</tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="font_red gray_link1">
+<tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JtjsREBORN/" target="_blank" title="家庭教师REBORN!"><img src="http://mh.sfacg.com/Logo/55599c96-c3c0-49ea-adbe-5eec0bcf9ef0.jpg" width="80" height="100" border="0" alt="家庭教师REBORN!" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JtjsREBORN/" target="_blank">家庭教师REBORN!</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">409最终话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/ARACH/" target="_blank" title="Arachnid"><img src="http://mh.sfacg.com/Logo/3714e436-7c8e-40fa-8447-07173e1d470b.jpg" width="80" height="100" border="0" alt="Arachnid" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/ARACH/" target="_blank">Arachnid</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">054话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/XFGJ/" target="_blank" title="旋风管家"><img src="http://mh.sfacg.com/Logo/7fa1b874-c624-439a-9c5a-fb721712f24a.jpg" width="80" height="100" border="0" alt="旋风管家" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/XFGJ/" target="_blank">旋风管家</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">458话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/PDLZX/" target="_blank" title="潘多拉之心"><img src="http://mh.sfacg.com/Logo/3a09d788-43d9-4e63-bf24-03b6fa718a3b.jpg" width="80" height="100" border="0" alt="潘多拉之心" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/PDLZX/" target="_blank">潘多拉之心</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">096话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/JHDBL/" target="_blank" title="极黑的布伦希尔特"><img src="http://mh.sfacg.com/Logo/8695ecfb-511f-4e2b-8233-e73d8d547241.jpg" width="80" height="100" border="0" alt="极黑的布伦希尔特" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/JHDBL/" target="_blank">极黑的布伦希尔特</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">110话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/HSHDC/" target="_blank" title="黑社会的超能力女儿"><img src="http://mh.sfacg.com/Logo/e2089e7b-9d94-4fa9-903a-731d674cca27.jpg" width="80" height="100" border="0" alt="黑社会的超能力女儿" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/HSHDC/" target="_blank">黑社会的超能力女儿</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">038话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/LXLEN/" target="_blank" title="流星LENS"><img src="http://mh.sfacg.com/Logo/1273a20b-baa9-4d6d-bb8c-64550ce0e1fb.jpg" width="80" height="100" border="0" alt="流星LENS" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/LXLEN/" target="_blank">流星LENS</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">036话完结</td>
+</tr>
+</table></td>
+</tr><tr>
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/LDZL/" target="_blank" title="龙的争乱"><img src="http://mh.sfacg.com/Logo/7f453137-f77f-42d2-89c5-a720a1173fde.jpg" width="80" height="100" border="0" alt="龙的争乱" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/LDZL/" target="_blank">龙的争乱</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">019话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/UQXHO/" target="_blank" title="UQ HOLDER!"><img src="http://mh.sfacg.com/Logo/dcc4d687-ed6d-408c-8df5-b2e3d6f87377.jpg" width="80" height="100" border="0" alt="UQ HOLDER!" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/UQXHO/" target="_blank">UQ HOLDER!</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">043话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/YYDWG/" target="_blank" title="忧郁的物怪庵"><img src="http://mh.sfacg.com/Logo/cd00ef6a-beb5-4639-8cef-8b4653ef3888.jpg" width="80" height="100" border="0" alt="忧郁的物怪庵" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/YYDWG/" target="_blank">忧郁的物怪庵</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">011话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/SNBNM/" target="_blank" title="说你不能没有我"><img src="http://mh.sfacg.com/Logo/4c3e8fbd-101f-4201-925d-f64d0d641cca.jpg" width="80" height="100" border="0" alt="说你不能没有我" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/SNBNM/" target="_blank">说你不能没有我</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">番外篇01</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/Tsubasa/" target="_blank" title="Tsubasa翼"><img src="http://mh.sfacg.com/Logo/Tsubasa.jpg" width="80" height="100" border="0" alt="Tsubasa翼" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/Tsubasa/" target="_blank">Tsubasa翼</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">233话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/ZETMAN/" target="_blank" title="ZETMAN"><img src="http://mh.sfacg.com/Logo/ZETMAN.jpg" width="80" height="100" border="0" alt="ZETMAN" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/ZETMAN/" target="_blank">ZETMAN</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">220话</td>
+</tr>
+</table></td>
+
+<td height="170"><table width="90" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="108" align="center" bgcolor="#FFFFFF" class="gray_frame"><a href="/HTML/XXGJS/" target="_blank" title="吸血鬼骑士"><img src="http://mh.sfacg.com/Logo/XXGJS.jpg" width="80" height="100" border="0" alt="吸血鬼骑士" /></a></td>
+</tr>
+<tr>
+<td height="30" align="center" bgcolor="#FFFFFF"><a href="/HTML/XXGJS/" target="_blank">吸血鬼骑士</a></td>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF">特别增刊</td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+<td width="210" valign="top"><table width="210" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
+<tr>
+<td height="23" bgcolor="#FFFFFF"><table width="100%" height="23" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="block_bg"><h4 class="Subhead">最新更新漫画</h4></td>
+</tr>
+</table></td>
+</tr>
+<tr class="font_gray gray_link1 Li_bg">
+<td valign="top" bgcolor="#F7F7F7" class="Height_px22" style="padding: 6px;"><ul>
+
+<li><a href="/HTML/HZDLQ/" target="_blank">黑子的篮球</a>[271话]</li>
+
+<li><a href="/HTML/Naruto/" target="_blank">火影忍者</a>[686话]</li>
+
+<li><a href="/HTML/QJWYX/" target="_blank">请叫我英雄</a>[183话]</li>
+
+<li><a href="/HTML/LLL/" target="_blank">啦啦啦</a>[020话]</li>
+
+<li><a href="/HTML/BLOOD/" target="_blank">Bloody Cr..</a>[060话]</li>
+
+<li><a href="/HTML/OnePiece/" target="_blank">海贼王/One P..</a>[754话]</li>
+
+<li><a href="/HTML/JZXFZ/" target="_blank">君主先发制人</a>[009话]</li>
+
+<li><a href="/HTML/TSJMY/" target="_blank">汤神君没有朋友</a>[017话]</li>
+
+<li><a href="/HTML/JMLSblack/" target="_blank">假面教师BLACK</a>[035话]</li>
+
+<li><a href="/HTML/PHXXX/" target="_blank">破坏 x 革命</a>[032话]</li>
+
+<li><a href="/HTML/TJQF/" target="_blank">特极囚犯</a>[164话]</li>
+
+<li><a href="/HTML/BILLI/" target="_blank">Billion D..</a>[023话]</li>
+
+<li><a href="/HTML/EMNB/" target="_blank">恶魔奶爸</a>[EX奶爸02]</li>
+
+<li><a href="/HTML/NZJD/" target="_blank">逆转监督</a>[304话]</li>
+
+<li><a href="/HTML/WQTXS/" target="_blank">我妻同学是我的老婆</a>[082-090话]</li>
+
+<li><a href="/HTML/JJDXX/" target="_blank">进击的学校</a>[039话]</li>
+
+<li><a href="/HTML/ZRZG/" target="_blank">昨日之歌</a>[088话]</li>
+
+<li><a href="/HTML/MZFSQ/" target="_blank">明治绯色奇谭</a>[029话]</li>
+
+</ul>
+<div class="li_more"><a href="/WeeklyUpdate/" class="Blue_link1">查看更多</a></div>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="space10px">
+<tr>
+<td width="770" valign="top">
+<div id="List_1">
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="28%" class="Tab_bg"><div class="comic_title4"></div></td>
+<td width="72%" valign="bottom" class="Tab_bg">
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">字母列表</td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="/Catalog/" class="Tab1" target="_blank">图片列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,2)" class="Tab1">分类列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,3);" class="Tab1">完结漫画</a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" style="margin-top: 1px;">
+<tr>
+<td height="30" align="center" bgcolor="#ededed">
+<div class="letter_list gray_link3 F14PX font_red">
+<ul>
+<li style="width:44px;" id="Letter_0">HOT!</li>
+<li id="Letter_1"><a href="/Letter/A.html" target="LetterList" OnClick="javascript:SelectLetter(1);">A</a></li>
+<li id="Letter_2"><a href="/Letter/B.html" target="LetterList" OnClick="javascript:SelectLetter(2);">B</a></li>
+<li id="Letter_3"><a href="/Letter/C.html" target="LetterList" OnClick="javascript:SelectLetter(3);">C</a></li>
+<li id="Letter_4"><a href="/Letter/D.html" target="LetterList" OnClick="javascript:SelectLetter(4);">D</a></li>
+<li id="Letter_5"><a href="/Letter/E.html" target="LetterList" OnClick="javascript:SelectLetter(5);">E</a></li>
+<li id="Letter_6"><a href="/Letter/F.html" target="LetterList" OnClick="javascript:SelectLetter(6);">F</a></li>
+<li id="Letter_7"><a href="/Letter/G.html" target="LetterList" OnClick="javascript:SelectLetter(7);">G</a></li>
+<li id="Letter_8"><a href="/Letter/H.html" target="LetterList" OnClick="javascript:SelectLetter(8);">H</a></li>
+<li id="Letter_9"><a href="/Letter/I.html" target="LetterList" OnClick="javascript:SelectLetter(9);">I</a></li>
+<li id="Letter_10"><a href="/Letter/J.html" target="LetterList" OnClick="javascript:SelectLetter(10);">J</a></li>
+<li id="Letter_11"><a href="/Letter/K.html" target="LetterList" OnClick="javascript:SelectLetter(11);">K</a></li>
+<li id="Letter_12"><a href="/Letter/L.html" target="LetterList" OnClick="javascript:SelectLetter(12);">L</a></li>
+<li id="Letter_13"><a href="/Letter/M.html" target="LetterList" OnClick="javascript:SelectLetter(13);">M</a></li>
+<li id="Letter_14"><a href="/Letter/N.html" target="LetterList" OnClick="javascript:SelectLetter(14);">N</a></li>
+<li id="Letter_15"><a href="/Letter/O.html" target="LetterList" OnClick="javascript:SelectLetter(15);">O</a></li>
+<li id="Letter_16"><a href="/Letter/P.html" target="LetterList" OnClick="javascript:SelectLetter(16);">P</a></li>
+<li id="Letter_17"><a href="/Letter/Q.html" target="LetterList" OnClick="javascript:SelectLetter(17);">Q</a></li>
+<li id="Letter_18"><a href="/Letter/R.html" target="LetterList" OnClick="javascript:SelectLetter(18);">R</a></li>
+<li id="Letter_19"><a href="/Letter/S.html" target="LetterList" OnClick="javascript:SelectLetter(19);">S</a></li>
+<li id="Letter_20"><a href="/Letter/T.html" target="LetterList" OnClick="javascript:SelectLetter(20);">T</a></li>
+<li id="Letter_21"><a href="/Letter/U.html" target="LetterList" OnClick="javascript:SelectLetter(21);">U</a></li>
+<li id="Letter_22"><a href="/Letter/V.html" target="LetterList" OnClick="javascript:SelectLetter(22);">V</a></li>
+<li id="Letter_23"><a href="/Letter/W.html" target="LetterList" OnClick="javascript:SelectLetter(23);">W</a></li>
+<li id="Letter_24"><a href="/Letter/X.html" target="LetterList" OnClick="javascript:SelectLetter(24);">X</a></li>
+<li id="Letter_25"><a href="/Letter/Y.html" target="LetterList" OnClick="javascript:SelectLetter(25);">Y</a></li>
+<li id="Letter_26"><a href="/Letter/Z.html" target="LetterList" OnClick="javascript:SelectLetter(26);">Z</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<table width="750"  border="0" cellpadding="6" cellspacing="1" bgcolor="#CCCCCC" class="space10px" ID="LetterList_1">
+<tr>
+<td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="Mh_space4px base_line">
+<tr>
+<td height="26" class="font_gray"><B class="F14PX font_red">人气漫画</B> <B>列表</B></td>
+<td align="right"></td>
+</tr>
+</table>
+<ul class="comic_list gray_link1">
+
+<li><a href="/HTML/OnePiece/" target="_blank">海贼王/One Pie..[754话未完]</a></li>
+
+<li><a href="/HTML/Naruto/" target="_blank">火影忍者[686话未完]</a></li>
+
+<li><a href="/HTML/bleach/" target="_blank">死神[589话未完]</a></li>
+
+<li><a href="/HTML/YJDWB/" target="_blank">妖精的尾巴[393话未完]</a></li>
+
+<li><a href="/HTML/shiszqdzqy/" target="_blank">史上最强弟子兼一[576话未完]</a></li>
+
+<li><a href="/HTML/JtjsREBORN/" target="_blank">家庭教师REBORN![409最终话已完]</a></li>
+
+<li><a href="/HTML/EMNB/" target="_blank">恶魔奶爸[EX奶爸02已完]</a></li>
+
+<li><a href="/HTML/MSDHL/" target="_blank">美食的俘虏[285话未完]</a></li>
+
+<li><a href="/HTML/HZDLQ/" target="_blank">黑子的篮球[271话未完]</a></li>
+
+<li><a href="/HTML/SkipBeat/" target="_blank">Skip Beat[214话未完]</a></li>
+
+<li><a href="/HTML/HunterXHunter/" target="_blank">全职猎人[347话未完]</a></li>
+
+<li><a href="/HTML/YingHun/" target="_blank">银魂[502话未完]</a></li>
+
+<li><a href="/HTML/huizsnp/" target="_blank">会长是女仆[虎之卷已完]</a></li>
+
+<li><a href="/HTML/JJDJR/" target="_blank">进击的巨人[059话未完]</a></li>
+
+<li><a href="/HTML/MZTKN/" target="_blank">名侦探柯南[902话未完]</a></li>
+
+<li><a href="/HTML/HTGZS/" target="_blank">滑头鬼之孙[外传03已完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/AIR-Gear/" target="_blank">飞轮少年[最终话已完]</a></li>
+
+<li><a href="/HTML/ALSXY/" target="_blank">爱丽丝学园[血型小剧场已完]</a></li>
+
+<li><a href="/HTML/XXGJS/" target="_blank">吸血鬼骑士[特别增刊已完]</a></li>
+
+<li><a href="/HTML/HZS/" target="_blank">黑执事[095话未完]</a></li>
+
+<li><a href="/HTML/SJZL/" target="_blank">食戟之灵[079话未完]</a></li>
+
+<li><a href="/HTML/WQWZX/" target="_blank">新网球王子[126-129话未完]</a></li>
+
+<li><a href="/HTML/ASJS/" target="_blank">暗杀教室[100话未完]</a></li>
+
+<li><a href="/HTML/XFGJ/" target="_blank">旋风管家[458话未完]</a></li>
+
+<li><a href="/HTML/BAKUMAN/" target="_blank">Bakuman食梦者[176话已完]</a></li>
+
+<li><a href="/HTML/JJS/" target="_blank">结界师[345话已完]</a></li>
+
+<li><a href="/HTML/ZYSZD/" target="_blank">只有神知道的世界[连载前短篇已完]</a></li>
+
+<li><a href="/HTML/HXGSN/" target="_blank">好想告诉你[092话未完]</a></li>
+
+<li><a href="/HTML/CODEBREAKER/" target="_blank">Code Breake..[230话完结已完]</a></li>
+
+<li><a href="/HTML/MDMAG/" target="_blank">魔笛MAGI[232话未完]</a></li>
+
+<li><a href="/HTML/DGray-Man/" target="_blank">D格雷少年[218话未完]</a></li>
+
+<li><a href="/HTML/Magical-Teacher/" target="_blank">魔法老师[355话已完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/DJSSG/" target="_blank">东京食尸鬼[136话未完]</a></li>
+
+<li><a href="/HTML/YQCR/" target="_blank">一拳超人[超047话未完]</a></li>
+
+<li><a href="/HTML/HFLY/" target="_blank">火凤燎原[391话未完]</a></li>
+
+<li><a href="/HTML/DYSQ/" target="_blank">第一神拳[1028-1033话未完]</a></li>
+
+<li><a href="/HTML/Fullmetal/" target="_blank">钢之炼金术士[THE PROTOTYP..已完]</a></li>
+
+<li><a href="/HTML/PDLZX/" target="_blank">潘多拉之心[096话未完]</a></li>
+
+<li><a href="/HTML/LMZJ/" target="_blank">猎魔战记(大剑)[152话未完]</a></li>
+
+<li><a href="/HTML/YLGXNGG/" target="_blank">樱兰高校男公关部[仲夏夜的男公关部已完]</a></li>
+
+<li><a href="/HTML/ZQHZHS/" target="_blank">最强会长黑神[球磨川完结篇已完]</a></li>
+
+<li><a href="/HTML/WL/" target="_blank">伪恋[131话未完]</a></li>
+
+<li><a href="/HTML/Tsubasa/" target="_blank">Tsubasa翼[233话已完]</a></li>
+
+<li><a href="/HTML/XXXHolic/" target="_blank">XXXHolic[完结特别篇已完]</a></li>
+
+<li><a href="/HTML/CQZX/" target="_blank">春秋战雄[236话未完]</a></li>
+
+<li><a href="/HTML/WJL/" target="_blank">我间乱[最终话已完]</a></li>
+
+<li><a href="/HTML/To_Love/" target="_blank">To Love る[162话已完]</a></li>
+
+<li><a href="/HTML/STJY7/" target="_blank">山田君与7位魔女[119话未完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/SDSXSMWSHS/" target="_blank">圣斗士星矢冥王神话[阿斯普洛斯01已完]</a></li>
+
+<li><a href="/HTML/Guyver/" target="_blank">强殖装甲凯普[228话未完]</a></li>
+
+<li><a href="/HTML/BYZS/" target="_blank">白银之匙[105-107话未完]</a></li>
+
+<li><a href="/HTML/CFH/" target="_blank">虫奉行[165话未完]</a></li>
+
+<li><a href="/HTML/jinseqx/" target="_blank">金色琴弦[075话已完]</a></li>
+
+<li><a href="/HTML/XMYEZ/" target="_blank">夏目友人帐[080话未完]</a></li>
+
+<li><a href="/HTML/QYZ/" target="_blank">七原罪[086话未完]</a></li>
+
+<li><a href="/HTML/shihs/" target="_blank">噬魂师[113话完结未完]</a></li>
+
+<li><a href="/HTML/GTO14/" target="_blank">GTO湘南14日[070话已完]</a></li>
+
+<li><a href="/HTML/YNDXZ/" target="_blank">有你的小镇[261话完结已完]</a></li>
+
+<li><a href="/HTML/WZTX/" target="_blank">王者天下[394话未完]</a></li>
+
+<li><a href="/HTML/HXYZ/" target="_blank">火星异种[096话未完]</a></li>
+
+<li><a href="/HTML/AKB49/" target="_blank">AKB49[190话未完]</a></li>
+
+<li><a href="/HTML/BSZN/" target="_blank">飙速宅男[224话未完]</a></li>
+
+<li><a href="/HTML/FSJII2/" target="_blank">封神纪III[080卷完结已完]</a></li>
+
+<li><a href="/HTML/GS-21/" target="_blank">光速蒙面侠21[333话已完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/TLYDY/" target="_blank">逃离伊甸园[185话完结已完]</a></li>
+
+<li><a href="/HTML/Liar Game/" target="_blank">LiarGame(欺诈..[182话未完]</a></li>
+
+<li><a href="/HTML/SlamDunk/" target="_blank">灌篮高手[031卷已完]</a></li>
+
+<li><a href="/HTML/LSQMS/" target="_blank">蓝色驱魔师[058话未完]</a></li>
+
+<li><a href="/HTML/DLFS/" target="_blank">独领风骚[110话未完]</a></li>
+
+<li><a href="/HTML/Inuyasha/" target="_blank">犬夜叉[特别篇已完]</a></li>
+
+<li><a href="/HTML/CNLZQ/" target="_blank">超能力者齐木楠雄的灾难[108话未完]</a></li>
+
+<li><a href="/HTML/PQ/" target="_blank">排球[118话未完]</a></li>
+
+<li><a href="/HTML/FSJII/" target="_blank">封神纪II[064话未完]</a></li>
+
+<li><a href="/HTML/MXMDROPS/" target="_blank">蜜X蜜水果糖[045话已完]</a></li>
+
+<li><a href="/HTML/BXGZY/" target="_blank">白雪公主与7个囚犯[052话完结已完]</a></li>
+
+<li><a href="/HTML/YQSNYJS/" target="_blank">元气少女缘结神[116话未完]</a></li>
+
+<li><a href="/HTML/TennicePrince/" target="_blank">网球王子[379话已完]</a></li>
+
+<li><a href="/HTML/PSYREN/" target="_blank">PSYREN[145话已完]</a></li>
+
+<li><a href="/HTML/EMBHS/" target="_blank">恶魔辩护[100话已完]</a></li>
+
+<li><a href="/HTML/SYZD/" target="_blank">色诱中毒[016卷已完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/SummrizeKing/" target="_blank">通灵王[Flowers26未完]</a></li>
+
+<li><a href="/HTML/WHTD-XXX/" target="_blank">我和她的XXX[番外篇03未完]</a></li>
+
+<li><a href="/HTML/SATYS/" target="_blank">S.A特优生[外传04已完]</a></li>
+
+<li><a href="/HTML/JTKSLAB/" target="_blank">今天开始恋爱吧[番外篇2已完]</a></li>
+
+<li><a href="/HTML/JHDBL/" target="_blank">极黑的布伦希尔特[110话未完]</a></li>
+
+<li><a href="/HTML/CRSZS/" target="_blank">诚如神之所说[第二部71未完]</a></li>
+
+<li><a href="/HTML/SHPD/" target="_blank">神幻拍档[099话未完]</a></li>
+
+<li><a href="/HTML/ZZSW/" target="_blank">直至死亡将我们分开[191话未完]</a></li>
+
+<li><a href="/HTML/GFXFE/" target="_blank">功夫旋风儿[059卷已完]</a></li>
+
+<li><a href="/HTML/JJDLH/" target="_blank">境界的轮回[223话未完]</a></li>
+
+<li><a href="/HTML/NANA/" target="_blank">NANA[淳子的小屋6未完]</a></li>
+
+<li><a href="/HTML/XINF/" target="_blank">信蜂[085话未完]</a></li>
+
+<li><a href="/HTML/LKX/" target="_blank">浪客行[322话未完]</a></li>
+
+<li><a href="/HTML/ZETMAN/" target="_blank">ZETMAN[220话未完]</a></li>
+
+<li><a href="/HTML/LXJGS/" target="_blank">螺旋卷钩生[158话完结已完]</a></li>
+
+<li><a href="/HTML/ZSD/" target="_blank">自杀岛[122-123话未完]</a></li>
+
+</ul>
+<ul class="comic_list gray_link1 space10px">
+
+<li><a href="/HTML/tianshihha/" target="_blank">天是红河岸[030卷已完]</a></li>
+
+<li><a href="/HTML/TSRJ/" target="_blank">吞噬人间[078话未完]</a></li>
+
+<li><a href="/HTML/DWZG/" target="_blank">动物之国[053话未完]</a></li>
+
+<li><a href="/HTML/GSY/" target="_blank">革神语[番外篇重制版未完]</a></li>
+
+<li><a href="/HTML/GDDLC/" target="_blank">鬼灯的冷彻[148话未完]</a></li>
+
+<li><a href="/HTML/AREAX/" target="_blank">Area D异能领域[070话未完]</a></li>
+
+<li><a href="/HTML/xinsjfyzs/" target="_blank">新世纪福音战士[096话完结已完]</a></li>
+
+<li><a href="/HTML/BLZYYJM/" target="_blank">不良仔与眼镜妹[211话已完]</a></li>
+
+<li><a href="/HTML/WMDCZ/" target="_blank">我们的存在[最终话已完]</a></li>
+
+<li><a href="/HTML/YR/" target="_blank">亚人[022话未完]</a></li>
+
+<li><a href="/HTML/SKETD/" target="_blank">SketDance[288话已完]</a></li>
+
+<li><a href="/HTML/HT/" target="_blank">黑铁[069-070话已完]</a></li>
+
+<li><a href="/HTML/ZCHZT/" target="_blank">斩赤红之瞳[050话未完]</a></li>
+
+<li><a href="/HTML/KYGC/" target="_blank">堀与宫村[037话未完]</a></li>
+
+<li><a href="/HTML/WMXJJHL/" target="_blank">完美小姐进化论[031-033卷未完]</a></li>
+
+<li><a href="/HTML/WYLS/" target="_blank">王样老师[108话未完]</a></li>
+
+</ul>
+</td>
+</tr>
+</table>
+<div id="LetterList_2" style="display:none">
+<iframe src="/Letter/A.html" frameBorder=0 width="100%" height="650" scrolling="no" id="LetterList" name="LetterList"></iframe>
+</div>
+</div>
+<div id="List_2" style="display:none">
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="28%" class="Tab_bg"><div class="comic_title4"></div></td>
+<td width="72%" valign="bottom" class="Tab_bg"><table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,1)" class="Tab1">字母列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="/Catalog/" class="Tab1">图片列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">分类列表</td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,3);" class="Tab1">完结漫画</a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" style="margin-top: 1px;">
+<tr>
+<td height="30" align="center" bgcolor="#ededed"><div class="letter_list2 gray_link3 font_red">
+<ul>
+<li id="Type_1">热血类</li>
+<li id="Type_2"><a href="/Type/2.html" target="TypeList" OnClick="javascript:SelectType(2,'Type');">校园类</a></li>
+<li id="Type_3"><a href="/Type/3.html" target="TypeList" OnClick="javascript:SelectType(3,'Type');">推理类</a></li>
+<li id="Type_4"><a href="/Type/4.html" target="TypeList" OnClick="javascript:SelectType(4,'Type');">机战类</a></li>
+<li id="Type_5"><a href="/Type/5.html" target="TypeList" OnClick="javascript:SelectType(5,'Type');">冒险类</a></li>
+<li id="Type_6"><a href="/Type/6.html" target="TypeList" OnClick="javascript:SelectType(6,'Type');">运动类</a></li>
+<li id="Type_7"><a href="/Type/7.html" target="TypeList" OnClick="javascript:SelectType(7,'Type');">耽美类</a></li>
+<li id="Type_8"><a href="/Type/8.html" target="TypeList" OnClick="javascript:SelectType(8,'Type');">搞笑类</a></li>
+<li id="Type_9"><a href="/Type/9.html" target="TypeList" OnClick="javascript:SelectType(9,'Type');">科幻类</a></li>
+<li id="Type_10"><a href="/Type/10.html" target="TypeList" OnClick="javascript:SelectType(10,'Type');">魔幻类</a></li>
+<li id="Type_11"><a href="/Type/11.html" target="TypeList" OnClick="javascript:SelectType(11,'Type');">恐怖类</a></li>
+<li id="Type_12"><a href="/Type/12.html" target="TypeList" OnClick="javascript:SelectType(12,'Type');">社会类</a></li>
+<li id="Type_13"><a href="/Type/13.html" target="TypeList" OnClick="javascript:SelectType(13,'Type');">爱情类</a></li>
+<li id="Type_14"><a href="/Type/14.html" target="TypeList" OnClick="javascript:SelectType(14,'Type');">武侠类</a></li>
+<li id="Type_15"><a href="/Type/15.html" target="TypeList" OnClick="javascript:SelectType(15,'Type');">温情类</a></li>
+</ul>
+</div></td>
+</tr>
+</table>
+<iframe src="/Type/1.html" frameBorder=0 width="100%" height="800" scrolling="no" id="TypeList" name="TypeList"></iframe>
+</div>
+</div>
+<div id="List_3" style="display:none">
+<table width="750"  border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="28%" class="Tab_bg"><div class="comic_title4"></div></td>
+<td width="72%" valign="bottom" class="Tab_bg"><table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,1)" class="Tab1">字母列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="/Catalog/" class="Tab1">图片列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC" class="Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="block_place"><a href="javascript:show_tbl('List_',3,2)" class="Tab1">分类列表</a></td>
+</tr>
+</table>
+<table width="84" height="27" border="0" align="left" cellpadding="0" cellspacing="1" bgcolor="#ffffff" class="Tab2_frame Tab_space">
+<tr>
+<td align="center" bgcolor="#ededed" class="Tab_middle3 block_place">完结漫画</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" style="margin-top: 1px;">
+<tr>
+<td height="30" align="center" bgcolor="#ededed"><div class="letter_list2 gray_link3 font_red">
+<ul>
+<li id="Finish_1">热血类</li>
+<li id="Finish_2"><a href="/Finish/2.html" target="FinishList" OnClick="javascript:SelectType(2,'Finish');">校园类</a></li>
+<li id="Finish_3"><a href="/Finish/3.html" target="FinishList" OnClick="javascript:SelectType(3,'Finish');">推理类</a></li>
+<li id="Finish_4"><a href="/Finish/4.html" target="FinishList" OnClick="javascript:SelectType(4,'Finish');">机战类</a></li>
+<li id="Finish_5"><a href="/Finish/5.html" target="FinishList" OnClick="javascript:SelectType(5,'Finish');">冒险类</a></li>
+<li id="Finish_6"><a href="/Finish/6.html" target="FinishList" OnClick="javascript:SelectType(6,'Finish');">运动类</a></li>
+<li id="Finish_7"><a href="/Finish/7.html" target="FinishList" OnClick="javascript:SelectType(7,'Finish');">耽美类</a></li>
+<li id="Finish_8"><a href="/Finish/8.html" target="FinishList" OnClick="javascript:SelectType(8,'Finish');">搞笑类</a></li>
+<li id="Finish_9"><a href="/Finish/9.html" target="FinishList" OnClick="javascript:SelectType(9,'Finish');">科幻类</a></li>
+<li id="Finish_10"><a href="/Finish/10.html" target="FinishList" OnClick="javascript:SelectType(10,'Finish');">魔幻类</a></li>
+<li id="Finish_11"><a href="/Finish/11.html" target="FinishList" OnClick="javascript:SelectType(11,'Finish');">恐怖类</a></li>
+<li id="Finish_12"><a href="/Finish/12.html" target="FinishList" OnClick="javascript:SelectType(12,'Finish');">社会类</a></li>
+<li id="Finish_13"><a href="/Finish/13.html" target="FinishList" OnClick="javascript:SelectType(13,'Finish');">爱情类</a></li>
+<li id="Finish_14"><a href="/Finish/14.html" target="FinishList" OnClick="javascript:SelectType(14,'Finish');">武侠类</a></li>
+<li id="Finish_15"><a href="/Finish/15.html" target="FinishList" OnClick="javascript:SelectType(15,'Finish');">温情类</a></li>
+</ul>
+</div></td>
+</tr>
+</table>
+<iframe src="/Finish/1.html" frameBorder=0 width="100%" height="800" scrolling="no" id="FinishList" name="FinishList"></iframe>
+</div>
+</td>
+<td width="210" valign="top"><table width="210" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC">
+<tr>
+<td height="23" bgcolor="#FFFFFF"><table width="100%" height="23" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="block_bg"><h4 class="Subhead">大家都在看的轻小说</h4></td>
+</tr>
+</table></td>
+</tr>
+<tr class="font_gray">
+<td height="23" valign="top" bgcolor="#F7F7F7" class="Height_px22" style="padding: 6px;">
+<table cellspacing="0" cellpadding="0" width="100%" border="0" class="Height_px18"><tbody><tr><td>
+
+<a href="http://book.sfacg.com/Novel/31548/" target="_blank" class="icon_hot Red_link1">弑魔者的简单生活</a></td></tr><tr><td class="font_red">作者: ☆疯狂→蚊子★</td></tr><tr><td>　　林翔是个爱打架的学生，在一次救人中，被车撞入海里，和游走在各个平行世界..……</td></tr><tr><td height="12"><table cellspacing="0" cellpadding="0" width="100%" border="0"><tr><td bgcolor="#cccccc" height="1"></td></tr><tr><td height="2"></td></tr><tr><td bgcolor="#cccccc" height="1"></td></tr></table></td></tr></tbody></table><ul class="Li_bg2 Red_link2">
+
+<li><a href="http://book.sfacg.com/Novel/31030/"  target="_blank">龙骑士的我目标就是..</a>(1254728)</li>
+
+<li><a href="http://book.sfacg.com/Novel/32537/"  target="_blank">RPG世界又怎样</a>(640121)</li>
+
+<li><a href="http://book.sfacg.com/Novel/26766/"  target="_blank">魔法纪元&#183..</a>(403016)</li>
+
+<li><a href="http://book.sfacg.com/Novel/33178/"  target="_blank">老师，求你放过我！</a>(175012)</li>
+
+<li><a href="http://book.sfacg.com/Novel/35588/"  target="_blank">谁要和这个矮子谈恋..</a>(9267)</li>
+
+<li><a href="http://book.sfacg.com/Novel/35832/"  target="_blank">我的兄长大人是重度..</a>(83066)</li>
+
+<li><a href="http://book.sfacg.com/Novel/6165/"  target="_blank">纯情主人俏女仆</a>(3958924)</li>
+
+<li><a href="http://book.sfacg.com/Novel/35876/"  target="_blank">东方幻想萌战记</a>(28621)</li>
+
+<li><a href="http://book.sfacg.com/Novel/28611/"  target="_blank">风之佣兵团</a>(955997)</li>
+
+<li><a href="http://book.sfacg.com/Novel/15433/"  target="_blank">我的女友是魔法少女</a>(2867962)</li>
+
+<li><a href="http://book.sfacg.com/Novel/7661/"  target="_blank">魂武纪</a>(3346113)</li>
+
+<li><a href="http://book.sfacg.com/Novel/36424/"  target="_blank">魔幻世界</a>(12077)</li>
+
+<li><a href="http://book.sfacg.com/Novel/34560/"  target="_blank">被坑成了魔法伪娘</a>(90974)</li>
+
+<li><a href="http://book.sfacg.com/Novel/35789/"  target="_blank">被召唤的我誓愿成为..</a>(26530)</li>
+
+</ul>
+<ul>
+<li class="li_more"><a href="http://book.sfacg.com/" class="Blue_link1">更多动漫轻小说</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<table width="210" border="0" cellpadding="1" cellspacing="1" bgcolor="#CCCCCC" class="space10px">
+<tr>
+<td height="23" bgcolor="#FFFFFF"><table width="100%" height="23" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="block_bg"><h4 class="Subhead">论坛最新帖</h4></td>
+</tr>
+</table></td>
+</tr>
+<tr class="font_gray gray_link1 Li_bg">
+<td valign="top" bgcolor="#F7f7f7" class="Height_px22" style="padding: 6px;">
+<ul style="width:192px">
+<script src="http://bbs.sfacg.com/tools/showtopics.aspx?count=13&views=-1&order=2&encoding=utf-8&fid=0&length=30&template=2"></script>
+</ul>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#e4e4e4" class="space10px">
+<tr>
+<td class="comic_links Red_link2">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+<tr>
+<td height="39" class="gray_frame">
+<ul>
+<li><a href="http://www.sfacg.com" target="_blank"><img height="31" src="http://www.sfacg.com/images/Link_logo.jpg" width="88" border="0" /></a></li>
+</ul></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFFF" style="margin-top: 3px;">
+<tr>
+<td class="gray_frame Height_px22"><a href="http://comic.sfacg.com/HTML/OnePiece/" target="_blank">海贼王漫画</a>  <a href="http://comic.sfacg.com/HTML/Naruto/" target="_blank">火影忍者漫画</a>  <a href="http://comic.sfacg.com/HTML/YJDWB/" target="_blank">妖精的尾巴漫画</a>  <a href="http://www.iggyy8.com/" target="_blank">漫画吧</a>　<a href="http://www.tuku.cc/" target="_blank">CC在线漫画</a>  <a href="http://www.bencaodao.com/" target="_blank">中药网</a>  <a href="http://www.9lala.com/" target="_blank">九啦啦漫画</a>  <a href="http://bleach.manmankan.com/" target="_blank">死神</a>  <a href="http://comic.letv.com/" target="_blank">乐视动漫视频</a>  <a href="http://www.sasa123.com" target="_blank">动画片大全</a>　<a href="http://cartoon.zwbk.org" target="_blank">动漫百科</a>  <a href="http://www.rexuedongman.com/" target="_blank">热血动漫</a>  <a href="http://cheats.3234.com/" target="_blank">游戏攻略</a>  <a href="http://war3.4735.com/" target="_blank">魔兽争霸3</a>  <a href="http://www.rayfile.cc/" target="_blank">耽美漫画</a>  <a href="http://www.mp3721.com/" target="_blank">单机游戏大全</a>  <a href="http://pc.265g.com/" target="_blank">265G单机游戏</a>  <a href="http://bbs.yzz.cn/" target="_blank">游戏论坛</a>  <a href="http://box.7k7k.com" target="_blank">单机游戏下载</a>  <a href="http://www.ddcomic.com/" target="_blank">动漫电影</a>  <a href="http://xx.5068.com/" target="_blank">QQ游戏</a>  <a href="http://manhua.uuu9.com/" target="_blank">游久漫画</a>  <a href="http://box.7k7k.com/" target="_blank">单机游戏下载</a>  <a href="http://www.mocartoon.com/" target="_blank">动漫</a>  <a href="http://manhua.weibo.com/" target="_blank">新浪微漫画</a>  <a href="http://ps3.tgbus.com/" target="_blank">PS3中文网</a>  <a href="http://www.hao123.com/" target="_blank">hao123上网导航</a>  <a href="http://xyq.tgbus.com/" target="_blank">梦幻西游</a> <a href="http://game.3533.com/" target="_blank">手机应用</a>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table width="980" height="36"  border="0" align="center" cellpadding="8" cellspacing="0" class="space10px">
+<tr class="font_gray gray_link1">
+<td bgcolor="#e3e3e3"><a href="http://www.sfacg.com/Extending/Announce.html">免责声明</a>　|　<a href="http://www.sfacg.com/Extending/CopyRight.html">版权隐私</a>　|　<a href="http://www.sfacg.com/Extending/ContactUs.html">联系方式</a>　|　<a href="http://www.sfacg.com/Extending/Links.html">友情链接</a>　|　<a href="http://www.miibeian.gov.cn/">粤ICP备10062407号</a>　|　粤网文[2012]0726-109号</td>
+<td align="right" bgcolor="#e3e3e3" class="font_Gray">[C] 2005－2011 SFACG.COM All Rights Reserved</td>
+</tr>
+</table>
+<script src='/AD/float.js?1.6'></script>
+<div id="TJ2" style="position:absolute; width:0; height:0; overflow: hidden;">
+<script src="http://v.sfacg.com/stats/tj.js?1.2"></script>
+</div>
+<div style="display: block;" id="beitou"><a class="body-bg-left" target="_blank" href="http://game.weibo.com/spread/s/a/9cbfe8872821eab8"></a>
+<a class="body-bg-right" target="_blank" href="http://game.weibo.com/spread/s/a/f27cc8e4b89758c1"></a></div>
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=2&amp;pos=left&amp;uid=585760" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
+<div style="position:absolute; width:0; height:0; overflow: hidden;">
+<script type="text/javascript">
+(function() {
+var jkb = document.createElement('script'); jkb.type = "text/javascript"; jkb.async = true;
+jkb.src = document.location.protocol + "//exp.jiankongbao.com/loadtrace.php?host_id=12619&style=6&type=1";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jkb, s);
+})();
+</script>
+<script type="text/javascript">
+(function() {
+var jkb = document.createElement('script'); jkb.type = "text/javascript"; jkb.async = true;
+jkb.src = document.location.protocol + "//exp.jiankongbao.com/loadtrace.php?host_id=12617&style=6&type=1";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jkb, s);
+})();
+</script>
+<script type="text/javascript">
+(function() {
+var jkb = document.createElement('script'); jkb.type = "text/javascript"; jkb.async = true;
+jkb.src = document.location.protocol + "//exp.jiankongbao.com/loadtrace.php?host_id=12715&style=6&type=1";
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jkb, s);
+})();
+</script>
+</div>
+</body>
+</html>
