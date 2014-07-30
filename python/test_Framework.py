@@ -1,51 +1,66 @@
 import sys
 
 
-def test_item_4(object):
-	print "test_item_4"
-	print object['op']
+def test_item_4(paras):
+        print "test_item_4"
+        print paras['op']
+        return {'status' : 4}
 
-def test_item_3(object):
+def test_item_3(paras):
 	print "test_item_3"
-	print object['op']
+	print paras['op']
+        return {'status' : 3}
 
-def test_item_2(object):
+def test_item_2(paras):
 	print "test_item_2"
-	print object['op']
+	print paras['op']
+        return {'status' : 2}
 
-def test_item_1(object):
+def test_item_1(paras):
 	print "test_item_1"
-	print object['op']
+	print paras['op']
+        return {'status' : 1}
+
+
+testList = {
+        'addRR' : [
+		{'name' : 'test_item_1'} , 
+		{'name' : 'test_item_2'} , 
+		{'name' : 'test_item_3'}  
+	],
+        'editRR':[
+                {'name' : 'test_item_1'}, 
+                {'name' : "test_item_4"},
+                {'name' : "test_item_2"}
+        ]
+}
+
+def doTest(func):
+        def wrap_func(paras):
+                testItems = testList[paras['op']]
+                for item in testItems:
+                        testFunc = getattr(sys.modules[__name__] , item['name'])
+                        ret = testFunc(paras)
+                        if ret['status'] != 0 and paras['debug'] == 'False':
+                                return ret
+                func(paras)
+        return wrap_func
 
 
 
-def doTest(testList):
-	for item in testList:
-		testFunc = getattr(sys.modules[__name__] , item['name'])
-		testFunc(item['para'])
+@doTest
+def editRR(paras):
+        print 'do edit RR'
 
-def editRR():
-	RRObject = {'op' : 'editRR'}
-	testList = [
-		{'name' : 'test_item_1' , 'para' : RRObject} , 
-		{'name' : "test_item_4" , 'para' : RRObject} ,
-		{'name' : "test_item_2" , 'para' : RRObject}
-	]
-	doTest(testList)
-
-def addRR():
-	RRObject = {'op' : 'addRR'}
-	testList = [
-		{'name' : 'test_item_1' , 'para' : RRObject} , 
-		{'name' : "test_item_2" , 'para' : RRObject} ,
-		{'name' : "test_item_3" , 'para' : RRObject}
-	]
-	ret = doTest(testList)
-
-
+@doTest
+def addRR(paras):
+        print 'do add RR'
 
 
 if __name__ == "__main__":
-	operation = sys.argv[1]
-	func = getattr(sys.modules[__name__] , operation)
-	func()
+        paras = {
+                'op' : sys.argv[1],
+                'para' : 'paras',
+                'debug' : sys.argv[2]
+        }
+	getattr(sys.modules[__name__] ,paras['op'])(paras)
