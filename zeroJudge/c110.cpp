@@ -16,10 +16,6 @@ int number_five(int nums[])
 int number_four(int nums[])
 {
         nums[2] = nums[2] - 5 * nums[4];
-        if(nums[2] < 0)
-        {
-                nums[1] = nums[1] - (-1) * nums[2];
-        }
         return nums[4];
 }
 
@@ -38,8 +34,8 @@ int number_three(int nums[])
                         nums[1] = nums[1] - 6;
                         return box + 1;
                 case 1:
-                        nums[2] = nums[2] - 4;
-                        nums[1] = nums[1] - 11;
+                        nums[2] = nums[2] - 5;
+                        nums[1] = nums[1] - 7;
                         return box + 1;
                 case 0:
                         return box;
@@ -49,7 +45,7 @@ int number_three(int nums[])
 
 int number_two(int nums[])
 {
-        int box = nums[6] / 9;
+        int box = nums[2] / 9;
         nums[2] = nums[2] % 9;
         if(nums[2] != 0)
         {
@@ -120,52 +116,25 @@ int main()
         int num[7];
         while(scanf("%d %d %d %d %d %d",&num[1],&num[2],&num[3],&num[4],&num[5],&num[6]))
         {
-                for(int i = 0 ; i <= 6 ; i++)
+                int i;
+                for(i = 1 ; i <= 6 ; i++)
                 {
-                        if(num[i]!=0) break;
+                        if(num[i] != 0) 
+                        {
+                                break;
+                        }
                 }
                 if(i==7) break;
                 
                 int sum = 0;
-                for(int i = 6 ; i > 0 ; i++)
+                for( i = 6 ; i > 0 ; i--)
                 {
                         if(num[i] > 0)
                         {
                                 sum = sum + box_number(i , num);
                         }
                 } 
-                int box=num[6]+num[5]+num[4];
-                num[1]-=11*num[5]; //一個5x5搭配11個1x1
-                num[2]-=5*num[4]; //一個4x4搭配5個2x2(如果2x2不夠的情況最底下會考慮)
-
-                box+=(num[3]/4); if(num[3]%4) box++;
-                switch(num[3]%4){ //3x3情況要特別討論
-                        case 0: break;
-                        case 1:
-                                num[2]-=5;
-                                num[1]-=7;
-                                break;
-                        case 2:
-                                num[2]-=3;
-                                num[1]-=6;
-                                break;
-                        case 3:
-                                num[2]-=1;
-                                num[1]-=5;
-                                break;
-                }
-
-                if (num[2]>0){ //如果2x2還有剩
-                        box+=num[2]/9; if(num[2]%9) box++;
-                        num[1]-=(36-(num[2]%9)*4);
-                }
-                else if (num[2]<0)
-                        num[1]-=(-num[2])*4; //將不夠的2x2用4個1x1來補
-
-                if (num[1]>0){ //如果1x1還有剩
-                        box+=(num[1]/36); if(num[1]%36) box++;
-                }
-                printf("%d\n",box);
+                printf("%d\n",sum);
         }
         return 0;
 }
