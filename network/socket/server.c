@@ -27,7 +27,8 @@ int main(void)
         serv_addr.sin_addr.s_addr = htonl(INADDR_ANY); 
         serv_addr.sin_port = htons(5000);    
 
-        bind(listenfd, (struct sockaddr*)&serv_addr,sizeof(serv_addr));
+        int ret = bind(listenfd, (struct sockaddr*)&serv_addr,sizeof(serv_addr));
+        printf("%d\n", ret);
 
         if(listen(listenfd, 10) == -1){
                 printf("Failed to listen\n");
@@ -44,8 +45,6 @@ int main(void)
                 struct sockaddr_in *s = (struct sockaddr_in *)&addr;
                 int port = ntohs(s->sin_port);
                 inet_ntop(AF_INET, &s->sin_addr, ipstr, sizeof ipstr);
-                printf("Peer IP address: %s\n", ipstr);
-                printf("Peer IP port: %d\n", port);
                 strcpy(sendBuff, "Message from server");
                 write(connfd, sendBuff, strlen(sendBuff));
 
