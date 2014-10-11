@@ -10,6 +10,7 @@ void bigDivide(char num1[] , char num2[] , char quot[]);
 void bigSub(char num1[] , char num2[]);
 void removeFrontZero(char quot[]);
 int bigMul(int arr[], int n, int len);
+int bigMul_char(char arr[], int n, int len);
 int sumArray(int arr[], int len);
 
 void swapChar(char str[], int i , int j)
@@ -80,8 +81,15 @@ void removeFrontZero(char quot[])
 	
 }
 
+
 void bigDivide(char num1[] , char num2[] , char quot[])
 {
+	if(strcmp(num1 , "0") == 0)
+	{
+		quot[0] = '0';
+		quot[1] = '\0';
+		return;
+	}
 	char *temp = (char*)malloc(sizeof(char) * strlen(num1));
 	int len1 = strlen(num1);
 	int i;
@@ -111,6 +119,7 @@ void bigDivide(char num1[] , char num2[] , char quot[])
 	}
 	quot[i] = '\0';
 	removeFrontZero(quot);
+	reverseStr(quot);
 	free(temp);
 }
 
@@ -174,35 +183,65 @@ void bigAdd(char fir[], char sec[])
 	}
 	else
 	{
-		fir[i] = carry;
+		
+		fir[i] = carry + '0';
 		fir[i+1] = '\0';
 	}
 }
-char *getMultTemp(char arr[], int index)
+void getMultTemp(char arr[], int index)
 {
-	char* temp = (char*)malloc(sizeof(char) * (strlen(arr) + 1 + index));	
 	reverseStr(arr);
 	int len = strlen(arr);
 	int i;
 	for( i = len ; i < len + index ; i++ )
 	{
+		
 		arr[i] = '0';	
 	}
 	arr[i] = '\0';
+	reverseStr(arr);
 }
 void bigMulChar(char fir[], char sec[], char ret[])
 {
+	if(strcmp(fir , "0") == 0 || strcmp(sec , "0") == 0)
+	{
+		ret[0] = '0';
+		ret[1] = '\0';
+		return;
+	}
 	int lenSec = strlen(sec);
 	int i;
-	for( i = 0 ; i < lenSec, i++)
+	for( i = 0 ; i < lenSec; i++)
 	{
-		char *temp = getMultTemp(fir, i);
-		bigMul(temp, sec[i] - '0');
+		char *temp = (char*)malloc(sizeof(char) * (strlen(fir) + 1 + i));
+		strcpy(temp, fir);
+		getMultTemp(temp, i);
+		bigMul_char(temp, sec[i] - '0', strlen(temp));
 		bigAdd(ret, temp);
 		free(temp);
 	}
 }
 
+int bigMul_char(char arr[], int n, int len)
+{
+	int i;
+	int carry = 0;
+	for(i = 0 ; i < len ; i++)
+	{
+		int mult = (arr[i] - '0') * n + carry;
+		carry = mult / 10;
+		arr[i] = (mult % 10) + '0';
+	}
+	if(carry != 0)
+	{
+		for( i ; carry != 0 ; i++)
+		{
+			arr[i] = (carry % 10) + '0';
+			carry = carry / 10;
+		}
+	}
+	arr[i] = '\0';
+}
 int bigMul(int arr[], int n, int len)
 {
 	int i;
@@ -231,7 +270,8 @@ int bigMul(int arr[], int n, int len)
 int sumArray(int arr[], int len)
 {
 	int sum = 0;
-	for(int i = 0 ; i < len ; i++)
+	int i;
+	for(i = 0 ; i < len ; i++)
 	{
 		sum += arr[i];
 	}
