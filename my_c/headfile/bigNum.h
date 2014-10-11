@@ -1,24 +1,89 @@
 #include <stdio.h>
 #include <string.h>
+
+
+/* myHead : swapChar : start */
+void swapChar(char str[], int i , int j)
+{
+        char temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+}
+/* myHead : swapChar : end */
+
+/* myHead : reverseStr : start */
+void reverseStr(char str[])
+{
+        int len = strlen(str);
+        int i;
+        for( i = 0 ; i < len/2; i++ )
+        {
+                swapChar(str, i, len - 1 - i);
+        }
+}
+/* myHead : reverseStr : end */
+
+int isBigger(char fir[] , char sec[])
+{
+        int len_fir = strlen(fir);
+        int len_sec = strlen(sec);
+        if(len_fir < len_sec)
+        {
+                return 0;
+        }
+        else if(len_fir > len_sec)
+        {
+                return 1;
+        }
+        else
+        {
+                int i;
+                for( i = len_fir - 1 ; i > -1 ; i--)
+                {
+                        if(fir[i] > sec[i])
+                        {
+                                return 1;
+                        }
+                        else if(fir[i] < sec[i])
+                        {
+                                return 0;
+                        }
+                }
+                return 1;
+        }
+
+        
+}
+
+
 /* myHead : bigDivide : start */
 void bigDivide(char num1[] , char num2[] , char quot[])
 {
 	char *temp = (char*)malloc(sizeof(char) * strlen(num1));
 	int len1 = strlen(num1)
 	int i;
-	for( i = 0 ; i < len1 ; i++ )
+	for( i = 0 ; i < len1 ;)
 	{
 		temp[i] = num1[len1-i-1];
 		temp[i+1] = '\0';
-		reverse(temp);
+		reverseStr(temp);
 		int cnt = 0;
 		while(isBigger(temp , num2))
 		{
 			bigSub(temp, num2);
 			cnt++;
 		}
-		reverse(temp);
+		reverseStr(temp);
 		quot[i] = cnt + '0';
+
+                if(strcom(temp. "0") == 0)
+                {
+                        i = 0;
+                }
+                else
+                {
+                        i++;
+                }
 	}
 }
 
