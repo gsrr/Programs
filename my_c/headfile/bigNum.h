@@ -1,17 +1,24 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 
-/* myHead : swapChar : start */
+void swapChar(char str[], int i , int j);
+void reverseStr(char str[]);
+int isBigger(char fir[] , char sec[]);
+void bigDivide(char num1[] , char num2[] , char quot[]);
+void bigSub(char num1[] , char num2[]);
+void removeFrontZero(char quot[]);
+int bigMul(int arr[], int n, int len);
+int sumArray(int arr[], int len);
+
 void swapChar(char str[], int i , int j)
 {
         char temp = str[i];
         str[i] = str[j];
         str[j] = temp;
 }
-/* myHead : swapChar : end */
 
-/* myHead : reverseStr : start */
 void reverseStr(char str[])
 {
         int len = strlen(str);
@@ -21,7 +28,6 @@ void reverseStr(char str[])
                 swapChar(str, i, len - 1 - i);
         }
 }
-/* myHead : reverseStr : end */
 
 int isBigger(char fir[] , char sec[])
 {
@@ -55,17 +61,35 @@ int isBigger(char fir[] , char sec[])
         
 }
 
+void removeFrontZero(char quot[])
+{
+	int i;
+	for(i = 0 ; i < strlen(quot); i++)
+	{
+		if(quot[i] != '0')
+		{
+			break;
+		}
+	}
+	int j = 0;
+	for( i ; i < strlen(quot); i++,j++)
+	{
+		quot[j] = quot[i];
+	}
+	quot[j] = '\0';
+	
+}
 
-/* myHead : bigDivide : start */
 void bigDivide(char num1[] , char num2[] , char quot[])
 {
 	char *temp = (char*)malloc(sizeof(char) * strlen(num1));
-	int len1 = strlen(num1)
+	int len1 = strlen(num1);
 	int i;
-	for( i = 0 ; i < len1 ;)
+	int j = 0;
+	for( i = 0 ; i < len1 ; i++)
 	{
-		temp[i] = num1[len1-i-1];
-		temp[i+1] = '\0';
+		temp[j] = num1[len1-i-1];
+		temp[j+1] = '\0';
 		reverseStr(temp);
 		int cnt = 0;
 		while(isBigger(temp , num2))
@@ -76,20 +100,20 @@ void bigDivide(char num1[] , char num2[] , char quot[])
 		reverseStr(temp);
 		quot[i] = cnt + '0';
 
-                if(strcom(temp. "0") == 0)
+                if(strcmp(temp, "0") == 0)
                 {
-                        i = 0;
+                        j = 0;
                 }
                 else
                 {
-                        i++;
+                        j++;
                 }
 	}
+	quot[i] = '\0';
+	removeFrontZero(quot);
+	free(temp);
 }
 
-/* myHead : bigDivide : end */
-
-/* myHead : bigSub : start */
 void bigSub(char num1[] , char num2[])
 {
 	int i;
@@ -119,18 +143,66 @@ void bigSub(char num1[] , char num2[])
 	}
 	
 	int j;
-	for( j = i - 1 ; j > -1 ; j--)
+	for( j = i - 1 ; j > 0 ; j--)
 	{
-		if(num[j] != '0')
+		if(num1[j] != '0')
 		{
-			num[j+1] = '\0';
 			break;
 		}
 	}
+	num1[j+1] = '\0';
+	
 }
-/* myHead : bigSub : end */
 
-/* myHead:bigMul:start */
+void bigAdd(char fir[], char sec[])
+{
+	int lenFir = strlen(fir);
+	int lenSec = strlen(sec);
+	int i;
+	int carry = 0;
+	for( i = 0 ; i < lenFir || i < lenSec; i++)
+	{
+		int tmpFir = ( i < lenFir ) ? fir[i] - '0' : 0;
+		int tmpSec = ( i < lenSec ) ? sec[i] - '0' : 0;
+		int sum = tmpFir + tmpSec + carry;
+		carry = sum / 10;
+		fir[i] = (sum % 10) + '0';
+	}
+	if(carry == 0)
+	{
+		fir[i] = '\0';
+	}
+	else
+	{
+		fir[i] = carry;
+		fir[i+1] = '\0';
+	}
+}
+char *getMultTemp(char arr[], int index)
+{
+	char* temp = (char*)malloc(sizeof(char) * (strlen(arr) + 1 + index));	
+	reverseStr(arr);
+	int len = strlen(arr);
+	int i;
+	for( i = len ; i < len + index ; i++ )
+	{
+		arr[i] = '0';	
+	}
+	arr[i] = '\0';
+}
+void bigMulChar(char fir[], char sec[], char ret[])
+{
+	int lenSec = strlen(sec);
+	int i;
+	for( i = 0 ; i < lenSec, i++)
+	{
+		char *temp = getMultTemp(fir, i);
+		bigMul(temp, sec[i] - '0');
+		bigAdd(ret, temp);
+		free(temp);
+	}
+}
+
 int bigMul(int arr[], int n, int len)
 {
 	int i;
@@ -156,8 +228,6 @@ int bigMul(int arr[], int n, int len)
 		return i;
 	}
 }
-/* myHead:bigMul:end */
-/* myHead:sumArray:start */
 int sumArray(int arr[], int len)
 {
 	int sum = 0;
@@ -167,4 +237,3 @@ int sumArray(int arr[], int len)
 	}
 	return sum;
 }
-/* myHead:sunArray:end */
