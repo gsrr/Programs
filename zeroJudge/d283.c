@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #include <string.h>
 #include <stdlib.h>
 
@@ -277,13 +278,41 @@ int sumArray(int arr[], int len)
 	}
 	return sum;
 }
-void displayArrNum(char arr[])
+
+
+void displayArrNum(char fib[])
 {
-        int len = strlen(arr);
+        int len = strlen(fib);
         int i;
         for( i = len-1 ; i > -1 ; i--)
         {
-                printf("%c",arr[i]);
+                printf("%c",fib[i]);
         }
         printf("\n");
+}
+
+int main()
+{
+        char* fib[20001];
+        char fib0[] = {'0','\0'};
+        char fib1[] = {'1','\0'};
+        fib[0] = fib0;
+        fib[1] = fib1;
+        int i;
+        for( i = 2 ; i < 20001 ; i++)
+        {
+                char* temp = (char*)malloc(sizeof(char) * (strlen(fib[i-1]) + 5));
+                strcpy(temp , fib[i-1]);
+                bigAdd(temp, fib[i-2]);
+                fib[i] = temp;
+        }
+
+        int n;
+        while(scanf("%d", &n) != EOF)
+        {
+                displayArrNum(fib[n]);
+        }
+        return 0;
+
+
 }
