@@ -1,0 +1,9 @@
+Steps for installing compiler
+1.gcc_4.4.4, http://wiki.illumos.org/pages/viewpage.action?pageId=1147747
+2.gmp, http://ftp.gnu.org/gnu/gmp/
+3.mpfr, http://www.mpfr.org/mpfr-2.4.2/ 
+4.set env variable
+
+Reference:
+http://stackoverflow.com/questions/9450394/how-to-install-gcc-from-scratch-with-gmp-mpfr-mpc-elf-without-shared-librari
+
