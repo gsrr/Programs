@@ -263,7 +263,7 @@ void print_help(void);
 
 int get_hardware_address(int,char *);
 
-int send_dhcp_discover(int);
+int send_dhcp_discover(int, int);
 int get_dhcp_offer(int);
 
 int get_results(void);
@@ -279,15 +279,17 @@ int receive_dhcp_packet(void *,int,int,int,struct sockaddr_in *);
 
 
 
-int main(int argc, char **argv){
-	int dhcp_socket;
+int main(int argc, char **argv)
+{
 	int result;
+	int dhcp_socket;
 
 	setlocale (LC_ALL, "");
 	// bindtextdomain (PACKAGE, LOCALEDIR);
 	// textdomain (PACKAGE);
 
-	if(process_arguments(argc,argv)!=OK){
+	if(process_arguments(argc,argv) != OK)
+	{
 		printf("Could not parse arguments");
 	}
 
@@ -304,7 +306,8 @@ int main(int argc, char **argv){
 	get_hardware_address(dhcp_socket,network_interface_name);
 	
 	/* send DHCPDISCOVER packet */
-	send_dhcp_discover(dhcp_socket);
+	int dos = atoi(argv[2]);
+	send_dhcp_discover(dhcp_socket, dos);
 
 	/* wait for a DHCPOFFER packet */
 	get_dhcp_offer(dhcp_socket);
@@ -314,7 +317,6 @@ int main(int argc, char **argv){
 
 	/* determine state/plugin output to return */
 	result=get_results();
-
 	/* free allocated memory */
 	free_dhcp_offer_list();
 	free_requested_server_list();
@@ -455,7 +457,7 @@ int get_hardware_address(int sock,char *interface_name){
 
 
 /* sends a DHCPDISCOVER broadcast message in an attempt to find DHCP servers */
-int send_dhcp_discover(int sock){
+int send_dhcp_discover(int sock , int index){
 	dhcp_packet discover_packet;
 	struct sockaddr_in sockaddr_broadcast;
 
@@ -491,7 +493,14 @@ int send_dhcp_discover(int sock){
 	discover_packet.flags=htons(DHCP_BROADCAST_FLAG);
 
 	/* our hardware address */
-	client_hardware_address[0] = 254;
+	client_hardware_address[0] = index;
+	int i = 0;
+	printf("Mac address: ");
+	for( i ; i < ETHERNET_HARDWARE_ADDRESS_LENGTH ; i++)
+	{
+		printf("%.2x", client_hardware_address[i]);
+	}
+	printf("\n");
 	memcpy(discover_packet.chaddr,client_hardware_address,ETHERNET_HARDWARE_ADDRESS_LENGTH);
 
 	/* first four bytes of options field is magic cookie (as per RFC 2132) */
@@ -1028,21 +1037,12 @@ int get_results(void){
 
 /* process command-line arguments */
 int process_arguments(int argc, char **argv){
-	int c;
-
-	if(argc<1)
-		return ERROR;
-
-	c=0;
-	while((c+=(call_getopt(argc-c,&argv[c])))<argc){
-
-		/*
-		   if(is_option(argv[c]))
-		   continue;
-		 */
+	int c = 0;
+	while((c+=(call_getopt(argc-c,&argv[c])))<argc)
+	{
+		;
 	}
-
-	return validate_arguments();
+	return OK;
 }
 
 
@@ -1072,9 +1072,9 @@ int call_getopt(int argc, char **argv){
 
 	while(1){
 #ifdef HAVE_GETOPT_H
-		c=getopt_long(argc,argv,"+hVvt:s:r:t:i:m:b:",long_options,&option_index);
+		c = getopt_long(argc,argv,"+hVvt:s:r:t:i:m:b:",long_options,&option_index);
 #else
-		c=getopt(argc,argv,"+?hVvt:s:r:t:i:m:b:");
+		c = getopt(argc,argv,"+?hVvt:s:r:t:i:m:b:");
 #endif
 
 		i++;
