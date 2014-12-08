@@ -7,18 +7,17 @@ int main()
         int n;
         while(scanf("%d", &n))
         {
-                printf("n:%d\n",n);
                 if( n == 0 )
                 {
                         break;
                 }
                 int *arr = (int*)malloc(sizeof(int) * n);
-                int top = -1;
                 int m;
                 while(1)
                 {
                         int i;
                         int j = 1;
+                        int top = -1;
                         for( i = 0 ; i < n ; i++)
                         {
                                 scanf("%d", &m);
@@ -26,25 +25,31 @@ int main()
                                 {
                                         break;
                                 }
-                                for( j ;  j <= n ;)
+                                for( j ;  j <= n+1 ;)
                                 {
                                         if(top == -1)
                                         {
                                                 arr[++top] = j;
                                                 j++;
                                         }
-                                        if(m == arr[top])
-                                        {
-                                                top--;
-                                                break;
-                                        }
                                         else
                                         {
-                                                arr[++top] = j;
-                                                j++;
+                                                if(m == arr[top])
+                                                {
+                                                        top--;
+                                                        break;
+                                                }
+                                                else
+                                                {
+                                                        arr[++top] = j;
+                                                        j++;
+                                                }
                                         }
                                 }
-
+                        }
+                        if(m == 0)
+                        {
+                                break;
                         }
                         if(top == -1)
                         {
@@ -54,11 +59,8 @@ int main()
                         {
                                 printf("No\n");
                         }
-                        if(m == 0)
-                        {
-                                break;
-                        }
                 }
+                free(arr);
                 printf("\n");
         }
         return 0;

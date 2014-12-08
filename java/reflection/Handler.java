@@ -28,13 +28,26 @@ public class Handler
                         System.out.println(objSub.invoke(obj, 20, 5));
                         
                         Library lib = new Library(new Number());
-                        java.lang.reflect.Method libAdd = myClass.getMethod("addition");
+                        java.lang.reflect.Method libAdd = Library.class.getMethod("addition");
+                        System.out.println(libAdd);
+                        java.lang.reflect.Method libaaa = Library.class.getMethod("aaa");
+
+                        System.out.println(libaaa);
+                        if(libaaa.equals(""))
+                        {
+                                System.out.println("not null");
+                        }
+                        else
+                        {
+                                System.out.println("null");
+
+                        }
                         System.out.println(libAdd.invoke(lib));
 
                 }
                 catch(Exception e)
                 {
-                        ;
+                        System.out.println("exception");
                 }
         }
 

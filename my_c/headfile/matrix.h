@@ -45,6 +45,7 @@ void matrixMult(Matrix *fir, Matrix *sec, Matrix *ret)
                 int j;
                 for( j = 0 ; j < ret->col ; j++ )
                 {
+                        ret->elem[i][j] = 0;
 			int n;
 			for( n = 0 ; n < fir->col ; n++)
 			{
@@ -53,4 +54,9 @@ void matrixMult(Matrix *fir, Matrix *sec, Matrix *ret)
                 }
                 
         }
+}
+
+void matrixInverse(Matrix *fix, Matrix *ret
+{
+        
 }
