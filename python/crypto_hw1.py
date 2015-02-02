@@ -29,8 +29,78 @@ def main():
         print chr(97 ^ 79).encode('hex')
 	ciphertexts = [encrypt(key, msg) for msg in MSGS]
 
+
+import copy
+def transToString(c_list):
+    tc_list = []
+    for c in c_list:
+        tc_list.append("".join(chr(int(c[i : i + 2],16)) for i in range(0, len(c), 2)))
+
+    return tc_list
+
+
+def transToXor(ct, tc_list):
+    stc_list = []
+    for c in tc_list:
+        stc_list.append(strxor(ct, c))
+    return stc_list
+
+
+def getXorItems(stc_list):
+    space_list = []
+    for c in stc_list:
+        space_list.append(" " * len(c))
+
+    return space_list
+
+def getDecodeChr(i, de_list):
+    cnt = 0
+    for c in de_list:
+        if len(c) > i:
+            if c[i].isalpha():
+                cnt += 1
+    
+    return cnt
+
+
+def show_list(items):
+    for item in items:
+        print item
+        print
+
+
+def combineSpacePos(space_pos_list):
+    ret = {}
+    for item in space_pos_list:
+        for key in item.keys():
+            if not ret.has_key(key):
+                ret[key] = 0
+            ret[key] += 1
+
+    return ret
+def getSpacePostition(stc_list):
+    space_pos_list = []
+    for c in stc_list:
+        dec_space = " " * len(c)
+        tmp = strxor(c, dec_space)
+        pos_dict = {}
+        for i in range(len(tmp)):
+            if tmp[i].isalpha() or tmp[i] is " ":
+                pos_dict[i] = tmp[i]
+                
+        space_pos_list.append(pos_dict)
+
+    combineSpace = combineSpacePos(space_pos_list)
+    for key in combineSpace.keys():
+        if combineSpace[key] is not 11:
+            del combineSpace[key]
+    return combineSpace
+    
+        
+
+
 if __name__ == "__main__":
-	main()
+        #main()
 	c1 = "315c4eeaa8b5f8aaf9174145bf43e1784b8fa00dc71d885a804e5ee9fa40b16349c146fb778cdf2d3aff021dfff5b403b510d0d0455468aeb98622b137dae857553ccd8883a7bc37520e06e515d22c954eba5025b8cc57ee59418ce7dc6bc41556bdb36bbca3e8774301fbcaa3b83b220809560987815f65286764703de0f3d524400a19b159610b11ef3e"
 	c2 = "234c02ecbbfbafa3ed18510abd11fa724fcda2018a1a8342cf064bbde548b12b07df44ba7191d9606ef4081ffde5ad46a5069d9f7f543bedb9c861bf29c7e205132eda9382b0bc2c5c4b45f919cf3a9f1cb74151f6d551f4480c82b2cb24cc5b028aa76eb7b4ab24171ab3cdadb8356f"
 	c3 = "32510ba9a7b2bba9b8005d43a304b5714cc0bb0c8a34884dd91304b8ad40b62b07df44ba6e9d8a2368e51d04e0e7b207b70b9b8261112bacb6c866a232dfe257527dc29398f5f3251a0d47e503c66e935de81230b59b7afb5f41afa8d661cb"
@@ -43,62 +113,68 @@ if __name__ == "__main__":
 	c10 = "466d06ece998b7a2fb1d464fed2ced7641ddaa3cc31c9941cf110abbf409ed39598005b3399ccfafb61d0315fca0a314be138a9f32503bedac8067f03adbf3575c3b8edc9ba7f537530541ab0f9f3cd04ff50d66f1d559ba520e89a2cb2a83"
 	c11 = "32510ba9babebbbefd001547a810e67149caee11d945cd7fc81a05e9f85aac650e9052ba6a8cd8257bf14d13e6f0a803b54fde9e77472dbff89d71b57bddef121336cb85ccb8f3315f4b52e301d16e9f52f904"
         
-        c1 = "".join(chr(int(c1[i : i + 2],16)) for i in range(0, len(c1), 2))
-        c2 = "".join(chr(int(c2[i : i + 2],16)) for i in range(0, len(c2), 2))
-        c3 = "".join(chr(int(c3[i : i + 2],16)) for i in range(0, len(c3), 2))
-	x12 = strxor(c1,c2)
-        x13 = strxor(c1,c3)
-        #return "".join([chr(ord(x) ^ ord(y)) for (x, y) in zip(a[:len(b)], b)])
-        #print zip(x1)
-        #m12 =  "".join(str(ord(x)).encode('hex') for x in x12)
-        #print m12
-        space_x12 = " " * len(x12)
-        space_x13 = " " * len(x13)
-        a_x12 = "a" * len(x12)
-        a_x13 = "a" * len(x13)
-        the_x12 = "the" * len(x12)
-        print the_x12
-        #print " ".join(str(ord(x)).encode('hex') for x in space)
-        #space =  "".join(str(ord(x)).encode('hex') for x in space)
-        #print space
-        x12_space = strxor(space_x12 , x12)
-        print x12_space
-        test_x12 = ""
-        for x in x12_space:
-            if x.isalpha():
-                test_x12 += x
-            else:
-                test_x12 += " "
-        print test_x12
-        test_x13 = ""
-        x13_space = strxor(space_x13 , x13)
-        for x in x13_space:
-            if x.isalpha():
-                test_x13 += x
-            else:
-                test_x13 += " "
-        print test_x13
-        x12_a = strxor(a_x12 , x12)
-        x12_the = strxor(the_x12 , x12)
-        x13_a = strxor(a_x13 , x13)
-        print x12_space
-        print x13_space
+        import traceback
+        try:
+            c_list = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11]
+            tc_list = transToString(c_list)
+            space_pos = []
+            for i in range(11):
+                target = tc_list[i]
+                stc_list = transToXor(target, tc_list)
+                space_pos.append(getSpacePostition(stc_list))
 
-        print x12_a
-        print x13_a
+            
+            targetXor = transToXor(tc_list[int(sys.argv[1])], tc_list)
+            target_str = {}
+            cnt = 0
+            for c in targetXor:
+                de_space = " " * len(c)
+                tmp = strxor(de_space, c)
+                for key in space_pos[cnt].keys():
+                    target_str[key] = tmp[key]
+                cnt += 1
+            
+            de_observe = [
+                    {'b' : [21], 't' : [30], 'h' : [31]}, #0
+                    {},#1
+                    {'c' : [39], 'r': [40], 'y' : [41], 'p' : [42]},#2
+                    {'t' : [81]},#3
+                    {},#4
+                    {'r' : [7], 'p' : [32], 'h' : [33], 'y' : [34]},#5
+                    {},#6
+                    {},#7
+                    {'i' : [49], 't' : [50]},#8
+                    {'n': [25], 'a' : [26]}, #9
+                    {'e' : [2, 54, 82], ' ' : [10, 35 ], 's' : [14, 36]}
+                ]
 
-        print
-        print x12_the
-        #print " ".join(str(ord(x)).encode('hex') for x in m12_space)
-        #print m12_space
-        #print "".join(str(ord(x)).encode('hex') for x in x13)
-        '''
-	x1 = strxor(x1,c4)
-	x1 = strxor(x1,c5)
-	x1 = strxor(x1,c6)
-	x1 = strxor(x1,c7)
-	x1 = strxor(x1,c8)
-	x1 = strxor(x1,c9)
-	x1 = strxor(x1,c10)
-	x1 = strxor(x1,c11)
-        '''
+            for i in range(len(de_observe)):
+                targetXor = transToXor(tc_list[i], tc_list)
+                c = targetXor[int(sys.argv[1])]
+                obs = de_observe[i]
+                for key in obs.keys():
+                    decode = key * len(c)
+                    tmp = strxor(decode, c)
+                    for pos in obs[key]:
+                        target_str[pos] = tmp[pos]
+                    
+            for i in range(len(tc_list[int(sys.argv[1])])):
+                print i % 10,
+            
+            print
+            cnt = 0
+            t_ret = ""
+            while target_str:
+                if target_str.has_key(cnt):
+                    print target_str[cnt],
+                    t_ret += target_str[cnt]
+                    del target_str[cnt]
+                else:
+                    print "-",
+                cnt += 1
+
+            print
+            print t_ret
+        except:
+            print traceback.format_exc()
+
