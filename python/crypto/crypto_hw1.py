@@ -218,12 +218,12 @@ def verifyWordFromCompare(word_list):
                     del word_dic[word]
                     flag_in = True
     
-    show_list(word_list)
     print
 
 def verifyString(finalStr):
     invalidWord_list = []
     for ptxt in finalStr:
+        print ptxt
         invalidWord = {}
         str_list = ptxt.split(" ")
         if len(str_list) > 1:
@@ -234,6 +234,33 @@ def verifyString(finalStr):
         invalidWord_list.append(invalidWord)
 
     verifyWordFromCompare(invalidWord_list)
+    show_list(invalidWord_list)
+    return invalidWord_list
+
+
+def modifyString(word, i, c):
+    s = list(word)
+    s[i] = c
+    return "".join(s)
+
+def getProperWord(word_list):
+    proper_list = []
+    cnt = 0
+    for word_dic in word_list:
+        for word in word_dic.keys():
+            print word
+            for i in range(len(word)):
+                re_word = modifyString(word, i, "-")
+                output = getWordFormDict(re_word)
+                for line in output:
+                    proper_list.append((cnt, line[i], list(word_dic[word])[i], len(output)))
+        cnt += 1
+    proper_list = sorted(proper_list, key=lambda item:list(item)[3])
+    show_list(proper_list)
+
+def correctWrongSpell(word_list, de_observe, tc_list):
+    getProperWord(word_list)
+
 
 if __name__ == "__main__":
     try:
@@ -247,7 +274,6 @@ if __name__ == "__main__":
         oldFinalStr = []
         finalStr = []
         while len(set(finalStr).intersection(set(oldFinalStr))) != 11:
-            verifyString(finalStr)
             oldFinalStr = copy.copy(finalStr)
             finalStr = [""] * 11
             for c_idx in range(len(c_list)):
@@ -272,6 +298,9 @@ if __name__ == "__main__":
                                 de_observe[c_idx][realWord[idx]].append(ful_pos + idx + ret_list.index(w))
                     ful_pos += len(w)
                 
+            invalidWordList = verifyString(finalStr)
+            correctWrongSpell(invalidWordList, de_observe,tc_list)
+
             #raw_input()
     except:
         print traceback.format_exc()
