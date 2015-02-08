@@ -223,7 +223,6 @@ def verifyWordFromCompare(word_list):
 def verifyString(finalStr):
     invalidWord_list = []
     for ptxt in finalStr:
-        print ptxt
         invalidWord = {}
         str_list = ptxt.split(" ")
         if len(str_list) > 1:
@@ -234,7 +233,6 @@ def verifyString(finalStr):
         invalidWord_list.append(invalidWord)
 
     verifyWordFromCompare(invalidWord_list)
-    show_list(invalidWord_list)
     return invalidWord_list
 
 
@@ -252,15 +250,47 @@ def getProperWord(word_list):
             for i in range(len(word)):
                 re_word = modifyString(word, i, "-")
                 output = getWordFormDict(re_word)
-                for line in output:
-                    proper_list.append((cnt, line[i], list(word_dic[word])[i], len(output)))
+                if len(output) < 6:
+                    for line in output:
+                        proper_list.append((cnt, line[i], list(word_dic[word])[i], len(output)))
         cnt += 1
     proper_list = sorted(proper_list, key=lambda item:list(item)[3])
-    show_list(proper_list)
+    return proper_list
 
-def correctWrongSpell(word_list, de_observe, tc_list):
-    getProperWord(word_list)
+def wordLength(word_list):
+    cnt = 0
+    for dic in word_list:
+        cnt += len(dic.keys())
+    return cnt
 
+def correctWrongSpell(word_list, de_observe, tc_list, space_pos):
+    proper_list = getProperWord(word_list)
+    for item_set in proper_list:
+        print item_set
+        items = list(item_set)
+        str_idx = items[0]
+        ckr = items[1]
+        pos = items[2]
+        
+        if de_observe[str_idx].has_key(ckr) is False:
+            de_observe[str_idx][ckr] = []
+
+        de_observe[str_idx][ckr].append(pos)
+        finalStr = [""] * 11
+        for c_idx in range(len(tc_list)):
+            targetXor = transToXor(tc_list[c_idx], tc_list)
+            target_str = {}
+            getStrFromSpace(targetXor, space_pos, target_str)
+            getStrFromObserve(tc_list, de_observe, c_idx, target_str) 
+            finalStr[c_idx] = getFinalStr(target_str)
+
+        invalidWordList = verifyString(finalStr)
+        if wordLength(invalidWordList) < wordLength(word_list):
+            break;
+        else:
+            de_observe[str_idx][ckr].pop(len(de_observe[str_idx][ckr]) - 1)
+         
+        #raw_input()
 
 if __name__ == "__main__":
     try:
@@ -274,6 +304,7 @@ if __name__ == "__main__":
         oldFinalStr = []
         finalStr = []
         while len(set(finalStr).intersection(set(oldFinalStr))) != 11:
+            show_list(finalStr)
             oldFinalStr = copy.copy(finalStr)
             finalStr = [""] * 11
             for c_idx in range(len(c_list)):
@@ -299,7 +330,7 @@ if __name__ == "__main__":
                     ful_pos += len(w)
                 
             invalidWordList = verifyString(finalStr)
-            correctWrongSpell(invalidWordList, de_observe,tc_list)
+            correctWrongSpell(invalidWordList, de_observe, tc_list, space_pos)
 
             #raw_input()
     except:
