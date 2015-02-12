@@ -246,7 +246,6 @@ def getProperWord(word_list):
     cnt = 0
     for word_dic in word_list:
         for word in word_dic.keys():
-            print word
             for i in range(len(word)):
                 re_word = modifyString(word, i, "-")
                 output = getWordFormDict(re_word)
@@ -266,7 +265,6 @@ def wordLength(word_list):
 def correctWrongSpell(word_list, de_observe, tc_list, space_pos):
     proper_list = getProperWord(word_list)
     for item_set in proper_list:
-        print item_set
         items = list(item_set)
         str_idx = items[0]
         ckr = items[1]
@@ -328,9 +326,10 @@ if __name__ == "__main__":
                                     de_observe[c_idx][realWord[idx]] = []
                                 de_observe[c_idx][realWord[idx]].append(ful_pos + idx + ret_list.index(w))
                     ful_pos += len(w)
-                
+            
             invalidWordList = verifyString(finalStr)
             correctWrongSpell(invalidWordList, de_observe, tc_list, space_pos)
+            #guessWord()  #not finished, last step is here!
 
             #raw_input()
     except:
