@@ -1,3 +1,4 @@
+B
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,6 +18,7 @@ void generateRandomString(char *charSet, int length, char *str)
         str[length - 1] = '\0';
 }
 
+lib#generateRandomString
 
 removeSpaceAndMove(char *str, int length)
 {
