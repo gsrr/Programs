@@ -101,12 +101,38 @@ void removeDuplicateCharByBuffer(char *str, int length)
                         str[i] = ' ';
                 }
         }
-        printf("%s\n", str);
-        removeSpaceAndMove(str, length);
-        printf("%s:%d\n", str,strlen(str));
         removeSpaceAndMove_2(str, length);
-        
-           
+}
+
+int bit(int *a, int c)
+{
+        int b = 1 << c;
+        return b & *a;
+}
+
+void addBit(int *a, int c)
+{
+        int b = 1 << c;
+        *a = *a | b;
+}
+
+void removeDuplicateCharByBuffer_2(char *str, int length)
+{
+        int a = 0;
+        int i = 0 ; 
+        for( i ; i < length ; i++)
+        {
+                int c = str[i] - 'a';
+                if(bit(&a,c) == 0)
+                {
+                        addBit(&a,c);
+                }
+                else
+                {
+                        str[i] = ' ';
+                }
+        }
+        removeSpaceAndMove_2(str, length);
 }
 
 int main()
@@ -114,8 +140,10 @@ int main()
         char str[SIZE] = {0};
         char engSet[] = "abcdefghijklmnopqrstuvwxyz";
         generateRandomString(engSet, SIZE, str);
-        printf("%s\n", str);
+        printf("Input String : \n%s\n", str);
         removeDuplicateCharByBuffer(str, SIZE);
-        printf("%s:%d\n", str,strlen(str));
+        printf("\nOutput String - unique character:\n%s (size:%d)\n", str,strlen(str));
+        removeDuplicateCharByBuffer_2(str, SIZE);
+        printf("\nOutput String - unique character:\n%s (size:%d)\n", str,strlen(str));
         return 0;
 }
