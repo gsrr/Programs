@@ -12,6 +12,7 @@ def getLibFilePath(libFunc):
 		abspath = os.path.abspath(item[0])
 		for file in item[2]:
 			if libFunc == file.rstrip(".l"):	
+                                print "find lib file:" + file
 				filepath = abspath + "/" + file
 				return filepath
 
