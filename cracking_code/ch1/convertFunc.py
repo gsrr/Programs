@@ -45,6 +45,7 @@ def help(args):
             for line in lines:
                 if "#def" in line:
                     print line.split("::")[1]
+                    print
 
     print "-" * 50
     
