@@ -1,4 +1,13 @@
 
+/*
+ * reverse linked list for addition
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
+
 /* ::#def List:: */
 struct Node* createLinkList(int len);
 struct Node* createNode();
@@ -125,3 +134,36 @@ Node* list_add(Node* a, Node* b)
         return c;
 }
 /* #end */
+
+void reverseList(Node** list)
+{
+        Node* r = *list;
+        Node* p = NULL;
+        Node* c = NULL;
+        while(r != NULL)
+        {
+                c = r;
+                r = r -> next;
+                c -> next = p;
+                p = c;       
+        }
+        
+        *list = c;
+}
+
+int main()
+{
+        Node* a = createLinkList(5);
+        sleep(1);
+        Node* b = createLinkList(5);
+        print_list(a);
+        print_list(b);
+        reverseList(&a);
+        reverseList(&b);
+        print_list(a);
+        print_list(b);
+        Node* c = list_add(a, b);
+        print_list(c);
+        return 0;
+}
+

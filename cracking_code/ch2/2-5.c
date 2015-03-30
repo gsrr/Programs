@@ -1,3 +1,11 @@
+/*
+ * addition of linked list
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 
 /* ::#def List:: */
 struct Node* createLinkList(int len);
@@ -70,6 +78,7 @@ struct Node* dupList(struct Node* list, int len)
         }
         return dup_list;
 }
+/* #end */
 
 
 Node* initialNode(int val)
@@ -124,4 +133,15 @@ Node* list_add(Node* a, Node* b)
         }
         return c;
 }
-/* #end */
+
+int main()
+{
+        Node* a = createLinkList(5);
+        Node* b = createLinkList(5);
+        print_list(a);
+        print_list(b);
+        Node* c = list_add(a, b);
+        print_list(c);
+        return 0;
+}
+
