@@ -1,11 +1,11 @@
 
 /*
- * Beginning node of the loop
+ *
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <unistd.h>
+
 
 /* ::#def List:: */
 struct Node* createLinkList(int len);
@@ -15,7 +15,6 @@ void print_list(struct Node* list);
 struct Node
 {
         int val;
-        struct Node* ptr;
         struct Node* next;
 };
 typedef struct Node Node;
@@ -49,7 +48,6 @@ void print_list(struct Node* list)
         while(list != NULL)
         {
                 printf("%d ", list->val);
-                fflush(stdout);
                 list = list->next;
         }
         printf("\n");
@@ -149,9 +147,6 @@ void reverseList(Node** list)
         
         *list = c;
 }
-/* #end */
-
-
 void makeToCircular(Node** list, int begin)
 {
         Node* r = *list;
@@ -167,56 +162,37 @@ void makeToCircular(Node** list, int begin)
                 }
         }
         r -> next = p;
-
+        printf("Begin Node:%d\n", p->val);
 }
+/* #end */
 
 
-
-
-Node* dupReverseList(Node** list)
+void findBeginNode(Node* list)
 {
-       Node* h = NULL;
-       Node* rh = NULL;
-       Node* r = *list;
-       Node* p = NULL;
-       Node* c = NULL;
-       while( r != NULL)
-       {
-               c = r;
-               Node* tmp = initialNode( c->val );
-               tmp->ptr = c;
-               if(h == NULL)
-               {
-                       h = tmp;
-                       rh = tmp;
-               }
-               else
-               {
-                        rh -> next = tmp;       
-                        rh = rh -> next;
-               }
-               r = r -> next;
-               c -> next = p;
-               p = c;
-       }
-       return h;
+        Node* f = list -> next -> next;
+        Node* s = list -> next;
+        while( f != s )
+        {
+                f = f -> next -> next;
+                s = s -> next;
+        }
+
+        f = list;
+        while( f != s)
+        {
+                f = f -> next;
+                s = s -> next;
+        }
+        printf("Find Begin Node:%d\n", s -> val);
 }
 
 int main()
 {
-        Node* a = createLinkList(11);
+        Node *a = createLinkList(11);
         print_list(a);
-        makeToCircular(&a, 5);
-        int len;
-        Node* b = dupReverseList(&a);
-        Node* pb = NULL;
-        while( a == b->ptr )
-        {
-                a = a -> next;
-                pb = b;
-                b = b -> next;
-        }
-        printf("The begin node of the loop is :%d\n", pb->val);
+        makeToCircular(&a , 6);
+        findBeginNode(a);
+
         return 0;
 }
 

@@ -124,4 +124,36 @@ Node* list_add(Node* a, Node* b)
         }
         return c;
 }
+void reverseList(Node** list)
+{
+        Node* r = *list;
+        Node* p = NULL;
+        Node* c = NULL;
+        while(r != NULL)
+        {
+                c = r;
+                r = r -> next;
+                c -> next = p;
+                p = c;       
+        }
+        
+        *list = c;
+}
+void makeToCircular(Node** list, int begin)
+{
+        Node* r = *list;
+        Node* p = *list;
+        int cnt = begin;
+        while(r->next != NULL)
+        {
+                r = r -> next;
+                cnt--;
+                if(cnt < 0)
+                {
+                        p = p -> next;
+                }
+        }
+        r -> next = p;
+        printf("Begin Node:%d\n", p->val);
+}
 /* #end */

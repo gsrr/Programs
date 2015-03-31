@@ -1,11 +1,13 @@
 
 /*
- * Beginning node of the loop
+ * check palindrome for list
  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
+
 
 /* ::#def List:: */
 struct Node* createLinkList(int len);
@@ -15,7 +17,6 @@ void print_list(struct Node* list);
 struct Node
 {
         int val;
-        struct Node* ptr;
         struct Node* next;
 };
 typedef struct Node Node;
@@ -49,7 +50,6 @@ void print_list(struct Node* list)
         while(list != NULL)
         {
                 printf("%d ", list->val);
-                fflush(stdout);
                 list = list->next;
         }
         printf("\n");
@@ -149,9 +149,6 @@ void reverseList(Node** list)
         
         *list = c;
 }
-/* #end */
-
-
 void makeToCircular(Node** list, int begin)
 {
         Node* r = *list;
@@ -167,56 +164,102 @@ void makeToCircular(Node** list, int begin)
                 }
         }
         r -> next = p;
+        printf("Begin Node:%d\n", p->val);
+}
+/* #end */
+
+void makeToPalindorme(Node** list)
+{
+        if(list == NULL)
+        {
+                printf("list is null\n");
+                return;
+        }
+        Node* r = (*list);
+        int cnt = 0;
+        while( r != NULL )
+        {
+                cnt++;
+                r = r -> next;
+        }
+        int* arr = (int*)malloc(sizeof(int) * cnt);
+        int* start = arr;
+        int* end = arr + cnt - 1;
+        cnt = 0;
+        while( start != end )
+        {
+                *start = cnt++;
+                *end = *start;
+                start = start + 1;
+                end = end - 1;
+        }
+        r = (*list);
+        cnt = 0;
+        while( r != NULL)
+        {
+                r -> val = arr[cnt++];
+                r = r -> next;
+        }
+        
 
 }
 
-
-
-
-Node* dupReverseList(Node** list)
+void checkPalind(Node* list)
 {
-       Node* h = NULL;
-       Node* rh = NULL;
-       Node* r = *list;
-       Node* p = NULL;
-       Node* c = NULL;
-       while( r != NULL)
-       {
-               c = r;
-               Node* tmp = initialNode( c->val );
-               tmp->ptr = c;
-               if(h == NULL)
-               {
-                       h = tmp;
-                       rh = tmp;
-               }
-               else
-               {
-                        rh -> next = tmp;       
-                        rh = rh -> next;
-               }
-               r = r -> next;
-               c -> next = p;
-               p = c;
-       }
-       return h;
+        Node* r = list;
+        Node* p = list;
+        while( r -> next != NULL )
+        {
+                r = r -> next;
+                if( r -> next != NULL)
+                {
+                        r = r -> next;
+                }
+                else
+                {
+                        break;
+                }
+                p = p -> next;
+        }
+
+        Node* pp = p;
+        p = p -> next;
+        Node* c = NULL;
+        while( p != NULL )
+        {
+                c = p;
+                p = p -> next;
+                c -> next = pp;
+                pp = c;
+
+        }
+        r = list;
+        while( pp != r)
+        {
+                if( r->val != pp->val )
+                {
+                        printf("Not a palindrome\n");
+                        return;
+                }
+
+                pp = pp -> next;
+                r = r -> next;
+        }
+        printf("it is palindrome\n");
+        return ;
 }
 
 int main()
 {
-        Node* a = createLinkList(11);
-        print_list(a);
-        makeToCircular(&a, 5);
-        int len;
-        Node* b = dupReverseList(&a);
-        Node* pb = NULL;
-        while( a == b->ptr )
-        {
-                a = a -> next;
-                pb = b;
-                b = b -> next;
-        }
-        printf("The begin node of the loop is :%d\n", pb->val);
+        Node* list = createLinkList(11);
+        sleep(1);
+        Node* b = createLinkList(11);
+        print_list(list);
+        print_list(b);
+        makeToPalindorme(&list);
+        print_list(list);
+        checkPalind(list);
+        checkPalind(b);
         return 0;
 }
 
