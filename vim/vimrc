@@ -3,3 +3,14 @@ set bs=2
 set bg=dark
 set number
 set autoindent
+
+#set variable
+let HAdir="/var/apache/tomcat/webapps/NAS/misc/HAAgent/"
+let HAlib="/var/apache/tomcat/webapps/NAS/misc/HAAgent/Lib/"
+let HAex="/var/apache/tomcat/webapps/NAS/misc/HAAgent/ExportWeb/"
+
+#set alias command
+command Chha execute 'cd' HAdir
+command Chlib execute 'cd' HAlib
+command Chex execute 'cd' HAex
+
