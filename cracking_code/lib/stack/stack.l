@@ -1,6 +1,5 @@
 
 
-
 /* ::#def Stack :: */
 struct Stack
 {
@@ -8,6 +7,7 @@ struct Stack
         int top;
         int b;
         int h;
+        int tag;
 };
 
 typedef struct Stack Stack;
@@ -33,14 +33,16 @@ void push(Stack** s, int val)
         t->arr[t->top] = val;
 }
 
-void pop(Stack** s)
+int pop(Stack** s)
 {
         Stack* t = *s;
         if(t->top == (t->b) - 1)
         {
                 printf("Stack is empty!!\n");
         }
+        int val = t->arr[t->top];
         t->top -= 1;
+        return val;
 
 }
 void print_stack(Stack* s)
@@ -53,18 +55,33 @@ void print_stack(Stack* s)
         printf("\n");
 }
 
-Stack* createStack(int num)
+Stack* createStack(int num, int t)
 {
         srand(time(NULL));
         int* arr = (int*)malloc(sizeof(int) * num);
         Stack* s = initialStack(arr, 0, num-1);
-        int i;
-        for( i = 0 ; i < num ; i++ )
-        {
-                int tmp = rand() % 100;       
-                push(&s , tmp);
-        }
-        print_stack(s);
+        s->tag = t;
         return s;
 }
+
+Stack* initialValue(Stack** s, int num)
+{
+        int i;
+        for( i = 10 ; i > 0 ; i-- )
+        {
+                //int tmp = rand() % 100;       
+                push(s , i);
+        }
+        print_stack(*s);
+
+}
+int isStackEmpry(Stack* s)
+{
+        if(s -> top == -1)
+        {
+                return 1;
+        }
+        return 0;
+}
 /* #end */
+
