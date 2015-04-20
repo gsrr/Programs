@@ -55,6 +55,7 @@ void releaseList(node* list)
         {
                 node* tmp = list;
                 list = list->next;
+                free(tmp->elem);
                 free(tmp);
         }
 }
