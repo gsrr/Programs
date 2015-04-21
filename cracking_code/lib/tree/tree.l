@@ -26,11 +26,11 @@ void print_tree(tNode* root, void (*print)(void* item))
         print(root->item);
         if(root->lchild != NULL)
         {
-                print_tree(root->lchild);
+                print_tree(root->lchild, print);
         }
         if(root->rchild != NULL)
         {
-                print_tree(root->rchild);
+                print_tree(root->rchild, print);
         }
 }
 

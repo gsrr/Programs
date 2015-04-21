@@ -87,7 +87,6 @@ void createRTreeByArr(tNode** root, int* arr, int low, int high)
         }
         
         int middle = (low + high)/2;
-        printf("R:%d:%d:%d:%d\n", low,high, middle, arr[middle]);
         tNode* tmp = createTreeNode(&arr[middle]);
         (*root)->rchild = tmp;
         createLTreeByArr(&((*root)->rchild), arr, low, middle - 1);
@@ -101,7 +100,6 @@ void createLTreeByArr(tNode** root, int* arr, int low, int high)
                 return;
         }
         int middle = (low + high)/2;
-        printf("L:%d:%d:%d\n", low,high, arr[middle]);
         tNode* tmp = createTreeNode(&arr[middle]);
         (*root)->lchild = tmp;
         createLTreeByArr(&((*root)->lchild), arr, low, middle - 1);
@@ -113,6 +111,67 @@ void print(void* item)
         printf("%d ", *(int*)item);
 }
 
+
+
+void appendData(tNode** root, tNode* tmp)
+{
+        tNode* r = *root;
+        int* ritem = (int*)r->item;
+        int* titem = (int*)tmp->item;
+
+        if(*titem < *ritem)
+        {
+                if(r->lchild == NULL)
+                {
+                        r->lchild = tmp;
+                }
+                else
+                {
+                        appendData(&(r->lchild), tmp);
+                }
+        }
+        else
+        {
+                if(r->rchild == NULL)
+                {
+                        r->rchild = tmp;
+                }
+                else
+                {
+                        appendData(&(r->rchild), tmp);
+                }
+        }
+}
+
+void appendBST(tNode** root, int* arr, int low, int high)
+{
+        if(high < low)
+        {
+                return;
+        }
+        tNode* data = *root;
+        int* ritem = (int*)data->item; 
+        int middle = (low + high)/2;
+        tNode* tmp = createTreeNode(&arr[middle]);
+          
+        appendData(root, tmp);
+        appendBST(root, arr, low, middle-1);
+        appendBST(root, arr, middle+1, high);
+}
+
+
+void createBSTByOrder(int* arr, int num)
+{
+        tNode* root = createTreeNode(&arr[0]);
+        int i;
+        for( i = 1 ; i < num ; i++)
+        {
+                appendBST(&root, arr, i, i);
+        }
+        printf("\nheight:%d\n", treeHeight(root));
+        print_tree(root, print);
+}
+
 int main()
 {
         int num = 20;
@@ -120,12 +179,19 @@ int main()
         int low = 0 ; 
         int high = num - 1;
         int middle = (low + high)/2;
-        tNode* root = createTreeNode(&arr[middle]);
-        createLTreeByArr(&root, arr, low, middle - 1);
-        createRTreeByArr(&root, arr, middle + 1, high);
-        printf("height:%d\n", treeHeight(root));
-        print_tree(root, print);
+        //tNode* root = createTreeNode(&arr[middle]);
+        //createLTreeByArr(&root, arr, low, middle - 1);
+        //createRTreeByArr(&root, arr, middle + 1, high);
+        //printf("height:%d\n", treeHeight(root));
+        //print_tree(root, print);
         printf("\n");
+        tNode* binRoot = createTreeNode(&arr[middle]);
+        appendBST(&binRoot, arr, low, middle-1);
+        appendBST(&binRoot, arr, middle+1, high);
+        printf("height:%d\n", treeHeight(binRoot));
+        print_tree(binRoot, print);
+        //createBSTByOrder(arr, num);
+
         return 0;
 }
 
