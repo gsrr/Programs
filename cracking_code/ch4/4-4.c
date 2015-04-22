@@ -174,6 +174,13 @@ void releaseList(node* nl)
         }
 }
 
+
+void printl(void* item)
+{
+        tNode* t = (tNode*)item;
+        printf("%d ", *(int*)t->item);
+}
+
 void print_list(struct node* list, void (*print)(void* item))
 {
         node* runner = list;
@@ -208,17 +215,42 @@ void listAppend(node** nl, void* elem)
 
 /* #end */
 
-struct Nodell
+
+void BFS(tNode* root)
 {
-        void* node;
-        struct Nodell* next;
-}
-typedef struct Nodell Nodell;
-
-
-void BFS()
-{
-
+        node* ll = NULL;
+        listAppend(&ll, root);
+        int pcnt = 1;
+        int ccnt = 0;
+        printf("pcnt:%d\n", pcnt);
+        node* nll = NULL;
+        while( ll != NULL )
+        {
+                tNode* t = (tNode*)ll->elem;
+                ll = ll -> next;
+                pcnt--;
+                listAppend(&nll, t);
+                if(t->lchild != NULL)
+                {
+                        listAppend(&ll, t->lchild);
+                        ccnt++;
+                }
+                if(t->rchild != NULL)
+                {
+                        listAppend(&ll, t->rchild);
+                        ccnt++;
+                }
+                if(pcnt == 0 && ccnt != 0)
+                {
+                        //save nll
+                        print_list(nll, printl);
+                        pcnt = ccnt;
+                        ccnt = 0;
+                        nll = NULL;
+                        printf("pcnt:%d\n", pcnt);
+                }
+        }
+        printf("\n");
 }
 
 int main()
@@ -234,8 +266,7 @@ int main()
         appendBST(&root, arr, middle + 1, high);
         print_tree(root, print);
         printf("\n");
-        Nodell* nll = (Nodell*)malloc(sizeof(Nodell));       
-        BFS(&nll, root);
+        BFS(root);
         return 0;
 }
 
