@@ -195,6 +195,13 @@ case "$1" in
 	fi
 	testRsyncConnection $2
 	;;
+'createNormalLink')
+        srcIP=$2
+        srcPort=$3
+        tgtIP=$4
+        tgtPort=$5
+        ssh -NL $srcIP:$srcPort:$tgtIP:$tgtPost $tgtIP
+        ;;
 *)
 	listAllCommands
 	;;

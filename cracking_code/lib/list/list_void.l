@@ -20,6 +20,12 @@ void releaseList(node* nl)
         }
 }
 
+void printl(void* item)
+{
+        tNode* t = (tNode*)item;
+        printf("%d ", *(int*)t->item);
+}
+
 void print_list(struct node* list, void (*print)(void* item))
 {
         node* runner = list;

@@ -222,7 +222,7 @@ void BFS(tNode* root)
         listAppend(&ll, root);
         int pcnt = 1;
         int ccnt = 0;
-        printf("pcnt:%d\n", pcnt);
+        node* snll = NULL;
         node* nll = NULL;
         while( ll != NULL )
         {
@@ -243,14 +243,23 @@ void BFS(tNode* root)
                 if(pcnt == 0 && ccnt != 0)
                 {
                         //save nll
-                        print_list(nll, printl);
+                        listAppend(&snll, nll); 
                         pcnt = ccnt;
                         ccnt = 0;
                         nll = NULL;
-                        printf("pcnt:%d\n", pcnt);
                 }
         }
         printf("\n");
+        while(snll != NULL)
+        {
+                node* tn = (node*)snll->elem;
+                print_list(tn, printl);
+                printf("\n");
+                snll = snll -> next;
+        }
+
+
+
 }
 
 int main()
