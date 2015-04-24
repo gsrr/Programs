@@ -14,3 +14,7 @@ command Chha execute 'cd' HAdir
 command Chlib execute 'cd' HAlib
 command Chex execute 'cd' HAex
 
+#set tab color
+hi TabLineFill ctermfg=Yellow ctermbg=Black
+hi TabLine ctermfg=Black ctermbg=White
+hi TabLineSel ctermfg=Black ctermbg=LightGreen

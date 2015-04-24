@@ -2,15 +2,22 @@
 
 
 /* ::#def array :: */
-int* createArr(int num)
+#define INT 101
+#define CHAR 102
+
+void* createArr(int num, int type)
 {
-        int* tmp = (int*)malloc(sizeof(int)* num);
-        int i;
-        for( i = 0 ; i < num ; i++)
+        if(type == INT)
         {
-                tmp[i] = i+1;
-        } 
-        return tmp;
+                int* tmp = (int*)malloc(sizeof(int)* num);
+                int i;
+                for( i = 0 ; i < num ; i++)
+                {
+                        tmp[i] = i+1;
+                } 
+                return tmp;
+        }
+
 }
 
 void print_arr(int* arr, int num)

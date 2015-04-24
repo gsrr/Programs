@@ -64,4 +64,15 @@ void createBSTByOrder(int* arr, int num)
         printf("\nheight:%d\n", treeHeight(root));
         print_tree(root, print);
 }
+tNode* createBSTRoot(int* arr, int num)
+{
+        int low = 0;
+        int high = num - 1;
+        int middle = (low + high)/2;
+
+        tNode* root = createTreeNode(&arr[middle]);
+        appendBST(&root, arr, low, middle-1);
+        appendBST(&root, arr, middle+1, high);
+        return root;
+}
 /* #end */

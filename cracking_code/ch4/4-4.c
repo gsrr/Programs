@@ -240,7 +240,7 @@ void BFS(tNode* root)
                         listAppend(&ll, t->rchild);
                         ccnt++;
                 }
-                if(pcnt == 0 && ccnt != 0)
+                if(pcnt == 0)
                 {
                         //save nll
                         listAppend(&snll, nll); 
@@ -257,9 +257,6 @@ void BFS(tNode* root)
                 printf("\n");
                 snll = snll -> next;
         }
-
-
-
 }
 
 int main()

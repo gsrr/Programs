@@ -1,6 +1,6 @@
 
 /*
- * Decide if t2 is a subtree of t1 (binary tree)
+ * print all path which sum a given value.(binary tree)
  */
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,0 +1,14 @@
+#Close startup message
+startup_message off
+#
+##Set hardstatus always on
+hardstatus alwayslastline " %-Lw%{= Bw}%n%f %t%{-}%+Lw %=| %0c:%s "
+#
+##Set utf8 as default encoding
+defutf8 on
+#
+##bind F1 to move to previous window
+bindkey "^[[11~" prev
+#
+##bind F2 to move to next window
+bindkey "^[[12~" next

@@ -56,8 +56,8 @@ def main(args):
         lines = fr.readlines()
         with open("./tmp.c" , "w") as fw:
             for line in lines:
-                if line.startswith("#def"):
-                    libFunc = line.lstrip("#def")
+                if line.startswith("#mydef"):
+                    libFunc = line.lstrip("#mydef")
                     fw.write(getLibFunc(libFunc.strip()))
                 else:
                     fw.write(line)
