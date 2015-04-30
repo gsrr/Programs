@@ -18,3 +18,7 @@ command Chex execute 'cd' HAex
 hi TabLineFill ctermfg=Yellow ctermbg=Black
 hi TabLine ctermfg=Black ctermbg=White
 hi TabLineSel ctermfg=Black ctermbg=LightGreen
+
+nmap <C-R> zL
+nmap <C-L> zH
+
