@@ -9,6 +9,13 @@ struct node
 };
 typedef struct node node;
 
+node* createNode(void* elem)
+{
+        node* nl = (node*)malloc(sizeof(node));
+        nl->elem = elem;
+        nl->next = NULL;
+        return nl;
+}
 void releaseList(node* nl)
 {
         while(nl != NULL)
@@ -40,6 +47,10 @@ void print_list(struct node* list, void (*print)(void* item))
 
 void listAppend(node** nl, void* elem)
 {
+        if(elem == NULL)
+        {
+                return;
+        }
         node* tmp = (node*)malloc(sizeof(node));
         tmp->elem = elem;
         tmp->next = NULL;
