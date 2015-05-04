@@ -20,9 +20,6 @@ int myrand_base(int base)
         return rand() % base;
 }
 
-int myrand(int base);
-
-
 int var_f(f_args in)
 {
         int base = in.cust ? in.cust : in.base;
@@ -68,7 +65,13 @@ void print_arr(int* arr, int num)
 
 /* #end */
 
-int* oct2bin(int num)
+typedef struct
+{
+        int* arr;
+        int len;
+}StructArr;
+
+StructArr oct2bin(int num)
 {
         int arr[32] = {0};
         int cnt = 0;
@@ -86,12 +89,49 @@ int* oct2bin(int num)
                 retarr[idx++] = arr[i]; 
         }
         print_arr(retarr, cnt);
-        return retarr;
+        StructArr ret = {retarr, cnt};
+        return ret;
 }
 
-void insertNum(int** arrN, int* arrM)
+void updateBit(int *num, int i, int v)
 {
+        int c = ~( 1<<i );
+        *num = (*num & c) | ( v<<i );
+        return;
+}
 
+void insertNum(StructArr sarrN, StructArr sarrM)
+{
+        int* arrN = sarrN.arr;
+        int nlen = sarrN.len;
+        int* arrM = sarrM.arr;
+        int mlen = sarrM.len;
+
+        if(nlen < mlen)
+        {
+                printf("N should bigger than M\n");
+                return;
+        }
+
+}
+
+void insertNumBit(int N, int M)
+{
+        if(N < M)
+        {
+                printf("N should bigger than M\n");
+                return;
+        }
+        int num = M;
+        int cnt = 0;
+        while( num != 1 )
+        {
+                int bit = num % 2;
+                updateBit(&N, cnt++, bit);
+                num = num / 2;
+        }
+        updateBit(&N, cnt++, 1);
+        printf("After inserting:(M,N) = (%d,%d)\n", M, N);
 }
 
 int main()
@@ -100,9 +140,10 @@ int main()
         int M = myrand(100);
         int N = myrand();
         printf("(M,N) = (%d,%d)\n", M,N);
-        int* arrM = oct2bin(M);
-        int* arrN = oct2bin(N);
-        insertNum(&arrN, arrM);
+        StructArr arrM = oct2bin(M);
+        StructArr arrN = oct2bin(N);
+        insertNum(arrN, arrM);
+        insertNumBit(N, M);
         return 0;
 }
 
