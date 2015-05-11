@@ -114,18 +114,41 @@ void updateBit(int *num, int i, int v)
 /* #end */
 void nextSmallest(int n)
 {
+        int tmp = n;
         binarray ba = oct2bin(n);
         int cnt = 0;
         int i;
-        for( i = ba.len - 1; ba.arr[i] != 1; i--)
+        int flag = 1;
+        for( i = ba.len - 1; i > -1 ; i--)
         {
+                if(ba.arr[i] == flag)
+                {
+                        updateBit(&tmp, cnt, flag == 0);
+                        flag--;
+                }
                 cnt++;
         }
-        int tmp = n;
-        updateBit(&tmp, cnt, 0 );
-        updateBit(&tmp, cnt + 1, 1);
-        printf("%d\n", tmp);
+        printf("Smallest:%d\n", tmp);
         oct2bin(tmp);
+
+}
+
+void nextBiggest(int n)
+{
+        int i;
+        binarray ba = oct2bin(n);
+        int cnt = 0;
+       for( i = 0 ; i < ba.len ; i++)
+       {
+                if(ba.arr[i] == 1)
+                {
+                        cnt++;
+                }
+       } 
+       int tmp = 0;
+       int ret = ((~tmp) << 32 - cnt - 1) & ~(1 << 31);
+       printf("nextBiggest:%d\n", ret);
+        oct2bin(ret);
 
 }
 
@@ -133,6 +156,7 @@ int main()
 {
         int n = myrand();
         nextSmallest(n);
+        nextBiggest(n);
         return 0;
 }
 
