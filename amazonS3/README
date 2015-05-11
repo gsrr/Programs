@@ -1,0 +1,11 @@
+s3Agent.py need support by s3Cmd, you can download it from below link:
+http://s3tools.org/s3cmd
+
+s3Agent.py support four advanced options as below:
+        Server_Enc:Enable encryption in S3 server side.
+
+        Reduce_Redund:Reduce Redundancy , reduce the redundant data in S3 server side.
+
+        Delete_Extra_File:Compare source and target directory , delete the file in target directory                          which the file is not in source directory.
+
+        Incremental_Rep:Incremental Replication, make the backup more effectively.
