@@ -116,7 +116,7 @@ void showBusShift(bus_shift* bss, int num)
         printf("\n");
 }
 
-void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c)
+void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
         int i;
         for( i = 0 ; i < num ; i++)
@@ -125,10 +125,16 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c)
                 printf("%c ", i + 'a');
                 for( j = 0 ; j < bss[i].len ; j++)
                 {
-                        if( (i == base && j == b) || ( i == comp && j == c))
+                        if( i == base && j == b )
                         {
                                 printf("\033[41m\033[37m");
-                                printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
+                                printf("%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
+                                printf("\033[0m");
+                        }
+                        else if(i == comp && j == c)
+                        {
+                                printf("\033[41m\033[37m");
+                                printf("%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
                                 printf("\033[0m");
                         }
                         else
@@ -138,7 +144,6 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c)
                 }
                 printf("\n");
         }
-        sleep(1);
 }
 
 
@@ -170,9 +175,72 @@ int var_f(f_args in)
 
 /* #end */
 
-void check_bus_shift(bus_shift* bss)
+
+int getOffset(bus_shift* bss, int num, int busIdx, int timeIdx)
 {
-        ;
+      int offset[3] = {0 , -20, 20};
+      int i;
+      for( i = 0 ; i < num ; i++)
+      {
+              if( i == busIdx )
+              {
+                  int len = bss[busIdx].len;
+                  int j;
+                  for( j = 0 ; j < 3 ; j++)
+                  {
+                          int s = bss[busIdx].s[timeIdx] + offset[j];
+                          int e = bss[busIdx].e[timeIdx] + offset[j];
+                          int post_s;
+                          int post_e;
+                          if(timeIdx != 0)
+                          {
+                                  int pre_s = bss[busIdx].s[timeIdx-1];
+                                  int pre_e = bss[busIdx].e[timeIdx-1];
+                                  if(pre_s > s || pre_e > s)
+                                  {
+                                          continue;
+                                  }
+                          }
+                          if(timeIdx != len -1)
+                          {
+                                  int post_s = bss[busIdx].s[timeIdx+1];
+                                  int post_e = bss[busIdx].e[timeIdx+1];
+                                  if(s > post_s || e > post_s)
+                                  {
+                                          continue;
+                                  }
+                          }
+                          break;
+                  }
+                  if(j == 3)
+                  {
+                          return -1;
+                  }
+                  else
+                  {
+                          return offset[j];
+                  }
+
+              }
+      }
+}
+
+
+void check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int cIdx)
+{
+      int b_offset = getOffset(bss, num, base, bIdx);
+      int c_offset = getOffset(bss, num, comp, cIdx);
+      printf("\n");
+      if(b_offset == -1 || c_offset == -1)
+      {
+              printf("Error\n");
+      }
+      else
+      {
+              printf("%c:offset=%d, %c:offset=%d\n", base+'a', b_offset, comp+'a', c_offset);
+              showBusSwapShift(bss, num, base, bIdx, comp, cIdx, b_offset, c_offset);
+      }
+      sleep(1);
 }
 
 
@@ -208,8 +276,8 @@ void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
                                showBusShift(bss, num);
                                printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
                                swapShift(bss, base, i, comp, j);
-                               showBusSwapShift(bss, num, base, i, comp, j);
-                               check_bus_shift(bss);
+                               showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
+                               check_bus_shift(bss, num, base, i, comp, j);
                                swapShift(bss, base, i, comp, j);
                        }
                 }
