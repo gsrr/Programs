@@ -106,42 +106,135 @@ void showBusShift(bus_shift* bss, int num)
         for( i = 0 ; i < num ; i++)
         {
                 int j;
+                printf("%c ", i + 'a');
                 for( j = 0 ; j < bss[i].len ; j++)
                 {
                         printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
                 }
                 printf("\n");
         }
+        printf("\n");
 }
 
+void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c)
+{
+        int i;
+        for( i = 0 ; i < num ; i++)
+        {
+                int j;
+                printf("%c ", i + 'a');
+                for( j = 0 ; j < bss[i].len ; j++)
+                {
+                        if( (i == base && j == b) || ( i == comp && j == c))
+                        {
+                                printf("\033[41m\033[37m");
+                                printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
+                                printf("\033[0m");
+                        }
+                        else
+                        {
+                                printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
+                        }
+                }
+                printf("\n");
+        }
+        sleep(1);
+}
+
+
+/* ::#def myrand :: */
+typedef struct{
+        int base;
+        int cust;
+}f_args;
+
+int myrand_base(int base)
+{
+        srand(time(NULL));
+        return rand() % base;
+}
+
+int var_f(f_args in)
+{
+        int base = in.cust ? in.cust : in.base;
+        return myrand_base(base);
+}
 
 /*
-int checkIndivBus(bus_shift bs)
-{
+* varadic macros
+*/
+#define myrand(...) var_f((f_args){.base=1000,__VA_ARGS__});
 
+
+
+
+/* #end */
+
+void check_bus_shift(bus_shift* bss)
+{
+        ;
 }
 
-void check_bus_shift(bus_shift* bss, int len)
+
+void swapShift(bus_shift* bss, int base, int i, int comp, int j)
+{
+        int* b_s = bss[base].s;
+        int* b_e = bss[base].e;
+        int* c_s = bss[comp].s;
+        int* c_e = bss[comp].e;
+
+        int tmp_s = b_s[i];
+        b_s[i] = c_s[j];
+        c_s[j] = tmp_s;
+
+        int tmp_e = b_e[i];
+        b_e[i] = c_e[j];
+        c_e[j] = tmp_e;
+}
+
+void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
+{
+        int i;
+        for( i = 0 ; i < bss[base].len ; i++ )
+        {
+                int j;
+                for( j = 0 ; j < bss[comp].len ; j++)
+                {
+                       int b_s = bss[base].s[i];
+                       int c_s = bss[comp].s[j];
+                       if(abs(b_s - c_s) <= 60)
+                       {
+                               system("clear");
+                               showBusShift(bss, num);
+                               printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
+                               swapShift(bss, base, i, comp, j);
+                               showBusSwapShift(bss, num, base, i, comp, j);
+                               check_bus_shift(bss);
+                               swapShift(bss, base, i, comp, j);
+                       }
+                }
+        }
+}
+
+
+void switchBusShift(bus_shift* bss, int busNum, int len)
 {
         int i;
         for( i = 0 ; i < len ; i++ )
         {
-                if(checkIndivBus(bss[i]) == 1)
+                if( i != busNum)
                 {
-                        printf("Error\n");
-                        return;
+                        browse_bus_shift(bss, busNum, i, len);               
                 }
         }
-        showBusShift(bs, len);
 }
-*/
 
 int main()
 {
         int num = 3;
         bus_shift *bss = readInput("shift.txt", num);       
-        showBusShift(bss, num);
-        //check_bus_shift(bss, 3);
+        int busNum = myrand(3);
+        switchBusShift(bss, busNum, num);
         return 0;
 }
 
