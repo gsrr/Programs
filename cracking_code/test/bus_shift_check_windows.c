@@ -1,16 +1,18 @@
 
-/*
- *
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
 #include <math.h>
+#include <windows.h>
 
 
 #define OFFSET 20
+
+
+HANDLE  hConsole; 
 
 struct bus_shift
 {
@@ -118,13 +120,11 @@ void showBusShift(bus_shift* bss, int num)
         printf("\n");
 }
 
-
-
-
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-        outputData();
+        SetConsoleTextAttribute(hConsole, 14);     
         printf("%c:offset=%d, %c:offset=%d\n", base+'a', boffset, comp+'a', coffset);
+        SetConsoleTextAttribute(hConsole, 15);
         int i;
         for( i = 0 ; i < num ; i++)
         {
@@ -134,15 +134,17 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c,
                 {
                         if( i == base && j == b )
                         {
-                                printf("\033[41m\033[37m");
+                                //printf("\033[41m\033[37m");
+                                SetConsoleTextAttribute(hConsole, 12);
                                 printf("%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
-                                printf("\033[0m");
+                                SetConsoleTextAttribute(hConsole, 15);
+                                //printf("\033[0m");
                         }
                         else if(i == comp && j == c)
                         {
-                                printf("\033[41m\033[37m");
+                                SetConsoleTextAttribute(hConsole, 12);
                                 printf("%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
-                                printf("\033[0m");
+                               SetConsoleTextAttribute(hConsole, 15);
                         }
                         else
                         {
@@ -176,9 +178,6 @@ int var_f(f_args in)
 * varadic macros
 */
 #define myrand(...) var_f((f_args){.base=1000,__VA_ARGS__});
-
-
-
 
 /* #end */
 
@@ -233,23 +232,20 @@ int getOffset(bus_shift* bss, int num, int busIdx, int timeIdx)
 }
 
 
-int check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int cIdx)
+void check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int cIdx)
 {
-        int ret = 0;
       int b_offset = getOffset(bss, num, base, bIdx);
       int c_offset = getOffset(bss, num, comp, cIdx);
       printf("\n");
       if(b_offset == -1 || c_offset == -1)
       {
               printf("Error\n");
-                ret = 1;       
       }
       else
       {
               showBusSwapShift(bss, num, base, bIdx, comp, cIdx, b_offset, c_offset);
       }
-      sleep(1);
-      return ret;
+      Sleep(1000);
       //printf("\nPress any key to continue...\n");
       //getchar();
 }
@@ -273,9 +269,6 @@ void swapShift(bus_shift* bss, int base, int i, int comp, int j)
 
 void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
 {
-        int totalCnt = 0;
-        int sucCnt = 0;
-        int failCnt = 0;
         int i;
         for( i = 0 ; i < bss[base].len ; i++ )
         {
@@ -286,19 +279,18 @@ void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
                        int c_s = bss[comp].s[j];
                        if(abs(b_s - c_s) <= 60)
                        {
-                               system("clear");
+                               system("cls");
                                showBusShift(bss, num);
-                               totalCnt++;
+                               SetConsoleTextAttribute(hConsole, 14);
                                printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
+                               SetConsoleTextAttribute(hConsole, 15);
                                swapShift(bss, base, i, comp, j);
                                showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
-                               int ret = check_bus_shift(bss, num, base, i, comp, j);
-                               ret == 0 ? sucCnt++ : failCnt++;
+                               check_bus_shift(bss, num, base, i, comp, j);
                                swapShift(bss, base, i, comp, j);
                        }
                 }
         }
-        printf("\nResult: total = %d , successful = %d , fail = %d\n", totalCnt, sucCnt, failCnt);
 }
 
 
@@ -316,10 +308,13 @@ void switchBusShift(bus_shift* bss, int busNum, int len)
 
 int main()
 {
+        hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, 15);
         int num = 3;
         bus_shift *bss = readInput("shift.txt", num);       
         int busNum = myrand(3);
         switchBusShift(bss, busNum, num);
+        system("pause");
         return 0;
 }
 
