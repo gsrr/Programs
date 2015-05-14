@@ -119,11 +119,14 @@ void showBusShift(bus_shift* bss, int num)
 }
 
 
+void myprintf()
+{
 
+}
 
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-        outputData();
+
         printf("%c:offset=%d, %c:offset=%d\n", base+'a', boffset, comp+'a', coffset);
         int i;
         for( i = 0 ; i < num ; i++)
