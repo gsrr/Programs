@@ -1,0 +1,6 @@
+Q: 
+push error : The requested URL returned error: 403 Forbidden
+Ans:
+git push https://wangz@github.com/wangz/example.git
+
+
