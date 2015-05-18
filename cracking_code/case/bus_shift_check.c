@@ -8,7 +8,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <math.h>
-
+#include <stdarg.h>
 
 #define OFFSET 20
 
@@ -119,41 +119,92 @@ void showBusShift(bus_shift* bss, int num)
 }
 
 
-void myprintf()
-{
 
+
+/* ::#def myprint :: */
+
+void writeData(FILE *fw, char* msg)
+{
+        fprintf(fw, "%s", msg);
+}
+
+
+void myprintf(FILE *fw, const char *fmt, ...)
+{
+        char msg[1024] = {0};
+        va_list ap;
+        va_start(ap, fmt);
+        vsprintf(msg, fmt, ap);
+        va_end(ap);
+        printf("%s", msg);
+        writeData(fw, msg);
+        return;
+}
+
+
+/* #end */
+
+void countfsChargs(FILE* fw, bus_shift* bss, int num)
+{
+        int i;
+        int fc = 0;
+        int sc = 0;
+        for( i = 0 ; i < num ; i++)
+        {
+                int pe = bss[i].e[0];
+                int j;
+                for( j = 1 ; j < bss[i].len - 1 ; j++)
+                {
+                        int cs = bss[i].s[j];
+                        if(cs - pe >= 60)        
+                        {
+                                sc++;
+                        }
+                        else
+                        {
+                                fc++;
+                        }
+                        pe = bss[i].e[j];
+                }
+        }
+        myprintf(fw, "Fast Charges: %d\n", fc);
+        myprintf(fw, "Slow Charges: %d\n", sc);
 }
 
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-
+        char *filepath[256] = {0};
         printf("%c:offset=%d, %c:offset=%d\n", base+'a', boffset, comp+'a', coffset);
+        sprintf(filepath, "%s/%c%d%c%d", "./outputs", base+'a', b, comp+'a', c);
+        FILE *fw = fopen(filepath, "a");
         int i;
         for( i = 0 ; i < num ; i++)
         {
                 int j;
-                printf("%c ", i + 'a');
+                myprintf(fw, "%c ", i + 'a');
                 for( j = 0 ; j < bss[i].len ; j++)
                 {
                         if( i == base && j == b )
                         {
                                 printf("\033[41m\033[37m");
-                                printf("%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
+                                myprintf(fw, "%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
                                 printf("\033[0m");
                         }
                         else if(i == comp && j == c)
                         {
                                 printf("\033[41m\033[37m");
-                                printf("%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
+                                myprintf(fw, "%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
                                 printf("\033[0m");
                         }
                         else
                         {
-                                printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
+                                myprintf(fw, "%d-%d ", bss[i].s[j], bss[i].e[j]);
                         }
                 }
-                printf("\n");
+                myprintf(fw, "\n");
         }
+        countfsChargs(fw, bss, num);
+        fclose(fw);
 }
 
 
@@ -294,7 +345,7 @@ void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
                                totalCnt++;
                                printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
                                swapShift(bss, base, i, comp, j);
-                               showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
+                               //showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
                                int ret = check_bus_shift(bss, num, base, i, comp, j);
                                ret == 0 ? sucCnt++ : failCnt++;
                                swapShift(bss, base, i, comp, j);
@@ -319,6 +370,7 @@ void switchBusShift(bus_shift* bss, int busNum, int len)
 
 int main()
 {
+        system("rm ./outputs/*");
         int num = 3;
         bus_shift *bss = readInput("shift.txt", num);       
         int busNum = myrand(3);
