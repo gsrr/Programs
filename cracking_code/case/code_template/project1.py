@@ -23,23 +23,31 @@ def BruteForceMedianSearch(DNA, l):
     diffBest = 9999
     while word:
         merf = transfer(word)
-        time.sleep(1)
-        dist, diffsum = totalDistance(word, DNA)
+        #time.sleep(1)
+        dist, diffsum = totalDistance(merf, DNA)
         print merf, diffsum, dist
         if diffsum < diffBest:
             bestWord = merf
             diffBest = diffsum
             bestDist = dist
         word = nextWord(word)
-
-    print bestWord, diffBest , bestDist
+    
+    print
+    return bestWord, diffBest , bestDist
    
 def compare(word, seq):
     pos = 0
+    hd = 99
+    for i in range(0,len(seq) - 8):
+        tmp = 0
+        for j in range(0, len(word)):
+            if word[j] != seq[i + j]:
+                tmp += 1
+        if tmp < hd:
+            hd = tmp
+            pos = i
     
-    for i in seq:
-        for j in word:
-
+    return pos , hd
 
 def totalDistance(word, DNA):
     dist = []
@@ -47,7 +55,7 @@ def totalDistance(word, DNA):
     for seq in DNA:
         pos, score = compare(word, seq)
         dist.append(pos)
-        diff += score
+        diffsum += score
 
     return dist, diffsum 
 
@@ -62,7 +70,7 @@ def nextWord(word):
             break
         i += 1
 
-    if i == 9:
+    if i == 8:
         return None
     else:
         return word
