@@ -4,6 +4,36 @@ import math
 
 # 2011/08/27 Version 1, first imported
 
+
+class Shape:
+    def __init__(self):
+        self.shapes = ["triangle"]
+        self.hist = [0] * 21
+
+class myMath:
+    @staticmethod
+    def recordSlope(shape, x, y):
+        slope = myMath.getSlope(x, y)
+        shape.hist[int(slope * 10) + 10] += 10
+        print shape.hist
+        
+    @staticmethod
+    def getSlope(x, y):
+        slope = None
+        if x == 0:
+            slope = 1
+        elif y == 0:
+            slope = 0
+        else:
+            slope = round(y / float(x), 2)
+            if slope > 1:
+                slope = 1
+            elif slope < -1:
+                slope = -1
+        
+        return slope
+    
+
 class Brush():
     def __init__(self, screen):
         self.screen = screen
@@ -19,6 +49,7 @@ class Brush():
         self.brush = pygame.image.load("brush.png").convert_alpha()
         # set the current brush depends on size
         self.brush_now = self.brush.subsurface((0,0), (1, 1))
+        self.shape = Shape()
 
     def start_draw(self, pos):
         self.drawing = True
@@ -69,6 +100,7 @@ class Brush():
         points = [ (self.last_pos[0], self.last_pos[1]) ]
         len_x = pos[0] - self.last_pos[0]
         len_y = pos[1] - self.last_pos[1]
+        slope = myMath.recordSlope(self.shape, len_x, len_y)
         length = math.sqrt(len_x ** 2 + len_y ** 2)
         step_x = len_x / length
         step_y = len_y / length
@@ -152,16 +184,20 @@ class Menu():
         # size buttons
         for (i, rect) in enumerate(self.sizes_rect):
             if rect.collidepoint(pos):
+                '''
                 if i:   # i == 1, size down
                     self.brush.set_size(self.brush.get_size() - 0.5)
                 else:
                     self.brush.set_size(self.brush.get_size() + 0.5)
+                '''
+                print "Learning"
                 return True
         # color buttons
         for (i, rect) in enumerate(self.colors_rect):
             if rect.collidepoint(pos):
                 self.brush.set_color(self.colors[i])
                 return True
+                
         return False
 
 class Painter():
