@@ -42,6 +42,7 @@ def compare(word, seq):
         tmp = 0
         for j in range(0, len(word)):
             if word[j] != seq[i + j]:
+                time.sleep(1)
                 tmp += 1
         if tmp < hd:
             hd = tmp
