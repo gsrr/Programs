@@ -2,6 +2,12 @@ import sys, time
 import itertools
 import time
 
+DEBUG = False
+
+def myprint(msg):
+    if DEBUG:
+        print msg 
+        time.sleep(1)
 
 def transfer(word):
     words = {
@@ -23,7 +29,6 @@ def BruteForceMedianSearch(DNA, l):
     diffBest = 9999
     while word:
         merf = transfer(word)
-        #time.sleep(1)
         dist, diffsum = totalDistance(merf, DNA)
         print merf, diffsum, dist
         if diffsum < diffBest:
@@ -36,14 +41,15 @@ def BruteForceMedianSearch(DNA, l):
     return bestWord, diffBest , bestDist
    
 def compare(word, seq):
+    myprint(seq)
     pos = 0
     hd = 99
-    for i in range(0,len(seq) - 8):
+    for i in range(0,len(seq) - 7):
         tmp = 0
         for j in range(0, len(word)):
             if word[j] != seq[i + j]:
-                time.sleep(1)
                 tmp += 1
+        myprint(word[0 : 8] + ":" + seq[i : i + 8] + ":" + str(tmp))
         if tmp < hd:
             hd = tmp
             pos = i
@@ -77,7 +83,9 @@ def nextWord(word):
         return word
 
 
-
+if len(sys.argv) > 2:
+    if sys.argv[2] == "debug":
+        DEBUG = True
 
 DNA = []
 fp = open(sys.argv[1])
