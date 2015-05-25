@@ -7,7 +7,8 @@
 #include <unistd.h>
 #include <math.h>
 #include <windows.h>
-
+#include <stdarg.h>
+#include <direct.h>
 
 #define OFFSET 20
 
@@ -120,39 +121,115 @@ void showBusShift(bus_shift* bss, int num)
         printf("\n");
 }
 
+
+
+
+/* ::#def myprint :: */
+
+void writeData(FILE *fw, char* msg)
+{
+        fprintf(fw, "%s", msg);
+}
+
+
+void myprintf(FILE *fw, const char *fmt, ...)
+{
+        char msg[1024] = {0};
+        va_list ap;
+        va_start(ap, fmt);
+        vsprintf(msg, fmt, ap);
+        va_end(ap);
+        printf("%s", msg);
+        writeData(fw, msg);
+        return;
+}
+
+
+/* #end */
+void offsetValue(int *pe, int i, int j, int base, int b, int comp, int c, int boffset, int coffset)
+{
+     if( i == base && j == b)
+     {
+           *pe += boffset;
+     }
+     if( i == comp && j == c)
+     {
+           *pe += coffset;
+     }
+}
+
+void countfsChargs(FILE* fw, bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
+{
+        int i;
+        int fc = 0;
+        int fct = 0;
+        int sc = 0;
+        int sct = 0;
+        for( i = 0 ; i < num ; i++)
+        {
+                int pe = bss[i].e[0];
+                offsetValue(&pe, i, 0, base, b, comp, c, boffset, coffset);
+                int j;
+                for( j = 1 ; j < bss[i].len ; j++)
+                {
+                        int cs = bss[i].s[j];
+                        offsetValue(&cs, i, j, base, b, comp, c, boffset, coffset);
+                        if(cs - pe >= 60)        
+                        {
+                                sc++;
+                                sct = sct + cs - pe;
+                        }
+                        else if(cs - pe >= 20)
+                        {
+                                fc++;
+                                fct = fct + cs - pe;
+                        }
+                        else
+                        {
+                            ;
+                        }
+                        pe = bss[i].e[j];
+                        offsetValue(&pe, i, j, base, b, comp, c, boffset, coffset);
+                }
+        }
+        myprintf(fw, "Fast Charges: %d , total time:%d minutes\n", fc, fct);
+        myprintf(fw, "Slow Charges: %d , total time:%d minutes\n", sc, sct);
+}
+
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-        SetConsoleTextAttribute(hConsole, 14);     
+        char filepath[256] = {0};
         printf("%c:offset=%d, %c:offset=%d\n", base+'a', boffset, comp+'a', coffset);
-        SetConsoleTextAttribute(hConsole, 15);
+        sprintf(filepath, "%s\\%c%d%c%d", ".\\outputs", base+'a', b, comp+'a', c);
+        FILE *fw = fopen(filepath, "a");
         int i;
         for( i = 0 ; i < num ; i++)
         {
                 int j;
-                printf("%c ", i + 'a');
+                myprintf(fw, "%c ", i + 'a');
                 for( j = 0 ; j < bss[i].len ; j++)
                 {
                         if( i == base && j == b )
                         {
-                                //printf("\033[41m\033[37m");
                                 SetConsoleTextAttribute(hConsole, 12);
-                                printf("%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
-                                SetConsoleTextAttribute(hConsole, 15);
-                                //printf("\033[0m");
+                                myprintf(fw, "%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
+                               SetConsoleTextAttribute(hConsole, 15);
                         }
                         else if(i == comp && j == c)
                         {
                                 SetConsoleTextAttribute(hConsole, 12);
-                                printf("%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
-                               SetConsoleTextAttribute(hConsole, 15);
+                                myprintf(fw, "%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
+                                SetConsoleTextAttribute(hConsole, 15);
                         }
                         else
                         {
-                                printf("%d-%d ", bss[i].s[j], bss[i].e[j]);
+                                myprintf(fw, "%d-%d ", bss[i].s[j], bss[i].e[j]);
                         }
                 }
-                printf("\n");
+                myprintf(fw, "\n");
         }
+        countfsChargs(fw, bss, num, base, b, comp, c, boffset, coffset);
+        fclose(fw);
 }
 
 
@@ -178,6 +255,9 @@ int var_f(f_args in)
 * varadic macros
 */
 #define myrand(...) var_f((f_args){.base=1000,__VA_ARGS__});
+
+
+
 
 /* #end */
 
@@ -232,22 +312,25 @@ int getOffset(bus_shift* bss, int num, int busIdx, int timeIdx)
 }
 
 
-void check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int cIdx)
+int check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int cIdx)
 {
+        int ret = 0;
       int b_offset = getOffset(bss, num, base, bIdx);
       int c_offset = getOffset(bss, num, comp, cIdx);
       printf("\n");
       if(b_offset == -1 || c_offset == -1)
       {
               printf("Error\n");
+                ret = 1;       
       }
       else
       {
               showBusSwapShift(bss, num, base, bIdx, comp, cIdx, b_offset, c_offset);
       }
       Sleep(1000);
-      //printf("\nPress any key to continue...\n");
+      printf("\nPress any key to continue...\n");
       //getchar();
+      return ret;
 }
 
 
@@ -269,6 +352,9 @@ void swapShift(bus_shift* bss, int base, int i, int comp, int j)
 
 void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
 {
+        int totalCnt = 0;
+        int sucCnt = 0;
+        int failCnt = 0;
         int i;
         for( i = 0 ; i < bss[base].len ; i++ )
         {
@@ -279,18 +365,21 @@ void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
                        int c_s = bss[comp].s[j];
                        if(abs(b_s - c_s) <= 60)
                        {
-                               system("cls");
+                               system("cls");			  
                                showBusShift(bss, num);
+							    totalCnt++;
                                SetConsoleTextAttribute(hConsole, 14);
                                printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
                                SetConsoleTextAttribute(hConsole, 15);
                                swapShift(bss, base, i, comp, j);
-                               showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
-                               check_bus_shift(bss, num, base, i, comp, j);
+                               //showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
+                               int ret = check_bus_shift(bss, num, base, i, comp, j);
+                               ret == 0 ? sucCnt++ : failCnt++;
                                swapShift(bss, base, i, comp, j);
                        }
                 }
         }
+        printf("\nResult: total = %d , successful = %d , fail = %d\n", totalCnt, sucCnt, failCnt);
 }
 
 
@@ -308,6 +397,7 @@ void switchBusShift(bus_shift* bss, int busNum, int len)
 
 int main()
 {
+        mkdir(".\\outputs");
         hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
         SetConsoleTextAttribute(hConsole, 15);
         int num = 3;

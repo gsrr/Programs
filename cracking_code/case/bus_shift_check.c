@@ -9,6 +9,8 @@
 #include <unistd.h>
 #include <math.h>
 #include <stdarg.h>
+#include <iostream>
+#include <map>
 
 #define OFFSET 20
 
@@ -16,12 +18,13 @@ struct bus_shift
 {
         int* s;
         int* e;
+        int* pc;
         int len;
 };
 
 typedef struct bus_shift bus_shift;
 
-int lineLen(char* line, char* delimit)
+int lineLen(char* line, const char* delimit)
 {
         int cnt = 0;
         char* pch;
@@ -37,7 +40,7 @@ int lineLen(char* line, char* delimit)
 }
 
 
-void getTime(char* timestr, int idx, bus_shift* bs)
+void getTime(char* timestr, int idx, bus_shift* bs, std::map<std::string, int> *powerMap)
 {
         int s, e;
 
@@ -46,10 +49,14 @@ void getTime(char* timestr, int idx, bus_shift* bs)
         {
                 bs->s[idx] = s;
                 bs->e[idx] = e;
+                char key[512] = {0};
+                sprintf(key, "%d_%d", s, e);
+                bs->pc[idx] = (*powerMap)[key];
+                //printf("%d-%d : %d\n",bs->s[idx], bs->e[idx], bs->pc[idx]);
         }
 }
 
-void setShiftData(bus_shift* bs, char* line)
+void setShiftData(bus_shift* bs, char* line, std::map<std::string, int> *powerMap)
 {
         char* pch;
         pch = strtok(line, " ");
@@ -57,19 +64,20 @@ void setShiftData(bus_shift* bs, char* line)
         int cnt = 0;
         while(pch != NULL)
         {
-                getTime(pch , cnt++, bs);
+                getTime(pch , cnt++, bs, powerMap);
                 pch = strtok(NULL, " ");
         }
 
 }
 
-void setBusShift(bus_shift* bs, char* line)
+void setBusShift(bus_shift* bs, char* line, std::map<std::string, int> *powerMap)
 {
         int len = lineLen(line, " ");
         bs->len = len - 1; 
         bs->s = (int*)malloc(sizeof(int) * bs->len);        
         bs->e = (int*)malloc(sizeof(int) * bs->len);        
-        setShiftData(bs, line);
+        bs->pc = (int*)malloc(sizeof(int) * bs->len);
+        setShiftData(bs, line, powerMap);
 }
 
 void trimRight(char* buffer)
@@ -86,7 +94,7 @@ void trimRight(char* buffer)
         buffer[i + 1] = '\0';
 }
 
-bus_shift* readInput(char* path, int num)
+bus_shift* readInput(const char* path, int num, std::map<std::string,int> *powerMap)
 {
         bus_shift* bss = (bus_shift*)malloc(sizeof(bus_shift) * num);
         char buffer[512];
@@ -95,7 +103,7 @@ bus_shift* readInput(char* path, int num)
         while(fgets(buffer, 512, fr) != NULL)
         {
                 trimRight(buffer);
-                setBusShift(&bss[i++], buffer);
+                setBusShift(&bss[i++], buffer, powerMap);
         }   
 
                                     
@@ -143,39 +151,77 @@ void myprintf(FILE *fw, const char *fmt, ...)
 
 
 /* #end */
-
-void countfsChargs(FILE* fw, bus_shift* bss, int num)
+void offsetValue(int *pe, int i, int j, int base, int b, int comp, int c, int boffset, int coffset)
 {
+     if( i == base && j == b)
+     {
+           *pe += boffset;
+     }
+     if( i == comp && j == c)
+     {
+           *pe += coffset;
+     }
+}
+
+
+void subPower(bus_shift *bss , int busIdx, int shiftIdx, int *powerBase)
+{
+        int s = bss[busIdx].s[shiftIdx];
+        int e = bss[busIdx].e[shiftIdx];
+        *powerBase -= bss[busIdx].pc[shiftIdx];      
+}
+
+void countfsChargs(FILE* fw, bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
+{
+        int powerBase = 100;
         int i;
         int fc = 0;
+        int fct = 0;
         int sc = 0;
+        int sct = 0;
         for( i = 0 ; i < num ; i++)
         {
                 int pe = bss[i].e[0];
+                subPower(bss, i, 0, &powerBase);
+                offsetValue(&pe, i, 0, base, b, comp, c, boffset, coffset);
                 int j;
-                for( j = 1 ; j < bss[i].len - 1 ; j++)
+                for( j = 1 ; j < bss[i].len ; j++)
                 {
                         int cs = bss[i].s[j];
+                        offsetValue(&cs, i, j, base, b, comp, c, boffset, coffset);
                         if(cs - pe >= 60)        
                         {
                                 sc++;
+                                sct = sct + cs - pe;
+                                powerBase += 100;
+                        }
+                        else if(cs - pe >= 20)
+                        {
+                                fc++;
+                                fct = fct + cs - pe;
+                                powerBase += ((cs - pe) / 10) * 8;
                         }
                         else
                         {
-                                fc++;
+
+                            ;
                         }
                         pe = bss[i].e[j];
+                        subPower(bss, i, j, &powerBase);
+                        offsetValue(&pe, i, j, base, b, comp, c, boffset, coffset);
                 }
         }
-        myprintf(fw, "Fast Charges: %d\n", fc);
-        myprintf(fw, "Slow Charges: %d\n", sc);
+        myprintf(fw, "Fast Charges: %d , total time:%d minutes\n", fc, fct);
+        myprintf(fw, "Slow Charges: %d , total time:%d minutes\n", sc, sct);
+        myprintf(fw, "Power Remind: %d \n", powerBase);
 }
 
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-        char *filepath[256] = {0};
+        char filepath[256] = {0};
+        printf("Bus choosed: %c\n\n", base + 'a');
         printf("%c:offset=%d, %c:offset=%d\n", base+'a', boffset, comp+'a', coffset);
-        sprintf(filepath, "%s/%c%d%c%d", "./outputs", base+'a', b, comp+'a', c);
+        sprintf(filepath, "%s\\%c%d%c%d", ".\\outputs", base+'a', b, comp+'a', c);
         FILE *fw = fopen(filepath, "a");
         int i;
         for( i = 0 ; i < num ; i++)
@@ -203,7 +249,7 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c,
                 }
                 myprintf(fw, "\n");
         }
-        countfsChargs(fw, bss, num);
+        countfsChargs(fw, bss, num, base, b, comp, c, boffset, coffset);
         fclose(fw);
 }
 
@@ -301,11 +347,11 @@ int check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int c
       else
       {
               showBusSwapShift(bss, num, base, bIdx, comp, cIdx, b_offset, c_offset);
+              printf("\nPress any key to continue...\n");
+              getchar();
       }
-      sleep(1);
+      //sleep(1);
       return ret;
-      //printf("\nPress any key to continue...\n");
-      //getchar();
 }
 
 
@@ -325,56 +371,142 @@ void swapShift(bus_shift* bss, int base, int i, int comp, int j)
         c_e[j] = tmp_e;
 }
 
-void browse_bus_shift(bus_shift* bss, int base, int comp, int num)
+int browse_bus_shift(bus_shift* bss, int base, int comp, int num)
 {
+        int ret = -1;
         int totalCnt = 0;
         int sucCnt = 0;
         int failCnt = 0;
-        int i;
-        for( i = 0 ; i < bss[base].len ; i++ )
+        int i = myrand(bss[base].len);
+        int j;
+        for( j = 0 ; j < bss[comp].len ; j++)
         {
-                int j;
-                for( j = 0 ; j < bss[comp].len ; j++)
+                int b_s = bss[base].s[i];
+                int c_s = bss[comp].s[j];
+                if(abs(b_s - c_s) <= 60)
                 {
-                       int b_s = bss[base].s[i];
-                       int c_s = bss[comp].s[j];
-                       if(abs(b_s - c_s) <= 60)
-                       {
-                               system("clear");
-                               showBusShift(bss, num);
-                               totalCnt++;
-                               printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
-                               swapShift(bss, base, i, comp, j);
-                               //showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
-                               int ret = check_bus_shift(bss, num, base, i, comp, j);
-                               ret == 0 ? sucCnt++ : failCnt++;
-                               swapShift(bss, base, i, comp, j);
-                       }
+                        system("clear");
+                        showBusShift(bss, num);
+                        totalCnt++;
+                        printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
+                        swapShift(bss, base, i, comp, j);
+                        //showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
+                        ret = check_bus_shift(bss, num, base, i, comp, j);
+                        if(ret == 0)
+                        {
+                                sucCnt++;
+                                break;
+                        } 
+                        else
+                        {
+                                failCnt++;
+                        }
+                        swapShift(bss, base, i, comp, j);
                 }
         }
-        printf("\nResult: total = %d , successful = %d , fail = %d\n", totalCnt, sucCnt, failCnt);
+        //printf("\nResult: total = %d , successful = %d , fail = %d\n", totalCnt, sucCnt, failCnt);
+        return ret;
 }
 
+void swapArr(int* arr, int i, int j)
+{
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+}
+        
+
+void shuffleArray(int* arr, int len)
+{
+        int i;
+        for( i = len - 1 ; i > -1 ; i--)
+        {
+                int r = myrand(len);
+                swapArr(arr, i, r);
+        }
+}
 
 void switchBusShift(bus_shift* bss, int busNum, int len)
 {
+        int* arr = (int*)malloc(sizeof(int) * len);
         int i;
-        for( i = 0 ; i < len ; i++ )
+        for( i = 0 ; i < len ; i++)
+        {
+                arr[i] = i;
+        }
+
+        shuffleArray(arr, len);
+        for( i = 0 ; i < len ; i++)
         {
                 if( i != busNum)
                 {
-                        browse_bus_shift(bss, busNum, i, len);               
+                        int ret = browse_bus_shift(bss, busNum, i, len);               
+                        if( ret == 0)
+                        {
+                                break;
+                        }
                 }
+        }
+        free(arr);
+}
+
+
+struct mapArgs
+{
+        std::map<std::string, int> *mp;
+};
+
+typedef struct mapArgs mapArgs;
+
+void readMap(char* line, void* args)
+{
+       mapArgs *mp = (mapArgs*)args;
+       std::map<std::string, int> *powerMap = mp-> mp;
+       int a, b, c, d;
+       sscanf(line, "%d %d %d %d", &a, &b, &c, &d);
+       char key[512] = {0};
+       sprintf(key, "%d_%d", b, c);
+       (*powerMap)[key] = d;
+}
+
+void readFile(const char* filepath, void *args, void (*func)(char* line, void* args))
+{
+        FILE *fr = fopen(filepath, "r");
+        char buffer[512];
+        while(fgets(buffer, 512, fr) != NULL)
+        {
+                func(buffer, args);
+        }
+}
+
+void readSchedule(const char* filepath, std::map<std::string,int> *powerMap)
+{
+        mapArgs *mp = (mapArgs*)malloc(sizeof(mapArgs));
+        mp->mp = powerMap;
+        readFile(filepath, mp, readMap);     
+}
+
+void showMapContent(std::map<std::string, int> *powerMap)
+{
+        for(std::map<std::string, int>::iterator it=(*powerMap).begin(); it != (*powerMap).end(); it++)
+        {
+                std::cout << it->first << " => " << it->second << '\n';
         }
 }
 
 int main()
 {
         system("rm ./outputs/*");
+        srand(time(NULL));
         int num = 3;
-        bus_shift *bss = readInput("shift.txt", num);       
-        int busNum = myrand(3);
-        switchBusShift(bss, busNum, num);
+        std::map<std::string , int> powerMap;
+        readSchedule("schedule.txt", &powerMap);
+        bus_shift *bss = readInput("shift.txt", num , &powerMap);       
+        while(1)
+        {
+                int busNum = myrand(3);
+                switchBusShift(bss, busNum, num);
+        }
         return 0;
 }
 
