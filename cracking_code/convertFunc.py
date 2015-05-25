@@ -50,7 +50,8 @@ def help(args):
 
     print "-" * 50
     
-def main(args):
+def main(args, compiler="gcc"):
+    print compiler
     sourceFile = args[1]
     with open(sourceFile, "r") as fr:
         lines = fr.readlines()
@@ -62,15 +63,19 @@ def main(args):
                 else:
                     fw.write(line)
     
-    cmd = "../compile.sh ./tmp.c %s"%(" ".join(args[2:]))
+    cmd = "../compile.sh %s ./tmp.c %s"%(compiler, " ".join(args[2:]))
+    print cmd
     os.system(cmd)
     os.system("mv ./tmp.c %s"%sourceFile)
     os.system("./tmp")
 
 if __name__ == "__main__":
-    func = getattr(sys.modules[__name__], sys.argv[1])
-    func(sys.argv[1:])
-    
+    if sys.argv[1] == "cpp":
+        main(sys.argv[1:], "g++")
+    else:
+        func = getattr(sys.modules[__name__], sys.argv[1])
+        func(sys.argv[1:])
+        
     #main()
 
 

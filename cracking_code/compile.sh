@@ -1,8 +1,9 @@
 #!/bin/bash
 
 rm tmp
-filename=$1
+compiler=$1
+filename=$2
 ext="${filename##*.}"
 name="${filename%.*}"
-gcc -o $name $filename -lm
+$compiler -o $name $filename -lm
 
