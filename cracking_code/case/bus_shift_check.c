@@ -14,6 +14,19 @@
 
 #define OFFSET 20
 
+/*
+#define DEBUG //debug
+#ifdef DEBUG
+        #define D if(1)
+#else
+        #define D if(0)
+#endif
+*/
+
+
+#define debug(...) fprintf(stdout, __VA_ARGS__)
+#define debug(...)
+
 struct bus_shift
 {
         int* s;
@@ -130,6 +143,16 @@ void showBusShift(bus_shift* bss, int num)
 
 
 /* ::#def myprint :: */
+/*
+void debug(const char *fmt, ...)
+{
+        va_list ap;
+        va_start(ap, fmt);
+        D vfprintf(stderr, fmt, ap);
+        va_end(ap);
+
+}
+*/
 
 void writeData(FILE *fw, char* msg)
 {
@@ -173,7 +196,7 @@ void subPower(bus_shift *bss , int busIdx, int shiftIdx, int *powerBase)
 
 void countfsChargs(FILE* fw, bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
 {
-        int powerBase = 100;
+        int powerBase[3] = {100, 100, 100};
         int i;
         int fc = 0;
         int fct = 0;
@@ -182,24 +205,25 @@ void countfsChargs(FILE* fw, bus_shift* bss, int num, int base, int b, int comp,
         for( i = 0 ; i < num ; i++)
         {
                 int pe = bss[i].e[0];
-                subPower(bss, i, 0, &powerBase);
+                subPower(bss, i, 0, &powerBase[i]);
                 offsetValue(&pe, i, 0, base, b, comp, c, boffset, coffset);
                 int j;
                 for( j = 1 ; j < bss[i].len ; j++)
                 {
+                        debug("%c, powerBase:%d\n", i + 'a', powerBase[i]);
                         int cs = bss[i].s[j];
                         offsetValue(&cs, i, j, base, b, comp, c, boffset, coffset);
                         if(cs - pe >= 60)        
                         {
                                 sc++;
                                 sct = sct + cs - pe;
-                                powerBase += 100;
+                                powerBase[i] += 100;
                         }
                         else if(cs - pe >= 20)
                         {
                                 fc++;
                                 fct = fct + cs - pe;
-                                powerBase += ((cs - pe) / 10) * 8;
+                                powerBase[i] += ((cs - pe) / 10) * 8;
                         }
                         else
                         {
@@ -207,13 +231,13 @@ void countfsChargs(FILE* fw, bus_shift* bss, int num, int base, int b, int comp,
                             ;
                         }
                         pe = bss[i].e[j];
-                        subPower(bss, i, j, &powerBase);
+                        subPower(bss, i, j, &powerBase[i]);
                         offsetValue(&pe, i, j, base, b, comp, c, boffset, coffset);
                 }
         }
-        myprintf(fw, "Fast Charges: %d , total time:%d minutes\n", fc, fct);
+        myprintf(fw, "\nFast Charges: %d , total time:%d minutes\n", fc, fct);
         myprintf(fw, "Slow Charges: %d , total time:%d minutes\n", sc, sct);
-        myprintf(fw, "Power Remind: %d \n", powerBase);
+        myprintf(fw, "\nPower Remind: a:%d, b:%d, c:%d \n", powerBase[0], powerBase[1], powerBase[2]);
 }
 
 void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c, int boffset, int coffset)
@@ -246,6 +270,7 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c,
                         {
                                 myprintf(fw, "%d-%d ", bss[i].s[j], bss[i].e[j]);
                         }
+                        debug("cost:%d ", bss[i].pc[j]);
                 }
                 myprintf(fw, "\n");
         }
