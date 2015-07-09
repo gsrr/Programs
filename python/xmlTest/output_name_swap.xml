@@ -7,7 +7,7 @@
                 <neighbor direction="W" name="Switzerland" />
         </country>
         <country name="Liechtenstein">
-                <rank>9</rank>
+                <rank>0</rank>
                 <year>2011</year>
                 <gdppc>59900</gdppc>
                 <neighbor direction="N" name="Malaysia" />

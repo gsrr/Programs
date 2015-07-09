@@ -38,6 +38,11 @@ def swap_country_name(tree, root, name1, name2):
     data2.attrib['name'] = name1
     tree.write("output_name_swap.xml")
 
+def remove_country(tree, root, name):
+    data = root.find("./country[@name='%s']"%name)
+    root.remove(data)
+    tree.write("output_remove.xml")
+
 
 
 if __name__ == "__main__":
@@ -50,4 +55,4 @@ if __name__ == "__main__":
     name1 = get_country_name(root, 0)
     name2 = get_country_name(root, 1)
     swap_country_name(tree, root, name1, name2)
-
+    remove_country(tree, root, "Taiwan")
