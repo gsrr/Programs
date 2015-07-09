@@ -6,6 +6,7 @@ public class Test
 
         public static void winner(Hand[] h)
         {
+                int lcnt = 0 , wcnt = 0;
                 System.out.println();       
                 int max = h[0].getHandValue();
                 System.out.println("The dealer's value is " + max);
@@ -14,14 +15,16 @@ public class Test
                         int tmp = h[i].getHandValue();
                         if(tmp > max)
                         {
-                                System.out.println("Player:" + i + " value: " + tmp + ": Win");       
+                                System.out.println("Player:" + i + " value: " + tmp + ": Win");   
+                                wcnt++;
                         }       
                         else
                         {
-                                System.out.println("Player:" + i + " value: " + tmp + ": Lost");       
+                                System.out.println("Player:" + i + " value: " + tmp + ": Lost");   
+                                lcnt++;
                         }       
                 }
-                System.out.println();       
+                System.out.println("Summary Win:" + wcnt + " Lost:" + lcnt);       
         }
 
         public static void main(String args[])
@@ -38,6 +41,5 @@ public class Test
                         h[i].newCard(d);
                 }
                 winner(h);
-
         }
 }

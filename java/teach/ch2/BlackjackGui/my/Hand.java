@@ -24,43 +24,6 @@ public class Hand
         }
 
         /**********************************************************
-          To reduce hand when newcard makes player go over 21
-          and there is an ace in the hand.
-          @param newCard random card from the set
-         **********************************************************/
-        private void reduceHand(Card newCard)
-        {
-                if((handvalue) > 21)
-                {
-                        if(aceInHand())
-                                handvalue -= 10;           
-
-                }
-        }//end reduceHand
-
-        /**********************************************************
-          To check if there is an ace in the hand.
-         **********************************************************/
-        private boolean aceInHand()
-        {
-                boolean result = false;
-                Card cardchk = null;
-                Iterator<Card> scan = inHand.iterator();
-
-                while (scan.hasNext() && !result)
-                {
-                        cardchk = scan.next();
-                        if(cardchk.getvalue() == 11)
-                        {
-                                cardchk.setvalue(1);
-                                result = true;
-                        }
-
-                }
-                return result;
-        }
-
-        /**********************************************************
           Adds a new card to the hand.
           @param currentdeck the Deck the game is playing with
          **********************************************************/
