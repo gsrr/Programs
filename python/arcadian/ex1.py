@@ -3,7 +3,7 @@
 import random
 
 def createMatrix(r,c):
-    matrix = [[0 for i in xrange(5)] for i in xrange(5)]
+    matrix = [[0 for i in xrange(c)] for i in xrange(r)]
     return matrix
 
 def random_assign(matrix):
@@ -52,18 +52,39 @@ def set_cell_life(matrix):
     
 
 def display_matrix(matrix):
-    print 
     for i in range(len(matrix)):
             print matrix[i]
 
+    print 
+
+def verifyInt(num):
+    try:
+        int(num)
+    except:
+        return -1
+
+    return 0
+
 
 def main():
+    print
     r = raw_input("Please input row number:")
     c = raw_input("Please input column number:")
+    
+    if verifyInt(r) != 0 or verifyInt(c) != 0:
+        print "[Error] : The row and column should be a number."
+        return
+    
+    if int(r) > 100 and int(c) > 100 :
+        print "[Error] : The size of matrix is too big."
+        return
+
     matrix = createMatrix(int(r), int(c))
     random_assign(matrix)
+    print "Before:"
     display_matrix(matrix)
     set_cell_life(matrix)
+    print "After:"
     display_matrix(matrix)
 
 
