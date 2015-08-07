@@ -1,31 +1,23 @@
 
-/*
- *
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
 #include <math.h>
+#include <windows.h>
 #include <stdarg.h>
+#include <direct.h>
 #include <iostream>
 #include <map>
 
 #define OFFSET 20
 
-/*
-#define DEBUG //debug
-#ifdef DEBUG
-        #define D if(1)
-#else
-        #define D if(0)
-#endif
-*/
-
 
 #define debug(...) fprintf(stdout, __VA_ARGS__)
 #define debug(...)
+HANDLE  hConsole; 
 
 struct bus_shift
 {
@@ -256,18 +248,18 @@ void showBusSwapShift(bus_shift* bss, int num, int base, int b, int comp, int c,
                 {
                         if( i == base && j == b )
                         {
-                                printf("\033[41m\033[37m");
+                                SetConsoleTextAttribute(hConsole, 14);
                                 myprintf(fw, "%d-%d ", bss[i].s[j] + boffset, bss[i].e[j] + boffset);
-                                printf("\033[0m");
+                                SetConsoleTextAttribute(hConsole, 15);
                         }
                         else if(i == comp && j == c)
                         {
-                                printf("\033[41m\033[37m");
+                                SetConsoleTextAttribute(hConsole, 14);
                                 myprintf(fw, "%d-%d ", bss[i].s[j] + coffset, bss[i].e[j] + coffset);
-                                printf("\033[0m");
+                                SetConsoleTextAttribute(hConsole, 15);
                         }
                         else
-                        {
+                        { 
                                 myprintf(fw, "%d-%d ", bss[i].s[j], bss[i].e[j]);
                         }
                         debug("cost:%d ", bss[i].pc[j]);
@@ -375,6 +367,7 @@ int check_bus_shift(bus_shift* bss, int num, int base, int bIdx, int comp, int c
               printf("\nPress any key to continue...\n");
               getchar();
       }
+      Sleep(1000);
       //sleep(1);
       return ret;
 }
@@ -402,7 +395,7 @@ int browse_bus_shift(bus_shift* bss, int base, int comp, int num)
         int totalCnt = 0;
         int sucCnt = 0;
         int failCnt = 0;
-        int i = myrand(bss[base].len);
+        int i = myrand_base(bss[base].len);
         int j;
         for( j = 0 ; j < bss[comp].len ; j++)
         {
@@ -410,10 +403,12 @@ int browse_bus_shift(bus_shift* bss, int base, int comp, int num)
                 int c_s = bss[comp].s[j];
                 if(abs(b_s - c_s) <= 60)
                 {
-                        system("clear");
+                               system("cls");			  
                         showBusShift(bss, num);
                         totalCnt++;
+                               SetConsoleTextAttribute(hConsole, 14);
                         printf("Swap (%c,%d) & (%c, %d)\n", base + 'a', i + 1, comp + 'a', j+ 1);
+                               SetConsoleTextAttribute(hConsole, 15);
                         swapShift(bss, base, i, comp, j);
                         //showBusSwapShift(bss, num, base, i, comp, j, 0, 0);
                         ret = check_bus_shift(bss, num, base, i, comp, j);
@@ -446,7 +441,7 @@ void shuffleArray(int* arr, int len)
         int i;
         for( i = len - 1 ; i > -1 ; i--)
         {
-                int r = myrand(len);
+                int r = myrand_base(len);
                 swapArr(arr, i, r);
         }
 }
@@ -468,7 +463,7 @@ void switchBusShift(bus_shift* bss, int busNum, int len)
                         int ret = browse_bus_shift(bss, busNum, i, len);               
                         if( ret == 0)
                         {
-                                break;
+                            break;
                         }
                 }
         }
@@ -521,17 +516,20 @@ void showMapContent(std::map<std::string, int> *powerMap)
 
 int main()
 {
-        system("rm ./outputs/*");
-        srand(time(NULL));
+		srand(time(NULL));
+        mkdir(".\\outputs");
+        hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hConsole, 15);
         int num = 3;
         std::map<std::string , int> powerMap;
         readSchedule("schedule.txt", &powerMap);
         bus_shift *bss = readInput("shift.txt", num , &powerMap);       
         while(1)
         {
-                int busNum = myrand(3);
+                int busNum = myrand_base(3);
                 switchBusShift(bss, busNum, num);
         }
+        system("pause");
         return 0;
 }
 

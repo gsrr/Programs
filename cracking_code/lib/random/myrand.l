@@ -9,7 +9,6 @@ typedef struct{
 
 int myrand_base(int base)
 {
-        srand(time(NULL));
         return rand() % base;
 }
 
