@@ -26,13 +26,11 @@ public class Poker
                 }
                 System.out.println("Summary Win:" + wcnt + " Lost:" + lcnt);       
         }
-
-        public static void main(String args[])
+        
+        public  static void startGame(int num)
         {
-                Scanner kb = new Scanner(System.in);
+                int players = num;
                 Deck d = new Deck();
-                System.out.print("\nPlease enter the number of players:");       
-                int players = kb.nextInt();
                 Player[] p = new Player[players];
                 for(int pi = 0 ; pi < players ; pi++)
                 {
@@ -41,5 +39,12 @@ public class Poker
                         p[pi].receive_card(d);
                 }
                 compare(p);
+
+        }
+        public static void main(String args[])
+        {
+                Scanner kb = new Scanner(System.in);
+                System.out.print("\nPlease enter the number of players:");       
+                startGame(kb.nextInt());
         }
 }
