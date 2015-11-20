@@ -83,17 +83,27 @@ def nextWord(word):
         return word
 
 
-if len(sys.argv) > 2:
-    if sys.argv[2] == "debug":
-        DEBUG = True
+def readData():
+    DNA = []
+    fp = open(sys.argv[1])
+    for line in fp:
+            line = line.strip()
+            DNA.append(line)
 
-DNA = []
-fp = open(sys.argv[1])
-for line in fp:
-	line = line.strip()
-	DNA.append(line)
+    return DNA
 
-startTime = time.time()
-print BruteForceMedianSearch(DNA, 8)
-elapsed = time.time() - startTime
-print 'It spends', elapsed, 'seconds'
+def main():
+    if len(sys.argv) > 2:
+        if sys.argv[2] == "debug":
+            DEBUG = True
+
+    DNA = readData()
+    startTime = time.time()
+    print BruteForceMedianSearch(DNA, 8)
+    elapsed = time.time() - startTime
+    print 'It spends', elapsed, 'seconds'
+    
+
+if __name__ == "__main__":
+    main()
+
