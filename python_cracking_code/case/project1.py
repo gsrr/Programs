@@ -22,23 +22,21 @@ def transfer(word):
 
     return "".join(wordStr)
 
-def BruteForceMedianSearch(DNA, l):
-    bestWord = "AAAAAAAA"
-    bestDist = None
-    word = [0] * 8
-    diffBest = 9999
-    while word:
-        merf = transfer(word)
-        dist, diffsum = totalDistance(merf, DNA)
-        print merf, diffsum, dist
-        if diffsum < diffBest:
-            bestWord = merf
-            diffBest = diffsum
-            bestDist = dist
-        word = nextWord(word)
-    
-    print
-    return bestWord, diffBest , bestDist
+def nextWord(word):
+    carry = 1
+    i = 0
+    while i < 8:
+        tmp = word[i] + carry
+        word[i] = tmp % 4
+        carry = tmp / 4
+        if carry == 0:
+            break
+        i += 1
+
+    if i == 8:
+        return None
+    else:
+        return word
    
 def compare(word, seq):
     myprint(seq)
@@ -66,22 +64,23 @@ def totalDistance(word, DNA):
 
     return dist, diffsum 
 
-def nextWord(word):
-    carry = 1
-    i = 0
-    while i < 8:
-        tmp = word[i] + carry
-        word[i] = tmp % 4
-        carry = tmp / 4
-        if carry == 0:
-            break
-        i += 1
-
-    if i == 8:
-        return None
-    else:
-        return word
-
+def BruteForceMedianSearch(DNA, l):
+    bestWord = "AAAAAAAA"
+    bestDist = None
+    word = [0] * 8
+    diffBest = 9999
+    while word:
+        merf = transfer(word)
+        dist, diffsum = totalDistance(merf, DNA)
+        print merf, diffsum, dist
+        if diffsum < diffBest:
+            bestWord = merf
+            diffBest = diffsum
+            bestDist = dist
+        word = nextWord(word)
+    
+    print
+    return bestWord, diffBest , bestDist
 
 def readData():
     DNA = []
