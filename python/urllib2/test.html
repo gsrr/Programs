@@ -1,0 +1,1960 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--fmt:setLocale value="en"/-->
+
+<title>
+
+
+
+EonNAS810
+
+
+
+</title>
+
+
+
+<style type="text/css">
+
+
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ol,ul {list-style:none;}
+
+a {cursor:pointer;}
+
+body {
+
+	margin-left: 0px;
+
+	margin-top: 0px;
+
+	margin-right: 0px;
+
+	margin-bottom: 0px;
+
+	background-color: #05151e;
+
+}
+
+.style1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	color: #FFFFFF;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+}
+
+.style4 {
+
+	font-size: 12px;
+
+	color: #FFFFFF;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.style5 {
+
+	color: #1a4d8e;
+
+	font-weight: bold;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+}
+
+
+
+</style>
+
+
+
+	<script type="text/javascript">
+
+		// The following strings are used in jquery.alerts.js
+
+		var jQueryAlert_Infomation = "Information";
+
+		var jQueryAlert_Warning = "Warning";
+
+		var jQueryAlert_Error = "Error";
+
+		var jQueryAlert_Confirm = "Confirm";
+
+		var jQueryAlert_Prompt = "Prompt";
+
+		var jQueryAlert_OK = "OK";
+
+		var jQueryAlert_Cancel = "Cancel";
+
+		
+
+		// The object contains hardware information
+
+		var HardwareInfo = new Object();
+
+		HardwareInfo = {"Initialized":"1","ModelSeries":"Entry","BoardID":"27","ModelName":"810","SN":"0","CPU":"none","ManagementPort":"e1000g0,e1000g1","ManagePortMAC":"82:95:95:72:33:66","Display":"vga","ServiceLED":"0","SystemFault":"1","supportLCD":"1","supportOTC":"1","supportDiskType":"1","supportHA":"0","supportFC":"0","supportRemoteDisk":"0","SWVersion":"1.6.14","DetailVersion":"1.6.14-02","Suite":"0","Debug":"0","ReleaseDate":"2014-05-30","DetailDate":"2014-05-30-19:34","CustomOn":"0","iscsiFilter":"1","fibreFilter":"1","PartitionVersion":"1","ModelAppend":"810","CustomName":"810","isOnlyTwoPort":"1","e1000g0":"LAN1","e1000g1":"LAN2"};
+
+	</script>
+
+
+
+<link type="text/css" rel="stylesheet" media="all" href="css/jquery.alerts.css" />
+
+<link type="text/css" href="css/redmond/jquery-ui-1.8.12.custom.css" rel="stylesheet" />
+
+
+
+<style type="text/css">
+
+	
+
+	/* dialog button */
+
+	.dialog_btn {
+
+		padding:6px;
+
+		background:url('../image/popup_bg_bottom.jpg') repeat-x;
+
+		border-top: 1px solid #8C8C8C;
+
+		height:22px;
+
+	}
+
+	.div_btn {/*chenyao 5-20*/
+
+		background-image:url(../image/btn.png);
+
+		background-repeat:no-repeat;
+
+		width:81px;
+
+		height:22px;
+
+		
+
+		text-align:center;
+
+		line-height:20px;
+
+		color:#FFFFFF;
+
+		font-family:Tahoma;
+
+		font-size:11px;
+
+		font-weight: bold;
+
+		-webkit-text-size-adjust:none;
+
+	}
+
+	.div_btn_c {
+
+		color:#194D8F;
+
+		font-family:Tahoma;
+
+		font-size:11px;
+
+		font-weight: bold;
+
+		cursor:pointer;
+
+		text-align:center;
+
+		vertical-align:middle;/*2009-4-28*/
+
+		-webkit-text-size-adjust:none;
+
+	}
+
+	.div_btn_c {/*2009-4-28*/
+
+		text-align:-moz-center;
+
+		vertical-align:-moz-middle;
+
+	}
+
+	.div_btn_side {
+
+		width:4px;
+
+		height:22px;
+
+		background-repeat:no-repeat;
+
+		cursor:pointer;/*2009-4-28*/
+
+	}
+
+	.t_btn_space {
+
+		width:10px;
+
+	}
+
+	.width_10 {/*usually for horizontal space between two btns*/
+
+		width:10px;
+
+	}
+
+	.align_r {
+
+	text-align:right;
+
+	}
+
+	.align_r {
+
+		text-align:-khtml-right;
+
+	}
+
+	.align_r {
+
+		text-align:-moz-right;
+
+	}
+
+
+
+	.divLinkBG {
+
+		position:absolute;
+
+		/*background-color:rgb(44,107,157);*/
+
+		width:auto;
+
+		min-width:150px;
+
+		top:19px;
+
+		height:auto;
+
+		min-height:70px;
+
+		right:0;
+
+		z-index:8;
+
+	}
+
+	.divLinkBG1 {
+
+		position:absolute;
+
+		background-color:rgb(44,107,157);
+
+		width:auto;
+
+		min-width:150px;
+
+		/*width:150px;*/
+
+		top:4px;
+
+		height:auto;
+
+		min-height:70px;
+
+		/*right:0;*/
+
+		z-index:10;
+
+	}
+
+	.divLinkBG2 {
+
+		position:absolute;
+
+		background-color:rgb(44,107,157);
+
+		width:auto;
+
+		min-width:150px;
+
+		/*width:150px;*/
+
+		top:4px;
+
+		height:auto;
+
+		min-height:70px;
+
+		/*right:0;*/
+
+		z-index:10;
+
+	}
+
+	.divLangBG {
+
+		position:absolute;
+
+		/*background-color:rgb(44,107,157);*/
+
+		width:auto;
+
+		min-width:150px;
+
+		top:19px;
+
+		height:20px;
+
+		right:180px;
+
+		z-index:8;
+
+	}
+
+	.divLangBG1 {
+
+		position:absolute;
+
+		background-color:rgb(44,107,157);
+
+		width:auto;
+
+		min-width:150px;
+
+		top:4px;
+
+		height:auto;
+
+		min-height:200px;
+
+		/*right:100px;*/
+
+		z-index:10;
+
+	}
+
+	.divLangBG2 {
+
+		position:absolute;
+
+		background-color:rgb(44,107,157);
+
+		width:auto;
+
+		min-width:150px;
+
+		top:4px;
+
+		height:auto;
+
+		min-height:200px;
+
+		/*right:100px;*/
+
+		z-index:10;
+
+	}
+
+	#divLinkCont td {
+
+		font-family: Arial;
+
+		font-size: 12px;
+
+		font-weight: normal;
+
+		color: #fff;
+
+		height:18px;
+
+		padding-left:5px;
+
+	}
+
+	#divLinkCont td:hover {
+
+		color: #000;
+
+		background-color:rgb(179,203,226);
+
+		cursor:pointer;
+
+	}
+
+	#spLinks {
+
+		cursor:pointer;
+
+	}
+
+	#spLinks:hover {
+
+		text-decoration: underline;
+
+	}
+
+	
+
+	#divLangCont td {
+
+		font-family: Arial;
+
+		font-size: 12px;
+
+		font-weight: normal;
+
+		color: #fff;
+
+		height:18px;
+
+		padding-left:5px;
+
+	}
+
+	#divLangCont td:hover {
+
+		color: #000;
+
+		background-color:rgb(179,203,226);
+
+		cursor:pointer;
+
+	}	
+
+	#curLang {
+
+		cursor:pointer;
+
+	}
+
+	#curLang:hover {
+
+		text-decoration: underline;
+
+	}
+
+	
+
+</style>
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+
+
+<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.alerts.js"></script>
+
+<script type="text/javascript" src="js/comm.js"></script>
+
+
+
+<script type="text/javascript" src="js/loadingNew.js"></script>
+
+
+
+<script type="text/javascript" src="../js/jquery.blockUI.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+
+	var g_loadShowRef = 0; // Used as reference count for LoadShow() & LoadClose(), if 1 LoadShow will do nothing. 
+
+	function LoadShow(info) {
+
+		if (g_loadShowRef > 0) return;
+
+		g_loadShowRef = 1;
+
+		$.blockUI({
+
+			message: $('#divLoading'),
+
+			css: {
+
+				top: '50%',
+
+				left: '50%',
+
+				width: '70px',
+
+				backgroundColor: '',
+
+				border: '0px',
+
+				cursor: 'default'
+
+			}, 
+
+			overlayCSS:  {
+
+				backgroundColor: ''
+
+			}
+
+		});
+
+	}
+
+
+
+	function LoadClose() {
+
+		$.unblockUI();
+
+		g_loadShowRef = 0;
+
+	}
+
+
+
+
+
+	function customUI(){
+
+		$(".customHide").hide();
+
+		$("div.divLinkBG").css('height',44)
+
+	}
+
+
+
+	function entryUI() {
+
+		$(".cBigNasOnly").remove();
+
+	}
+
+	
+
+	function midUI() {
+
+		$(".cEntryOnly").remove();
+
+	}
+
+	
+
+	$(document).ready(function()	{
+
+		
+
+		$("#divLoading").find("img").attr("src", "/image/Loading_Icon_EonNASPro.gif");
+
+		
+
+		var lang='null'
+
+		
+
+		if(lang=="cn")
+
+			$("#curLang").text("Chinese(Simplified)")
+
+		else if(lang=="tw")
+
+			$("#curLang").text("Chinese(Traditional)")
+
+		else if(lang=="cz")
+
+			$("#curLang").text("Czech")
+
+		else if(lang=="de")
+
+			$("#curLang").text("Deutsch")
+
+		else if(lang=="fr")
+
+			$("#curLang").text("French")
+
+		else if(lang=="it")
+
+			$("#curLang").text("Italian")
+
+		else if(lang=="jp")
+
+			$("#curLang").text("Japanese")
+
+		else if(lang=="ko")
+
+			$("#curLang").text("Korean")
+
+		else if(lang=="pl")
+
+			$("#curLang").text("Polish")
+
+		else if(lang=="pt")
+
+			$("#curLang").text("Portuguese")
+
+		else if(lang=="ru")
+
+			$("#curLang").text("Russian")
+
+		else if(lang=="es")
+
+			$("#curLang").text("Spanish")
+
+		else if(lang=="en")
+
+			$("#curLang").text("English")
+
+		
+
+		
+
+		if(HardwareInfo.CustomOn=="1")
+
+			customUI()
+
+		var indexNasModelName = HardwareInfo.ModelName;
+
+		
+
+		
+
+		if(HardwareInfo.CustomOn=="0")
+
+		{
+
+			$("#indexNasModel").text("About");
+
+			$("#ProductImage").attr("src", "/image/login/Product_" + indexNasModelName + ".jpg");
+
+			$("#copyRight").text('2011 Infortrend Technology, Inc. All rights reserved.');
+
+		}
+
+		else //customNAS
+
+		{
+
+			
+
+			$("#indexNasModel").text("About");
+
+			$("#ProductImage").attr("src", "/image/login/Product_CustomNAS.jpg");
+
+			$("#copyRight").text("");
+
+		}
+
+		
+
+		if (HardwareInfo.ModelSeries == "Entry") {
+
+			entryUI();
+
+		} else {
+
+			midUI();
+
+		}
+
+		
+
+		// Check Entry/MidNas
+
+		$('#onlineSupport').click( function() {
+
+			if (HardwareInfo.ModelSeries == "Entry") {
+
+				window.open('http://www.eonnas.com/EonNAS_support/EonNAS_support_online.asp');
+
+			} else {
+
+				window.open('http://support.infortrend.com/EonNAS/');
+
+			}
+
+		});
+
+	});
+
+
+
+	var isLockField = false;
+
+	
+
+	function lockField() {
+
+		$("#tabLogin input").attr("disabled", "disabled");
+
+		$("#buttonok").attr("disabled", "disabled");
+
+		isLockField = true;
+
+	}
+
+	
+
+	function unlockField() {
+
+		$("#tabLogin input").attr("disabled", "");
+
+		$("#buttonok").attr("disabled", "");
+
+		isLockField = false;
+
+	}
+
+	
+
+	function setCookie() {
+
+		if ($("#chRemName").attr("checked")) {
+
+			$.cookie("remName", $("#tName").val(), { expires: 1,path: '/' });
+
+		} else {
+
+			$("#chRemPass").attr("checked", "");
+
+			$.cookie("remName", null);
+
+		}
+
+		if ($("#chRemPass").attr("checked")) {
+
+			$.cookie("remPass", $("#tPass").val(), { expires: 1,path: '/' });
+
+		} else {
+
+			$.cookie("remPass", null);
+
+		}
+
+		
+
+		if ($("#chSSL").attr("checked")) {
+
+			$.cookie("ssl", "1", { expires: 1,path: '/' });
+
+		} else {
+
+			$.cookie("ssl", null);
+
+		}
+
+	}
+
+	
+
+	function setLang(lang)
+
+	{
+
+		// set language
+
+		// then ougout
+
+		$(this).empty();
+
+		$.post("./setSeesionLanguage", { Action: "post", language: lang },
+
+				function(data, textStatus)
+
+				{	window.location.href = "/index.jsp";});
+
+		
+
+	} 
+
+	
+
+	function check() {
+
+		var loginName = $.trim($("#tName").val());
+
+		var password = $("#tPass").val();
+
+
+
+		if (loginName == "") {
+
+			//infoAlert();
+
+			warnAlert("Please enter the username.", function() {$("#tName").focus();});
+
+			
+
+			return;
+
+		}
+
+		if (password == "") {
+
+			//infoAlert();
+
+			warnAlert("Please enter the password.", function() {$("#tPass").focus();});
+
+			$("#tPass").focus();
+
+			return;
+
+		}
+
+		if(loginName != "" && password != "")
+
+		{
+
+			lockField();
+
+			LoadShow('Loading');
+
+		
+
+			var random;
+
+
+
+			$.post("GetRandom", { Action: "post"},
+
+			function(data, textStatus)
+
+			{
+
+				var re2 = data.result;
+
+				random = re2;
+
+				
+
+				var pw = '';
+
+				for(i = 0;i < password.length;i++)
+
+				{
+
+					pw = pw + (password.charCodeAt(i) + random);
+
+					if(i != password.length - 1)
+
+					{
+
+						pw = pw + '#';
+
+					}
+
+				}
+
+
+
+				$.post("LoginCheck", { Action: "post", loginName: loginName,password: pw },
+
+				function(data, textStatus)
+
+				{
+
+					var re = data.result;
+
+					LoadClose();
+
+					if(re == 1)
+
+					{
+
+						//if(clickFlag == false)
+
+						//{
+
+							warnAlert("Login Failed!", function() {
+
+								unlockField();
+
+								$("tName").focus();
+
+							});
+
+						//}
+
+					}
+
+					else if(re == 2)
+
+					{
+
+						var msg = '';
+
+						if (data.ip != "10.253.253.1" && data.ip != "10.253.253.2")
+
+							msg = "The admin user account has already logged in from " + data.ip + "!\n";
+
+						else
+
+							msg = "The admin user account has already logged in via the other controller" + "!\n";
+
+						msg += "Are you sure you want to login? The current admin user will be forced to log out.";
+
+						
+
+						jConfirm(msg, "Confirm", function(b) {
+
+							if(b) {
+
+								$.post("KickAdmin", { Action: "post", userName: loginName},
+
+								function(data, textStatus)
+
+								{
+
+									var re1 = data.result; 
+
+									if(re1 == 0)
+
+									{	
+
+										setCookie();
+
+										//location.href=data.url;
+
+										location.href="status/mainFrame.jsp";
+
+									}
+
+									else if(re1 == 20)
+
+									{
+
+										var tmp_msg = "The mirrored disks are unavailable or have not been configured." + "\n";
+
+										tmp_msg += "To configure ZFS root mirror settings, go to the Maintenance > Root Mirror menu."; 
+
+										infoAlert(tmp_msg, function() {
+
+											setCookie();
+
+											//location.href=data.url;
+
+											location.href="status/mainFrame.jsp";
+
+										});
+
+									}
+
+								}, "json");
+
+							}
+
+							else {
+
+								unlockField();
+
+								return;
+
+							}
+
+						});
+
+						
+
+						
+
+					}
+
+					else if(re == 100)
+
+					{
+
+						var msg = "The user account has already logged in from " + data.ip + "!\n";
+
+						msg += "Are you sure you want to login? The current user will be forced to log out.";
+
+						
+
+						jConfirm(msg, "Confirm", function(b) {
+
+							if(b) {
+
+								$.post("KickUser", { Action: "post", userName: loginName},
+
+								function(data, textStatus)
+
+								{
+
+									var re1 = data.result;
+
+									if(re1 == 0)
+
+									{
+
+										setCookie();
+
+										//location.href=data.url;
+
+										location.href="status/mainFrame.jsp";
+
+									}
+
+								}, "json");
+
+							}
+
+							else {
+
+								unlockField();
+
+								return;
+
+							}
+
+						});
+
+
+
+						
+
+					}
+
+					else if(re == 6)
+
+					{
+
+						warnAlert("Failed to acquire the cluster mode.", unlockField);
+
+					}
+
+					else if(re == 50)
+
+					{
+
+						warnAlert("Failed to confirm the user type.", unlockField);
+
+					}
+
+					else if(re == 20)
+
+					{
+
+						var tmp_msg = "The mirrored disks are unavailable or have not been configured." + "\n";
+
+						tmp_msg += "To configure ZFS root mirror settings, go to the Maintenance > Root Mirror menu."; 
+
+						infoAlert(tmp_msg, function() {
+
+							setCookie();
+
+							location.href="status/mainFrame.jsp";
+
+						});
+
+						
+
+					} else if (re == 3 || re == 4) {
+
+						warnAlert("The username or password is incorrect.", function() {
+
+							unlockField();
+
+							$("#tName").focus();
+
+						});
+
+						
+
+					}
+
+					else
+
+					{
+
+						setCookie();
+
+						location.href="status/mainFrame.jsp";
+
+					}
+
+				}, "json");
+
+				
+
+				
+
+			}, "json");
+
+		}
+
+
+
+	}
+
+	
+
+	function btnHover(btnname)
+
+	{
+
+		btnnode = document.getElementById(btnname);
+
+		btnnode.style.color="#ff9500";   
+
+	}
+
+	
+
+	function btnOut(btnname)
+
+	{
+
+		btnnode = document.getElementById(btnname);
+
+		btnnode.style.color="#194D8F";
+
+	}
+
+
+
+	$(function() {
+
+
+
+	
+
+		var lang='null'
+
+
+
+		if ($.cookie("ssl") != null) {
+
+			$("#chSSL").attr("checked", "checked");
+
+			var url = window.location.href;
+
+			if (url.indexOf("http://") != -1){
+
+				url = url.replace("http://", "https://");
+
+				location.href=url;
+
+			}
+
+		} else {
+
+			$("#chSSL").attr("checked", "");
+
+			var url = window.location.href;
+
+			if (url.indexOf("https://") != -1){
+
+				url = url.replace("https://", "http://");
+
+				location.href=url;
+
+			}	
+
+		}
+
+		
+
+		if ($.cookie("remName") != null) {
+
+			$("#tName").val($.cookie("remName"));
+
+			$("#chRemName").attr("checked", "checked");
+
+		} else {
+
+			$("#chRemName").attr("checked", "");
+
+		}
+
+		
+
+		if ($.cookie("remPass") != null) {
+
+			$("#tPass").val($.cookie("remPass"));
+
+			$("#chRemPass").attr("checked", "checked");
+
+		} else {
+
+			$("#chRemPass").attr("checked", "");
+
+		}
+
+		
+
+		
+
+		
+
+		$("#chRemName").click(function() {
+
+			if (!$("#chRemName").attr("checked")) {
+
+				$("#chRemPass").attr("checked", "");
+
+			}
+
+		});
+
+		$("#chSSL").click(function() {
+
+			if ($("#chSSL").attr("checked")) {
+
+				setCookie();
+
+				var url = window.location.href;
+
+				if (url.indexOf("http://") != -1){
+
+					url = url.replace("http://", "https://");
+
+					url = url.replace("login.jsp", "index.jsp?language="+lang);
+
+					location.href = url
+
+
+
+				}	
+
+			} else {
+
+				setCookie();
+
+				var url = window.location.href;
+
+				if (url.indexOf("https://") != -1){
+
+					url = url.replace("https://", "http://");
+
+					url = url.replace("login.jsp", "index.jsp?language="+lang);
+
+					location.href = url
+
+				}	
+
+			}
+
+		});
+
+		
+
+		unlockField();
+
+		$("#tName").focus();
+
+
+
+		$("#spLinks").mouseover(function() {
+
+			$("#divLink, #divLinkCont").show();
+
+		});
+
+		$("#divLinkContainer").mouseleave(function() {
+
+			$("#divLink, #divLinkCont").hide();
+
+		});
+
+		
+
+		$("#curLang").mouseover(function() {
+
+			$("#divLang, #divLangCont").show();
+
+		});
+
+		$("#divLangContainer").mouseleave(function() {
+
+			$("#divLang, #divLangCont").hide();
+
+		});
+
+		
+
+	});
+
+	
+
+
+
+	document.onkeydown=function(event)
+
+	{
+
+		e = event ? event :(window.event ? window.event : null); 
+
+		if(e && e.keyCode == 13 && !isLockField)
+
+		{  
+
+			check();
+
+		}
+
+	}
+
+
+
+
+
+	var aboutDiag = null;
+
+	function about() {
+
+		var url = "../help/about.jsp";
+
+		
+
+		if (!aboutDiag) {
+
+			aboutDiag = $('<div></div>').dialog({
+
+		   autoOpen: false,
+
+		   title: "About",   //change to your own window title
+
+		   width: 570,     
+
+		   //height: 397,  
+
+		   modal: true,
+
+		   resizable: false,
+
+		   close:function(){$(this).empty();}
+
+		  });
+
+		}
+
+		aboutDiag.load(url);  
+
+		aboutDiag.dialog("open");				
+
+	}
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+<body>
+
+	
+
+	
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+		<tr>
+
+			<td background="/image/login/TopBg.jpg">
+
+				<div align="right">
+
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+						<tr>
+
+							<td>&nbsp;</td>
+
+							<td width="624">
+
+								<div align="right"><img src="/image/login/TopBg3-3.jpg" width="624" height="24" /></div>
+
+							</td>
+
+							<td width="105" background="/image/login/TopBg3-2.jpg">
+
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+									<tr>
+
+										<td width="120" align="right">
+
+											<div align="right">
+
+											<div id="divLangContainer" style="width:auto; min-width:150px;">
+
+												<span class="style1" id="curLang"></span>
+
+												<div class="divLangBG">
+
+												<div id="divLang" class="divLangBG1" style="display:none;opacity:0.7;filter:alpha(opacity=70);"></div>	
+
+													<div id="divLangCont" class="divLangBG2" style="display:none;" align="left">
+
+														<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+
+															<tr><td onclick="setLang('cn')">Chinese(Simplified)</td></tr>
+
+															<tr><td onclick="setLang('tw')">Chinese(Traditional)</td></tr>
+
+															<tr><td onclick="setLang('cz')">Czech</td></tr>
+
+															<tr><td onclick="setLang('de')">Deutsch</td></tr>
+
+															<tr><td onclick="setLang('en')">English</td></tr>
+
+															<tr><td onclick="setLang('fr')">French</td></tr>
+
+															<tr><td onclick="setLang('it')">Italian</td></tr>
+
+															<tr><td onclick="setLang('jp')">Japanese</td></tr>
+
+															<tr><td onclick="setLang('ko')">Korean</td></tr>
+
+															<tr><td onclick="setLang('pl')">Polish</td></tr>
+
+															<tr><td onclick="setLang('pt')">Portuguese</td></tr>
+
+															<tr><td onclick="setLang('ru')">Russian</td></tr>
+
+															<tr><td onclick="setLang('es')">Spanish</td></tr>
+
+														</table>
+
+													</div>
+
+												</div>
+
+											</div>
+
+											</div>
+
+										</td>
+
+										<td width="5">&nbsp;</td>
+
+										<td align="right"><img src="/image/login/GrayArrow_Right.gif" alt="" width="8" height="8" /></td>
+
+									</tr>
+
+								</table>
+
+							</td>
+
+							<td width="30" background="/image/login/TopBg3-1.jpg"></td>
+
+							<td width="98" background="/image/login/TopBg3-1.jpg">
+
+								<div align="center">
+
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+										<tr>
+
+											<td width="100px" align="right">
+
+												<div align="right">
+
+													<div id="divLinkContainer" style="width:auto; min-width:150px;">
+
+														<span class="style1" id="spLinks">
+
+															Links
+
+														</span>
+
+														<div class="divLinkBG">
+
+														<div id="divLink" class="divLinkBG1" style="display:none;opacity:0.7;filter:alpha(opacity=70);"></div>
+
+	
+
+														<div id="divLinkCont" class="divLinkBG2" style="display:none;" align="left">
+
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+
+																<tr>
+
+																	<td onclick="javascript:window.open('/help/en/helpMainFrame.jsp', '', 'width=980, height=600, resizable=no, scrollbars=yes');">
+
+																		Online Help
+
+																	</td>
+
+																</tr>
+
+																<tr class='cEntryOnly customHide'>
+
+																	<td onclick="javascript:window.open('http://www.eonnas.com/EonNAS_support/EonNAS_support_download-center.asp');">
+
+																		Documentation Center
+
+																	</td>
+
+																</tr>
+
+																<tr class='customHide'>
+
+																	<td onclick="javascript:window.open('http://www.eonnas.com/forum/');">
+
+																		Community Forum
+
+																	</td>
+
+																</tr>
+
+																<tr class="customHide" id="onlineSupport"> <!-- The suport link is set in document ready dynamically -->
+
+																	<td>
+
+																		Online Support
+
+																	</td>
+
+																</tr>
+
+																<tr class='cEntryOnly customHide'>
+
+																	<td onclick="javascript:window.open('http://www.eonnas.com/EonNAS_support/EonNAS_support_desktop-protection.asp');">
+
+																		Desktop Protection
+
+																	</td>
+
+																</tr>
+
+																<tr>
+
+																	<td onclick="about()" id="indexNasModel">
+
+																		About NAS
+
+																	</td>
+
+																</tr>
+
+															</table>
+
+														</div>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</td>
+
+											<td width="5">&nbsp;</td>
+
+											<td align="right"><img src="/image/login/GrayArrow_Right.gif" width="8" height="8" /></td>
+
+										</tr>
+
+									</table>
+
+								</div>
+
+							</td>
+
+						</tr>
+
+					</table>
+
+				</div>
+
+			</td>
+
+		</tr>
+
+	  
+
+		<tr>
+
+			<td valign="top" background="/image/login/CenterBg.jpg">
+
+				<div align="center">
+
+					<table width="960" border="0" cellspacing="0" cellpadding="0">
+
+						<tr>
+
+							<td width="480"><img id="ProductImage" width="480" height="468" /></td>
+
+							
+
+							<td valign="top">
+
+								<table border="0" cellspacing="0" cellpadding="0">
+
+									<tr>
+
+										<td><img src="/image/login/Center-2_1.jpg" width="329" height="194" /></td>
+
+									</tr>
+
+									<tr>
+
+										<td height="198" valign="top" background="/image/login/FormBg.jpg">
+
+											<table width="100%" height="100%" border="0" cellspacing="0">
+
+												<tr>
+
+													<td width="20">&nbsp;</td>
+
+													<td width="120" class="style1">&nbsp;</td>
+
+													<td align="left"></td>
+
+												</tr>
+
+												<tr>
+
+													<td width="20">&nbsp;</td>
+
+													<td width="120" class="style1">
+
+														Username :
+
+													</td>
+
+													<td align="left">
+
+														<label>
+
+															<input type="text" name="tName" id="tName" style="width:150px;" />
+
+														</label>
+
+													</td>
+
+												</tr>
+
+												<tr>
+
+													<td>
+
+														<div align="left"></div>
+
+													</td>
+
+													<td class="style1">
+
+														Password :
+
+													</td>
+
+													<td align="left">
+
+														<label>
+
+															<input type="password" name="tPass" id="tPass" style="width:150px;" />
+
+														</label>
+
+													</td>
+
+												</tr>
+
+												<tr>
+
+													<td>&nbsp;</td>
+
+													<td class="style1">&nbsp;</td>
+
+													<td align="left" valign="middle">
+
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+															<tr>
+
+																<td width="20" align="center">
+
+																	<input type="checkbox" name="chRemName" id="chRemName" />
+
+																</td>
+
+																<td align="left">
+
+																	<span class="style4">
+
+																		Remember username
+
+																	</span>
+
+																</td>
+
+															</tr>
+
+														</table>
+
+													</td>
+
+												</tr>
+
+												<tr>
+
+													<td>&nbsp;</td>
+
+													<td class="style1">&nbsp;</td>
+
+													<td>
+
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+															<tr>
+
+																<td width="20" align="center">
+
+																	<input type="checkbox" name="chRemPass" id="chRemPass" />
+
+																</td>
+
+																<td align="left">
+
+																	<span class="style4">
+
+																		Remember password
+
+																	</span>
+
+																</td>
+
+															</tr>
+
+														</table>
+
+													</td>
+
+												</tr>	
+
+												<tr>
+
+													<td>&nbsp;</td>
+
+													<td class="style1">&nbsp;</td>
+
+													<td>
+
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+															<tr>
+
+																<td width="20" align="center">
+
+																	<input type="checkbox" name="chSSL" id="chSSL" />
+
+																</td>
+
+																<td align="left">
+
+																	<span class="style4">
+
+																		SSL login
+
+																	</span>
+
+																</td>
+
+															</tr>
+
+														</table>
+
+													</td>
+
+												</tr>
+
+												<tr>
+
+													<td>&nbsp;</td>
+
+													<td class="style1">&nbsp;</td>
+
+													<td height="30">
+
+														<table width="100" border="0" cellspacing="0" cellpadding="0">
+
+															<tr>
+
+																<td>
+
+																	<div id="btn_ok" onMouseMove="javascript:btnHover('buttonok');" onMouseOut="javascript:btnOut('buttonok');">
+
+																		<table border="0" cellspacing="0" cellpadding="0">
+
+																			<tr>
+
+																				<td background="image/btn_left.png" class="div_btn_side"></td>
+
+																				<td id="buttonok" width="auto" style="min-width:150px;" height="22px" background="image/btn_center.png" class="div_btn_c" onClick="check();">
+
+																					Login
+
+																				</td>
+
+																				<td background="image/btn_right.png" class="div_btn_side"></td>
+
+																			</tr>
+
+																		</table>
+
+																	</div>
+
+																</td>
+
+															</tr>
+
+														</table>
+
+													</td>
+
+												</tr>
+
+											</table>
+
+										</td>
+
+									</tr>
+
+									<tr>
+
+										<td><img src="/image/login/Center-2_3.jpg" width="329" height="76" /></td>
+
+									</tr>
+
+								</table>
+
+							</td>
+
+							<td valign="top" width="151"><img src="/image/login/Center-3.jpg" width="151" height="468" /></td>
+
+						</tr>
+
+					</table>
+
+				</div>
+
+			</td>
+
+		</tr>
+
+		
+
+		<tr>
+
+			<td background="/image/login/BottomBg.jpg">
+
+				<div align="center">
+
+					<table width="960" border="0" cellspacing="0" cellpadding="0">
+
+						<tr>
+
+							<td width="5"><img src="/image/login/Bottom_1.jpg" width="5" height="109" /></td>
+
+							<td background="/image/login/Bottom_3.jpg">
+
+								<div align="center" class="style4" id="copyRight">
+
+									
+
+								</div>
+
+							</td>
+
+						</tr>
+
+					</table>
+
+				</div>
+
+			</td>
+
+		</tr>
+
+	</table>
+
+	
+
+	<!-- show loading -->
+
+	<div id="divLoading" style="display:none;">
+
+		<table>
+
+			<tr>
+
+				<td>
+
+					<img src="/image/Loading_Icon_EonNASPro.gif"/>
+
+				</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+
+	
+
+</body>
+
+</html>
+
