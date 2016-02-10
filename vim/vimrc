@@ -4,17 +4,22 @@ set bg=dark
 set number
 set autoindent
 
-#set variable
+"tab setting
+set expandtab   "Replace tab by space
+set tabstop=4   "set the width of tab
+set shiftwidth=4        "set the shift width
+
+"set variable
 let HAdir="/var/apache/tomcat/webapps/NAS/misc/HAAgent/"
 let HAlib="/var/apache/tomcat/webapps/NAS/misc/HAAgent/Lib/"
 let HAex="/var/apache/tomcat/webapps/NAS/misc/HAAgent/ExportWeb/"
 
-#set alias command
+"set alias command
 command Chha execute 'cd' HAdir
 command Chlib execute 'cd' HAlib
 command Chex execute 'cd' HAex
 
-#set tab color
+"set tab color
 hi TabLineFill ctermfg=Yellow ctermbg=Black
 hi TabLine ctermfg=Black ctermbg=White
 hi TabLineSel ctermfg=Black ctermbg=LightGreen
@@ -22,3 +27,8 @@ hi TabLineSel ctermfg=Black ctermbg=LightGreen
 nmap <C-R> zL
 nmap <C-L> zH
 
+inoremap <C-A> <Esc>A
+inoremap ( ()<Esc>i
+inoremap { {}<ESC>i
+inoremap " ""<Esc>i
+inoremap " ""<Esc>i
